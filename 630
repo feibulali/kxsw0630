@@ -1,585 +1,1258 @@
+#
+#-------------------------------------------------------------#
+#  创建者：https://v2rayse.com
+#  创建时间：2025-12-22 12:34:14
+#  模版：v2rayse默认模版
+#  节点数量：167
+#-------------------------------------------------------------#
+#
 port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 0.0.0.0:9090
 proxies:
-  - {name: 🇺🇸 美国, server: 209.200.246.53, port: 36774, type: trojan, password: Fv7ogJ6vfz, sni: cloudflare.com, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国, server: 145.223.70.115, port: 25365, type: trojan, password: eDHWaPzxcl, sni: cloudflare.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港, server: 58.152.30.31, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 2, server: 58.152.30.31, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 美國, server: 104.11.86.252, port: 443, type: trojan, password: hSA6YXe15O, sni: Telegram������������+@WangCai2, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 2, server: 205.185.115.223, port: 19258, type: trojan, password: iWnFtzMiac, sni: cloudflare.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 3, server: 219.79.214.159, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 4, server: 219.79.214.159, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 3, server: 138.124.67.26, port: 25572, type: ss, cipher: chacha20-ietf-poly1305, password: nqcIfYHlpMn3jzqkNDjKaG, udp: true}
-  - {name: 🇺🇸 美国 4, server: 194.59.183.134, port: 46114, type: ss, cipher: chacha20-ietf-poly1305, password: lejSRyqa033OEPmEQsvRsl, udp: true}
-  - {name: 🇺🇸 美国 5, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm, udp: true}
-  - {name: 🇺🇸 美国 6, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: wwzVn2ZnHfqYa6l8EWh3eY, udp: true}
-  - {name: 🇺🇸 美国 7, server: pupas-shirting-unsung.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: p78naCf2EfOlRSLTX0wFVx, udp: true}
-  - {name: 🇺🇸 美国 8, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm, udp: true}
-  - {name: 🇺🇸 美国 9, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: wwzVn2ZnHfqYa6l8EWh3eY, udp: true}
-  - {name: 🇺🇸 美国 10, server: pupas-shirting-unsung.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: p78naCf2EfOlRSLTX0wFVx, udp: true}
-  - {name: 🇺🇸 美国 11, server: v30.hdacd.com, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国, server: m.cnmjin.net, port: 16645, type: vmess, uuid: dc875b7c-c954-40e0-9007-73a4422e25c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 53bcf48886181e0dd5bd8dea7ab9d4a2.mobgslb.tbcache.com}}, udp: true}
-  - {name: 🇺🇸 美国 12, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 13, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 14, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度, server: 103.97.203.220, port: 550, type: vmess, uuid: 9e0e83ca-0fbc-44b1-8024-0eb8f9414156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 15, server: xiaoniu.andcdn.bid, port: 41318, type: vmess, uuid: 82539eb7-18c8-48d0-bb9c-55d1b6e47f59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /obj, headers: {Host: img14.360buyimg.com}}, udp: true}
-  - {name: 🇬🇧 英国 2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 3, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 4, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 5, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 6, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 7, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 8, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
-  - {name: 🇬🇧 英国 9, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 10, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
-  - {name: 🇬🇧 英国 11, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1"}, udp: true}
-  - {name: 🇫🇷 法国 3, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN"}, udp: true}
-  - {name: 🇫🇷 法国 4, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10"}, udp: true}
-  - {name: 🇫🇷 法国 5, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", headers: {Host: AZERB.NET}}, udp: true}
-  - {name: 🇫🇷 法国 6, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇫🇷 法国 7, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "?ed=2048"}, udp: true}
-  - {name: 🇫🇷 法国 8, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: TURK1.NET.NET}}, udp: true}
-  - {name: 🇫🇷 法国 9, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
-  - {name: 🇫🇷 法国 10, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: 2001:bc8:32d7:302::10, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
-  - {name: 🇫🇷 法国 11, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048"}, udp: true}
-  - {name: 🇫🇷 法国 12, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: AZERB.NET}}, udp: true}
-  - {name: 🇫🇷 法国 13, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇬🇧 英国 12, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 13, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 14, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 5, server: 2001:bc8:32d7:2013::8, port: 62211, type: vmess, uuid: e1786d49-ccba-466b-a0dd-e1ab59bd83bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇺🇸 美国 16, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", headers: {Host: AZERB.NET}}, udp: true}
-  - {name: 🇺🇸 美国 17, server: 2001:bc8:32d7:2013::8, port: 62211, type: vmess, uuid: e1786d49-ccba-466b-a0dd-e1ab59bd83bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇺🇸 美国 18, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 19, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10"}, udp: true}
-  - {name: 🇺🇸 美国 20, server: v30.hdacd.com, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 21, server: v30.hdacd.com, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 22, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: TURK1.NET.NET}}, udp: true}
-  - {name: 🇺🇸 美国 23, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: AZERB.NET}}, udp: true}
-  - {name: 🇺🇸 美国 24, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048"}, udp: true}
-  - {name: 🇺🇸 美国 25, server: xiaoniu.andcdn.bid, port: 41318, type: vmess, uuid: 82539eb7-18c8-48d0-bb9c-55d1b6e47f59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /obj, headers: {Host: img14.360buyimg.com}}, udp: true}
-  - {name: 🇺🇸 美国 26, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
-  - {name: 🇺🇸 美国 27, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "?ed=2048"}, udp: true}
-  - {name: 🇫🇷 法国 14, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
-  - {name: 🇫🇷 法国 15, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
-  - {name: 🇫🇷 法国 16, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
-  - {name: 🇫🇷 法国 17, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇫🇷 法国 18, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇫🇷 法国 19, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN"}, udp: true}
+  - {"type":"vless","name":"俄羅斯_1","server":"51.250.66.217","port":444,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ads.x5.ru"},"servername":"ads.x5.ru"}
+  - {"type":"vless","name":"美国_1","server":"all.tellmethetrue.shop","port":443,"uuid":"e4824193-4f54-453b-d037-88368e85ef0e","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"servername":"pqh30v1.hiddendom.shop"}
+  - {"type":"vless","name":"俄羅斯_2","server":"51.250.66.217","port":446,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ads.x5.ru"},"servername":"ads.x5.ru"}
+  - {"type":"vless","name":"俄羅斯_3","server":"all.adr-cloud.ru","port":446,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ads.x5.ru"},"servername":"ads.x5.ru"}
+  - {"type":"vless","name":"俄羅斯_4","server":"51.250.6.178","port":446,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ads.x5.ru"},"servername":"ads.x5.ru"}
+  - {"type":"vless","name":"俄羅斯_5","server":"51.250.88.6","port":444,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ads.x5.ru"},"servername":"ads.x5.ru"}
+  - {"type":"vless","name":"俄羅斯_6","server":"51.250.6.178","port":444,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ads.x5.ru"},"servername":"ads.x5.ru"}
+  - {"type":"vless","name":"俄羅斯_7","server":"all.adr-cloud.ru","port":444,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ads.x5.ru"},"servername":"ads.x5.ru"}
+  - {"type":"vless","name":"俄羅斯_8","server":"51.250.75.169","port":446,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ads.x5.ru"},"servername":"ads.x5.ru"}
+  - {"type":"vless","name":"俄羅斯_9","server":"51.250.88.6","port":446,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ads.x5.ru"},"servername":"ads.x5.ru"}
+  - {"type":"vless","name":"俄羅斯_10","server":"51.250.75.169","port":444,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ads.x5.ru"},"servername":"ads.x5.ru"}
+  - {"type":"trojan","name":"印度尼西亚","server":"180.131.145.161","port":23274,"password":"FodSUXysuS","udp":true,"skip-cert-verify":true,"sni":"cloudflare.com","network":"grpc"}
+  - {"type":"trojan","name":"美國_1","server":"205.185.115.223","port":19258,"password":"iWnFtzMiac","udp":true,"skip-cert-verify":true,"sni":"cloudflare.com","network":"grpc"}
+  - {"type":"vless","name":"荷蘭_1","server":"185.236.232.108","port":80,"uuid":"401374e6-df77-41fb-f638-dad8184f175b","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true}
+  - {"type":"vless","name":"NL_YouTube@小青科学网","server":"143.244.197.90","port":40191,"uuid":"c4c65266-80fb-4bf4-87ce-fb9e3deb3429","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"},"servername":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}
+  - {"type":"trojan","name":"美國_2","server":"zhe01.webflarex.top","port":38340,"password":"k9EG6P7KcwrNUvxo","udp":true,"skip-cert-verify":true,"sni":"yazhou10.dynu.net","network":"tcp"}
+  - {"type":"trojan","name":"香港_1","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
+  - {"type":"vless","name":"荷蘭_2","server":"89.23.113.137","port":47944,"uuid":"9f721f50-e015-5ea3-8bb0-22428307e9c0","skip-cert-verify":true,"network":"tcp","servername":"www.ietf.org","tls":false,"udp":true}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_1","server":"58.152.110.104","port":443,"password":"44e660b0ee21cf3ac66aee2c08af85d2","udp":true,"skip-cert-verify":true,"sni":"www.nintendogames.net","network":"tcp"}
+  - {"type":"trojan","name":"香港_2","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] trojan-HK ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_2","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"🔒
+    [By EbraSha] trojan-HK ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_3","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] b2n.ir/v2ray-configs | 61 ","network":"tcp"}
+  - {"type":"trojan","name":"香港_3","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] b2n.ir/v2ray-configs | 625 ","network":"tcp"}
+  - {"type":"trojan","name":"香港_4","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] b2n.ir/v2ray-configs | 748 ","network":"tcp"}
+  - {"type":"trojan","name":"香港_5","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_4","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_5","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] b2n.ir/v2ray-configs | 748 ","network":"tcp"}
+  - {"type":"trojan","name":"香港_6","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] ","network":"tcp"}
+  - {"type":"trojan","name":"香港_7","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_6","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] trojan-HK ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_7","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"香港_8","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������","network":"tcp"}
+  - {"type":"trojan","name":"香港_9","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] trojan-HK ","network":"tcp"}
+  - {"type":"vless","name":"IR_YouTube@小青科学网","server":"46.224.152.184","port":55484,"uuid":"1d03fcc7-8af7-4277-9a6d-bf8f1f0eb6e4","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_8","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] trojan-HK ","network":"tcp"}
+  - {"type":"trojan","name":"香港_10","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������","network":"tcp"}
+  - {"type":"trojan","name":"香港_11","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_9","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] b2n.ir/v2ray-configs | 61 ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_10","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_11","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] ","network":"tcp"}
+  - {"type":"trojan","name":"香港_12","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_12","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] trojan-HK ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_13","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_14","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_15","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] b2n.ir/v2ray-configs | 748 ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_16","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] b2n.ir/v2ray-configs | 676 ","network":"tcp"}
+  - {"type":"trojan","name":"香港_13","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_1","server":"green2.cdntencentmusic.com","port":34411,"password":"a5049baa-eadf-4523-bcac-33139e4a99ea","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"香港_14","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
+  - {"type":"trojan","name":"香港_15","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] trojan-HK ","network":"tcp"}
+  - {"type":"trojan","name":"香港_16","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] trojan-HK ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_17","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_18","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] b2n.ir/v2ray-configs | 625 ","network":"tcp"}
+  - {"type":"trojan","name":"香港_17","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_19","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_20","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"🔒
+    [By DukeMehdi] ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_21","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"🔒
+    [By DukeMehdi] b2n.ir/v2ray-configs | 896 ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_22","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_23","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_24","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_2","server":"220.130.58.138","port":34411,"password":"3846a29b-57d5-40f2-8acd-13855aa025cd","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"vmess","name":"美国(YouTube@小青科学网)_1","server":"v12.hdacd.com","port":"30812","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_25","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] b2n.ir/v2ray-configs | 946 ","network":"tcp"}
+  - {"type":"vmess","name":"美国(YouTube@小青科学网)_2","server":"v12.hdacd.com","port":"30812","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"香港_18","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_26","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] b2n.ir/v2ray-configs | 25 ","network":"tcp"}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_27","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] b2n.ir/v2ray-configs | 625 ","network":"tcp"}
+  - {"type":"vless","name":"俄羅斯_11","server":"ru01-blh02.tcp-reset-club.net","port":443,"uuid":"fba162df-6a82-4d57-b956-3a862944f50e","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"俄罗斯_1","server":"ru01-blh02.tcp-reset-club.net","port":443,"uuid":"fa9a90cf-f639-4719-9db7-1aba06690552","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"trojan","name":"香港_19","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] b2n.ir/v2ray-configs | 625 ","network":"tcp"}
+  - {"type":"trojan","name":"香港_20","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] b2n.ir/v2ray-configs | 61 ","network":"tcp"}
+  - {"type":"vless","name":"俄羅斯_12","server":"51.250.10.228","port":443,"uuid":"fd4b0117-d752-46fd-9a94-21a21e360fdb","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"sun6-21.userapi.com","tls":false,"udp":true}
+  - {"type":"vless","name":"摩爾多瓦_1","server":"94.232.247.168","port":41360,"uuid":"e16a35ea-6715-4e75-9845-d20358bd0876","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vmess","name":"CN_YouTube@小青科学网","server":"v12.hdacd.com","port":"30812","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_1","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"美国(YouTube@小青科学网)_3","server":"v12.hdacd.com","port":"30812","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇬🇧英国","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vless","name":"俄罗斯_2","server":"ru01-blh02.tcp-reset-club.net","port":443,"uuid":"b9c0d277-5dbe-41fa-a19d-5314f23ad22a","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"俄罗斯_3","server":"ru01-blh02.tcp-reset-club.net","port":443,"uuid":"c8685922-46f6-4cce-a64d-269aa22bdc84","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"俄羅斯_13","server":"ru01-blh02.tcp-reset-club.net","port":443,"uuid":"d44e93de-4a8c-464f-81f2-eb0d384b1ab2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"俄羅斯_14","server":"ru01-blh02.tcp-reset-club.net","port":443,"uuid":"fa9a90cf-f639-4719-9db7-1aba06690552","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"trojan","name":"香港_21","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] trojan-HK ","network":"tcp"}
+  - {"type":"vless","name":"俄羅斯_15","server":"ru01-blh02.tcp-reset-club.net","port":443,"uuid":"fba162df-6a82-4d57-b956-3a862944f50e","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"俄羅斯_16","server":"ru01-blh02.tcp-reset-club.net","port":443,"uuid":"3f214356-cfab-4056-9c06-7e2199fdf6e3","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"俄罗斯_4","server":"ru01-blh02.tcp-reset-club.net","port":443,"uuid":"6a830bcd-6104-472e-b174-d66eb463acf7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"trojan","name":"香港_22","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"vless","name":"巴西","server":"167.234.255.2","port":34045,"uuid":"d8dd94fd-540e-461d-b5d4-acebef02c22a","skip-cert-verify":true,"network":"tcp","servername":"visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me","tls":false,"udp":true}
+  - {"type":"trojan","name":"香港_23","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_2","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vless","name":"美国_2","server":"ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz","port":443,"uuid":"0e8a6896-ad90-4a3b-89a3-77d64aa409e2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"i2pd.website","tls":false,"udp":true}
+  - {"type":"vmess","name":"美国(YouTube@小青科学网)_4","server":"v30.hdacd.com","port":"30830","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"美国_3","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"香港_24","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"58.152.30.31","network":"tcp"}
+  - {"type":"vless","name":"俄羅斯_17","server":"77.110.113.219","port":443,"uuid":"d44e93de-4a8c-464f-81f2-eb0d384b1ab2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"俄罗斯_5","server":"ru01-blh02.tcp-reset-club.net","port":443,"uuid":"e3ce253c-896c-416f-9a4a-33b1cb771e02","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.kinopoisk.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"伊朗","server":"94.182.137.12","port":20532,"uuid":"8496c102-4094-4dd3-ad63-7bb7a35cbaee","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
+  - {"type":"trojan","name":"香港_25","server":"58.152.30.31","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"58.152.30.31","network":"tcp"}
+  - {"type":"vmess","name":"GB_youtube@资源分享师","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_3","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_4","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_5","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"美国(YouTube@小青科学网)_5","server":"v12.hdacd.com","port":"30812","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"英国(YouTube@小青科学网)","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vless","name":"俄罗斯_6","server":"51.250.10.228","port":443,"uuid":"fd4b0117-d752-46fd-9a94-21a21e360fdb","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"sun6-21.userapi.com","tls":false,"udp":true}
+  - {"type":"trojan","name":"台灣","server":"green2.cdntencentmusic.com","port":33301,"password":"17d3bf89-d2f0-4827-bcd0-c199fe54cd2a","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"香港_26","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] b2n.ir/v2ray-configs | 748 ","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_3","server":"green2.cdntencentmusic.com","port":34411,"password":"04a6a322-b08e-4635-99af-219c01ade7dd","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_4","server":"green2.cdntencentmusic.com","port":31104,"password":"3846a29b-57d5-40f2-8acd-13855aa025cd","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_5","server":"220.130.58.138","port":33301,"password":"a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_6","server":"green2.cdntencentmusic.com","port":34411,"password":"a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_7","server":"220.130.58.138","port":34411,"password":"ef76d08c-9841-47e8-92a6-5b74df5d58ac","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_6","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_7","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_8","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_9","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_10","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_11","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_12","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_13","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vless","name":"俄羅斯_18","server":"178.154.205.131","port":443,"uuid":"fd4b0117-d752-46fd-9a94-21a21e360fdb","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"ads.x5.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"美國_3","server":"194.113.73.136","port":4655,"uuid":"2668fdee-331d-4770-8244-d2a4efbf6ef8","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
+  - {"type":"trojan","name":"香港_27","server":"58.152.26.107","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By DukeMehdi] b2n.ir/v2ray-configs | 61 ","network":"tcp"}
+  - {"type":"vless","name":"俄羅斯_19","server":"217.16.27.97","port":501,"uuid":"c495cf08-e046-4311-aa4b-82cc16576992","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"sun6-21.userapi.com","tls":false,"udp":true}
+  - {"type":"trojan","name":"HK_YouTube@小青科学网_28","server":"58.152.25.71","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+    [By EbraSha] trojan-HK ","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_8","server":"green2.cdntencentmusic.com","port":33301,"password":"c80870af-749e-406c-bdbd-7aafa46de71d","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_9","server":"220.130.58.138","port":31102,"password":"25a6f104-84d0-4a8b-9827-1937f8816a6e","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_10","server":"220.130.58.138","port":35501,"password":"b06e8208-d522-41b7-a840-6b8b7731b308","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_11","server":"green2.cdntencentmusic.com","port":31103,"password":"3846a29b-57d5-40f2-8acd-13855aa025cd","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_12","server":"green2.cdntencentmusic.com","port":31102,"password":"a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"trojan","name":"TW_YouTube@小青科学网_13","server":"green2.cdntencentmusic.com","port":35501,"password":"a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e","udp":true,"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_14","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"GB_YouTube@小青科学网_15","server":"82.198.246.97","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"JP_YouTube@小青科学网_1","ws-opts":{"path":"/","headers":{"host":"n1753598452.wpg27.xyz"}},"server":"n1753598452.wpg27.xyz","port":"443","uuid":"4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"JP_YouTube@小青科学网_2","ws-opts":{"path":"/","headers":{"host":"n1753598451.74qxv.top"}},"server":"n1753598451.74qxv.top","port":"443","uuid":"9798678f-5b8c-4ff1-bbdd-b9b5c1539de0","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"HK_YouTube@小青科学网_29","ws-opts":{"path":"/","headers":{"host":"n1761214902.wpg27.xyz"}},"server":"n1761214902.wpg27.xyz","port":"443","uuid":"469e9a38-b64e-46c3-9793-234158942d3b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"YouTube@小青科学网_1","ws-opts":{"path":"/vmess_ws/smjc/index?ed=4096","headers":{"host":"cdn-us.sm-node.com"}},"server":"cdncdncdn.aikunapp.com","port":"443","uuid":"4fcfb509-1599-45eb-819d-326f5fee824f","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vless","name":"YouTube@小青科学网_2","server":"104.26.6.89","port":80,"uuid":"c5b129d7-f133-4b34-a9c6-68c9a8f70248","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"EMotioNaL-peRMIsSiONf1bs65u5f4.EcOTOuRISs.Co.uK","ws-opts":{"path":"/?ed","headers":{"host":"EMotioNaL-peRMIsSiONf1bs65u5f4.EcOTOuRISs.Co.uK"}}}
+  - {"type":"vmess","name":"YouTube@小青科学网_3","ws-opts":{"path":"/vmess_ws/smjc/index?ed=4096","headers":{"host":"cdn-sg1.jst-gw.top"}},"server":"cdncdn.aikunapp.com","port":"443","uuid":"4fcfb509-1599-45eb-819d-326f5fee824f","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"HK_YouTube@小青科学网_30","ws-opts":{"path":"/","headers":{"host":"n1761214918.74qxv.top"}},"server":"n1761214918.74qxv.top","port":"443","uuid":"b141803a-209c-47bd-be6e-14d6bc1e96be","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"HK_YouTube@小青科学网_31","ws-opts":{"path":"/","headers":{"host":"n1761214905.wpg27.xyz"}},"server":"n1761214905.wpg27.xyz","port":"443","uuid":"b1d3007c-441a-42d5-84b5-20301c46fa2c","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vless","name":"YouTube@小青科学网_4","server":"104.26.6.89","port":80,"uuid":"dd0f3ac0-98db-4ad0-9ac4-a3db5b6aa18e","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"elegaNt-PrOJECt4lB40WUCws.wiNDLEr.Co.uK","ws-opts":{"path":"/","headers":{"host":"elegaNt-PrOJECt4lB40WUCws.wiNDLEr.Co.uK"}}}
+  - {"type":"trojan","name":"荷蘭_3","server":"mfyousheng.nl.eu.org","port":443,"password":"Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q","udp":true,"skip-cert-verify":true,"sni":"mfyousheng.nl.eu.org","network":"ws","ws-opts":{"path":"/tjwsLhx0SFASG4l9FERJ1g"}}
+  - {"type":"vless","name":"YouTube@小青科学网_5","server":"104.26.6.89","port":80,"uuid":"dd0f3ac0-98db-4ad0-9ac4-a3db5b6aa18e","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"elegaNt-PrOJECt4lB40WUCws.wiNDLEr.Co.uK","ws-opts":{"path":"/?ed","headers":{"host":"elegaNt-PrOJECt4lB40WUCws.wiNDLEr.Co.uK"}}}
+  - {"type":"vmess","name":"HK_YouTube@小青科学网_32","ws-opts":{"path":"/","headers":{"host":"n1761214911.74qxv.top"}},"server":"n1761214911.74qxv.top","port":"443","uuid":"372c1939-299d-4946-9633-5ffa971f8b67","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"JP_YouTube@小青科学网_3","ws-opts":{"path":"/","headers":{"host":"n1753598446.wpg27.xyz"}},"server":"n1753598446.wpg27.xyz","port":"443","uuid":"a5047d95-24b8-451a-93e3-f2a387b93d5a","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"SG_YouTube@小青科学网_1","ws-opts":{"path":"/","headers":{"host":"n1747624267.4u9ma.icu"}},"server":"n1747624267.4u9ma.icu","port":"443","uuid":"8c5d150c-b046-4440-8230-e84506a065a3","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vless","name":"摩爾多瓦_2","server":"185.235.241.155","port":443,"uuid":"e615a5ba-fce3-4ffa-9c86-b0327a8a107a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/hormoz"}}
+  - {"type":"vless","name":"ES_YouTube@小青科学网","server":"138.124.14.37","port":44053,"uuid":"f437b574-5f4a-4298-84bb-e5f4db213ea2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@mrconfig_group@mrconfig_group@mrconfig_group@mrconfig_group@mrconfig_group"}}
+  - {"type":"vmess","name":"VMESS节点2-ipv6","ws-opts":{"path":"/github.com/Alvin9999","headers":{"host":"www.bing.com"}},"server":"2001:bc8:32d7:2013::8","port":"62211","uuid":"e1786d49-ccba-466b-a0dd-e1ab59bd83bb","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"未知VLESS-116|free-nodes","server":"94.131.100.167","port":443,"uuid":"cf691676-f3e8-4e83-ad05-399638e0e010","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/czoxqsws"}}
+  - {"type":"vmess","name":"HK_YouTube@小青科学网_33","ws-opts":{"path":"/","headers":{"host":"n1761214906.wpg27.xyz"}},"server":"n1761214906.wpg27.xyz","port":"443","uuid":"c28a6258-7baa-40fc-8a51-87f59c847cd7","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vless","name":"摩爾多瓦_3","server":"94.131.110.205","port":443,"uuid":"7e9dfc75-9a4a-4468-bc44-7a7c97d6aab7","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/ixjtmaws"}}
+  - {"type":"vmess","name":"法国_1","ws-opts":{"path":"/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN"},"server":"2001:bc8:32d7:302::10","port":"44579","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"法国_2","ws-opts":{"path":"/","headers":{"host":"2001:bc8:32d7:302::10"}},"server":"2001:bc8:32d7:302::10","port":"44579","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"SG_YouTube@小青科学网_2","ws-opts":{"path":"/","headers":{"host":"n1747624280.lie5d.cyou"}},"server":"n1747624280.lie5d.cyou","port":"443","uuid":"49dcf4b4-81eb-4fe2-91d3-86dc2e27ced5","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vless","name":"DEVLESS-17|free-nodes","server":"185.235.241.117","port":443,"uuid":"e615a5ba-fce3-4ffa-9c86-b0327a8a107a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/hormoz"}}
+  - {"type":"vmess","name":"法国_3","ws-opts":{"path":"/"},"server":"2001:bc8:32d7:302::10","port":"44579","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"法国_4","ws-opts":{"path":"/"},"server":"2001:bc8:32d7:302::10","port":"44579","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"摩爾多瓦_4","server":"185.235.241.124","port":443,"uuid":"e615a5ba-fce3-4ffa-9c86-b0327a8a107a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/hormoz"}}
+  - {"type":"vmess","name":"SG_YouTube@小青科学网_3","ws-opts":{"path":"/","headers":{"host":"n1747624271.lie5d.cyou"}},"server":"n1747624271.lie5d.cyou","port":"443","uuid":"a231ba8b-8871-416c-813b-e2240bc66bb2","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vless","name":"俄羅斯_20","server":"94.131.100.173","port":443,"uuid":"0a0d846f-8f54-4db4-940b-b373b1b02e4c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"www.vk.com","ws-opts":{"path":"/coxzfsws","headers":{"host":"www.vk.com"}}}
+  - {"type":"vmess","name":"法国_5","ws-opts":{"path":"/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN","headers":{"host":"2001:bc8:32d7:302::10"}},"server":"2001:bc8:32d7:302::10","port":"44579","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"摩爾多瓦_5","server":"94.131.100.168","port":443,"uuid":"cdcec1c7-49f9-4db6-a8f8-6d6b1062ba2c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/hzfealws"}}
+  - {"type":"vless","name":"摩爾多瓦_6","server":"94.131.110.119","port":443,"uuid":"e615a5ba-fce3-4ffa-9c86-b0327a8a107a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/hormoz"}}
+  - {"type":"vless","name":"RU_YouTube@小青科学网","server":"77.238.225.248","port":8443,"uuid":"star_test1","skip-cert-verify":true}
+  - {"type":"vless","name":"拉脫維亞","server":"185.145.245.204","port":443,"uuid":"26052074-f2a5-4335-b602-fe34633c71b1","skip-cert-verify":true}
+  - {"type":"vless","name":"法國","server":"62.210.8.152","port":18877,"uuid":"3fb38b37-c636-44d3-ab0c-897fab438bf1","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国
-      - 🇬🇧 英国
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 美國
-      - 🇺🇸 美国 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 11
-      - 🇫🇷 法国
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇺🇸 美国 14
-      - 🇮🇳 印度
-      - 🇺🇸 美国 15
-      - 🇬🇧 英国 2
-      - 🇬🇧 英国 3
-      - 🇬🇧 英国 4
-      - 🇬🇧 英国 5
-      - 🇬🇧 英国 6
-      - 🇬🇧 英国 7
-      - 🇬🇧 英国 8
-      - 🇬🇧 英国 9
-      - 🇬🇧 英国 10
-      - 🇬🇧 英国 11
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
-      - 🇫🇷 法国 4
-      - 🇫🇷 法国 5
-      - 🇫🇷 法国 6
-      - 🇫🇷 法国 7
-      - 🇫🇷 法国 8
-      - 🇫🇷 法国 9
-      - 🇫🇷 法国 10
-      - 🇫🇷 法国 11
-      - 🇫🇷 法国 12
-      - 🇫🇷 法国 13
-      - 🇬🇧 英国 12
-      - 🇬🇧 英国 13
-      - 🇬🇧 英国 14
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇺🇸 美国 22
-      - 🇺🇸 美国 23
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇺🇸 美国 27
-      - 🇫🇷 法国 14
-      - 🇫🇷 法国 15
-      - 🇫🇷 法国 16
-      - 🇫🇷 法国 17
-      - 🇫🇷 法国 18
-      - 🇫🇷 法国 19
+      - 俄羅斯_1
+      - 美国_1
+      - 俄羅斯_2
+      - 俄羅斯_3
+      - 俄羅斯_4
+      - 俄羅斯_5
+      - 俄羅斯_6
+      - 俄羅斯_7
+      - 俄羅斯_8
+      - 俄羅斯_9
+      - 俄羅斯_10
+      - 印度尼西亚
+      - 美國_1
+      - 荷蘭_1
+      - NL_YouTube@小青科学网
+      - 美國_2
+      - 香港_1
+      - 荷蘭_2
+      - HK_YouTube@小青科学网_1
+      - 香港_2
+      - HK_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_3
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - HK_YouTube@小青科学网_4
+      - HK_YouTube@小青科学网_5
+      - 香港_6
+      - 香港_7
+      - HK_YouTube@小青科学网_6
+      - HK_YouTube@小青科学网_7
+      - 香港_8
+      - 香港_9
+      - IR_YouTube@小青科学网
+      - HK_YouTube@小青科学网_8
+      - 香港_10
+      - 香港_11
+      - HK_YouTube@小青科学网_9
+      - HK_YouTube@小青科学网_10
+      - HK_YouTube@小青科学网_11
+      - 香港_12
+      - HK_YouTube@小青科学网_12
+      - HK_YouTube@小青科学网_13
+      - HK_YouTube@小青科学网_14
+      - HK_YouTube@小青科学网_15
+      - HK_YouTube@小青科学网_16
+      - 香港_13
+      - TW_YouTube@小青科学网_1
+      - 香港_14
+      - 香港_15
+      - 香港_16
+      - HK_YouTube@小青科学网_17
+      - HK_YouTube@小青科学网_18
+      - 香港_17
+      - HK_YouTube@小青科学网_19
+      - HK_YouTube@小青科学网_20
+      - HK_YouTube@小青科学网_21
+      - HK_YouTube@小青科学网_22
+      - HK_YouTube@小青科学网_23
+      - HK_YouTube@小青科学网_24
+      - TW_YouTube@小青科学网_2
+      - 美国(YouTube@小青科学网)_1
+      - HK_YouTube@小青科学网_25
+      - 美国(YouTube@小青科学网)_2
+      - 香港_18
+      - HK_YouTube@小青科学网_26
+      - HK_YouTube@小青科学网_27
+      - 俄羅斯_11
+      - 俄罗斯_1
+      - 香港_19
+      - 香港_20
+      - 俄羅斯_12
+      - 摩爾多瓦_1
+      - CN_YouTube@小青科学网
+      - GB_YouTube@小青科学网_1
+      - 美国(YouTube@小青科学网)_3
+      - 🇬🇧英国
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 俄羅斯_13
+      - 俄羅斯_14
+      - 香港_21
+      - 俄羅斯_15
+      - 俄羅斯_16
+      - 俄罗斯_4
+      - 香港_22
+      - 巴西
+      - 香港_23
+      - GB_YouTube@小青科学网_2
+      - 美国_2
+      - 美国(YouTube@小青科学网)_4
+      - 美国_3
+      - 香港_24
+      - 俄羅斯_17
+      - 俄罗斯_5
+      - 伊朗
+      - 香港_25
+      - GB_youtube@资源分享师
+      - GB_YouTube@小青科学网_3
+      - GB_YouTube@小青科学网_4
+      - GB_YouTube@小青科学网_5
+      - 美国(YouTube@小青科学网)_5
+      - 英国(YouTube@小青科学网)
+      - 俄罗斯_6
+      - 台灣
+      - 香港_26
+      - TW_YouTube@小青科学网_3
+      - TW_YouTube@小青科学网_4
+      - TW_YouTube@小青科学网_5
+      - TW_YouTube@小青科学网_6
+      - TW_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_6
+      - GB_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_8
+      - GB_YouTube@小青科学网_9
+      - GB_YouTube@小青科学网_10
+      - GB_YouTube@小青科学网_11
+      - GB_YouTube@小青科学网_12
+      - GB_YouTube@小青科学网_13
+      - 俄羅斯_18
+      - 美國_3
+      - 香港_27
+      - 俄羅斯_19
+      - HK_YouTube@小青科学网_28
+      - TW_YouTube@小青科学网_8
+      - TW_YouTube@小青科学网_9
+      - TW_YouTube@小青科学网_10
+      - TW_YouTube@小青科学网_11
+      - TW_YouTube@小青科学网_12
+      - TW_YouTube@小青科学网_13
+      - GB_YouTube@小青科学网_14
+      - GB_YouTube@小青科学网_15
+      - JP_YouTube@小青科学网_1
+      - JP_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_29
+      - YouTube@小青科学网_1
+      - YouTube@小青科学网_2
+      - YouTube@小青科学网_3
+      - HK_YouTube@小青科学网_30
+      - HK_YouTube@小青科学网_31
+      - YouTube@小青科学网_4
+      - 荷蘭_3
+      - YouTube@小青科学网_5
+      - HK_YouTube@小青科学网_32
+      - JP_YouTube@小青科学网_3
+      - SG_YouTube@小青科学网_1
+      - 摩爾多瓦_2
+      - ES_YouTube@小青科学网
+      - VMESS节点2-ipv6
+      - 未知VLESS-116|free-nodes
+      - HK_YouTube@小青科学网_33
+      - 摩爾多瓦_3
+      - 法国_1
+      - 法国_2
+      - SG_YouTube@小青科学网_2
+      - DEVLESS-17|free-nodes
+      - 法国_3
+      - 法国_4
+      - 摩爾多瓦_4
+      - SG_YouTube@小青科学网_3
+      - 俄羅斯_20
+      - 法国_5
+      - 摩爾多瓦_5
+      - 摩爾多瓦_6
+      - RU_YouTube@小青科学网
+      - 拉脫維亞
+      - 法國
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国
-      - 🇬🇧 英国
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 美國
-      - 🇺🇸 美国 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 11
-      - 🇫🇷 法国
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇺🇸 美国 14
-      - 🇮🇳 印度
-      - 🇺🇸 美国 15
-      - 🇬🇧 英国 2
-      - 🇬🇧 英国 3
-      - 🇬🇧 英国 4
-      - 🇬🇧 英国 5
-      - 🇬🇧 英国 6
-      - 🇬🇧 英国 7
-      - 🇬🇧 英国 8
-      - 🇬🇧 英国 9
-      - 🇬🇧 英国 10
-      - 🇬🇧 英国 11
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
-      - 🇫🇷 法国 4
-      - 🇫🇷 法国 5
-      - 🇫🇷 法国 6
-      - 🇫🇷 法国 7
-      - 🇫🇷 法国 8
-      - 🇫🇷 法国 9
-      - 🇫🇷 法国 10
-      - 🇫🇷 法国 11
-      - 🇫🇷 法国 12
-      - 🇫🇷 法国 13
-      - 🇬🇧 英国 12
-      - 🇬🇧 英国 13
-      - 🇬🇧 英国 14
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇺🇸 美国 22
-      - 🇺🇸 美国 23
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇺🇸 美国 27
-      - 🇫🇷 法国 14
-      - 🇫🇷 法国 15
-      - 🇫🇷 法国 16
-      - 🇫🇷 法国 17
-      - 🇫🇷 法国 18
-      - 🇫🇷 法国 19
+      - 俄羅斯_1
+      - 美国_1
+      - 俄羅斯_2
+      - 俄羅斯_3
+      - 俄羅斯_4
+      - 俄羅斯_5
+      - 俄羅斯_6
+      - 俄羅斯_7
+      - 俄羅斯_8
+      - 俄羅斯_9
+      - 俄羅斯_10
+      - 印度尼西亚
+      - 美國_1
+      - 荷蘭_1
+      - NL_YouTube@小青科学网
+      - 美國_2
+      - 香港_1
+      - 荷蘭_2
+      - HK_YouTube@小青科学网_1
+      - 香港_2
+      - HK_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_3
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - HK_YouTube@小青科学网_4
+      - HK_YouTube@小青科学网_5
+      - 香港_6
+      - 香港_7
+      - HK_YouTube@小青科学网_6
+      - HK_YouTube@小青科学网_7
+      - 香港_8
+      - 香港_9
+      - IR_YouTube@小青科学网
+      - HK_YouTube@小青科学网_8
+      - 香港_10
+      - 香港_11
+      - HK_YouTube@小青科学网_9
+      - HK_YouTube@小青科学网_10
+      - HK_YouTube@小青科学网_11
+      - 香港_12
+      - HK_YouTube@小青科学网_12
+      - HK_YouTube@小青科学网_13
+      - HK_YouTube@小青科学网_14
+      - HK_YouTube@小青科学网_15
+      - HK_YouTube@小青科学网_16
+      - 香港_13
+      - TW_YouTube@小青科学网_1
+      - 香港_14
+      - 香港_15
+      - 香港_16
+      - HK_YouTube@小青科学网_17
+      - HK_YouTube@小青科学网_18
+      - 香港_17
+      - HK_YouTube@小青科学网_19
+      - HK_YouTube@小青科学网_20
+      - HK_YouTube@小青科学网_21
+      - HK_YouTube@小青科学网_22
+      - HK_YouTube@小青科学网_23
+      - HK_YouTube@小青科学网_24
+      - TW_YouTube@小青科学网_2
+      - 美国(YouTube@小青科学网)_1
+      - HK_YouTube@小青科学网_25
+      - 美国(YouTube@小青科学网)_2
+      - 香港_18
+      - HK_YouTube@小青科学网_26
+      - HK_YouTube@小青科学网_27
+      - 俄羅斯_11
+      - 俄罗斯_1
+      - 香港_19
+      - 香港_20
+      - 俄羅斯_12
+      - 摩爾多瓦_1
+      - CN_YouTube@小青科学网
+      - GB_YouTube@小青科学网_1
+      - 美国(YouTube@小青科学网)_3
+      - 🇬🇧英国
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 俄羅斯_13
+      - 俄羅斯_14
+      - 香港_21
+      - 俄羅斯_15
+      - 俄羅斯_16
+      - 俄罗斯_4
+      - 香港_22
+      - 巴西
+      - 香港_23
+      - GB_YouTube@小青科学网_2
+      - 美国_2
+      - 美国(YouTube@小青科学网)_4
+      - 美国_3
+      - 香港_24
+      - 俄羅斯_17
+      - 俄罗斯_5
+      - 伊朗
+      - 香港_25
+      - GB_youtube@资源分享师
+      - GB_YouTube@小青科学网_3
+      - GB_YouTube@小青科学网_4
+      - GB_YouTube@小青科学网_5
+      - 美国(YouTube@小青科学网)_5
+      - 英国(YouTube@小青科学网)
+      - 俄罗斯_6
+      - 台灣
+      - 香港_26
+      - TW_YouTube@小青科学网_3
+      - TW_YouTube@小青科学网_4
+      - TW_YouTube@小青科学网_5
+      - TW_YouTube@小青科学网_6
+      - TW_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_6
+      - GB_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_8
+      - GB_YouTube@小青科学网_9
+      - GB_YouTube@小青科学网_10
+      - GB_YouTube@小青科学网_11
+      - GB_YouTube@小青科学网_12
+      - GB_YouTube@小青科学网_13
+      - 俄羅斯_18
+      - 美國_3
+      - 香港_27
+      - 俄羅斯_19
+      - HK_YouTube@小青科学网_28
+      - TW_YouTube@小青科学网_8
+      - TW_YouTube@小青科学网_9
+      - TW_YouTube@小青科学网_10
+      - TW_YouTube@小青科学网_11
+      - TW_YouTube@小青科学网_12
+      - TW_YouTube@小青科学网_13
+      - GB_YouTube@小青科学网_14
+      - GB_YouTube@小青科学网_15
+      - JP_YouTube@小青科学网_1
+      - JP_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_29
+      - YouTube@小青科学网_1
+      - YouTube@小青科学网_2
+      - YouTube@小青科学网_3
+      - HK_YouTube@小青科学网_30
+      - HK_YouTube@小青科学网_31
+      - YouTube@小青科学网_4
+      - 荷蘭_3
+      - YouTube@小青科学网_5
+      - HK_YouTube@小青科学网_32
+      - JP_YouTube@小青科学网_3
+      - SG_YouTube@小青科学网_1
+      - 摩爾多瓦_2
+      - ES_YouTube@小青科学网
+      - VMESS节点2-ipv6
+      - 未知VLESS-116|free-nodes
+      - HK_YouTube@小青科学网_33
+      - 摩爾多瓦_3
+      - 法国_1
+      - 法国_2
+      - SG_YouTube@小青科学网_2
+      - DEVLESS-17|free-nodes
+      - 法国_3
+      - 法国_4
+      - 摩爾多瓦_4
+      - SG_YouTube@小青科学网_3
+      - 俄羅斯_20
+      - 法国_5
+      - 摩爾多瓦_5
+      - 摩爾多瓦_6
+      - RU_YouTube@小青科学网
+      - 拉脫維亞
+      - 法國
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国
-      - 🇬🇧 英国
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 美國
-      - 🇺🇸 美国 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 11
-      - 🇫🇷 法国
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇺🇸 美国 14
-      - 🇮🇳 印度
-      - 🇺🇸 美国 15
-      - 🇬🇧 英国 2
-      - 🇬🇧 英国 3
-      - 🇬🇧 英国 4
-      - 🇬🇧 英国 5
-      - 🇬🇧 英国 6
-      - 🇬🇧 英国 7
-      - 🇬🇧 英国 8
-      - 🇬🇧 英国 9
-      - 🇬🇧 英国 10
-      - 🇬🇧 英国 11
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
-      - 🇫🇷 法国 4
-      - 🇫🇷 法国 5
-      - 🇫🇷 法国 6
-      - 🇫🇷 法国 7
-      - 🇫🇷 法国 8
-      - 🇫🇷 法国 9
-      - 🇫🇷 法国 10
-      - 🇫🇷 法国 11
-      - 🇫🇷 法国 12
-      - 🇫🇷 法国 13
-      - 🇬🇧 英国 12
-      - 🇬🇧 英国 13
-      - 🇬🇧 英国 14
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇺🇸 美国 22
-      - 🇺🇸 美国 23
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇺🇸 美国 27
-      - 🇫🇷 法国 14
-      - 🇫🇷 法国 15
-      - 🇫🇷 法国 16
-      - 🇫🇷 法国 17
-      - 🇫🇷 法国 18
-      - 🇫🇷 法国 19
+      - 俄羅斯_1
+      - 美国_1
+      - 俄羅斯_2
+      - 俄羅斯_3
+      - 俄羅斯_4
+      - 俄羅斯_5
+      - 俄羅斯_6
+      - 俄羅斯_7
+      - 俄羅斯_8
+      - 俄羅斯_9
+      - 俄羅斯_10
+      - 印度尼西亚
+      - 美國_1
+      - 荷蘭_1
+      - NL_YouTube@小青科学网
+      - 美國_2
+      - 香港_1
+      - 荷蘭_2
+      - HK_YouTube@小青科学网_1
+      - 香港_2
+      - HK_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_3
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - HK_YouTube@小青科学网_4
+      - HK_YouTube@小青科学网_5
+      - 香港_6
+      - 香港_7
+      - HK_YouTube@小青科学网_6
+      - HK_YouTube@小青科学网_7
+      - 香港_8
+      - 香港_9
+      - IR_YouTube@小青科学网
+      - HK_YouTube@小青科学网_8
+      - 香港_10
+      - 香港_11
+      - HK_YouTube@小青科学网_9
+      - HK_YouTube@小青科学网_10
+      - HK_YouTube@小青科学网_11
+      - 香港_12
+      - HK_YouTube@小青科学网_12
+      - HK_YouTube@小青科学网_13
+      - HK_YouTube@小青科学网_14
+      - HK_YouTube@小青科学网_15
+      - HK_YouTube@小青科学网_16
+      - 香港_13
+      - TW_YouTube@小青科学网_1
+      - 香港_14
+      - 香港_15
+      - 香港_16
+      - HK_YouTube@小青科学网_17
+      - HK_YouTube@小青科学网_18
+      - 香港_17
+      - HK_YouTube@小青科学网_19
+      - HK_YouTube@小青科学网_20
+      - HK_YouTube@小青科学网_21
+      - HK_YouTube@小青科学网_22
+      - HK_YouTube@小青科学网_23
+      - HK_YouTube@小青科学网_24
+      - TW_YouTube@小青科学网_2
+      - 美国(YouTube@小青科学网)_1
+      - HK_YouTube@小青科学网_25
+      - 美国(YouTube@小青科学网)_2
+      - 香港_18
+      - HK_YouTube@小青科学网_26
+      - HK_YouTube@小青科学网_27
+      - 俄羅斯_11
+      - 俄罗斯_1
+      - 香港_19
+      - 香港_20
+      - 俄羅斯_12
+      - 摩爾多瓦_1
+      - CN_YouTube@小青科学网
+      - GB_YouTube@小青科学网_1
+      - 美国(YouTube@小青科学网)_3
+      - 🇬🇧英国
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 俄羅斯_13
+      - 俄羅斯_14
+      - 香港_21
+      - 俄羅斯_15
+      - 俄羅斯_16
+      - 俄罗斯_4
+      - 香港_22
+      - 巴西
+      - 香港_23
+      - GB_YouTube@小青科学网_2
+      - 美国_2
+      - 美国(YouTube@小青科学网)_4
+      - 美国_3
+      - 香港_24
+      - 俄羅斯_17
+      - 俄罗斯_5
+      - 伊朗
+      - 香港_25
+      - GB_youtube@资源分享师
+      - GB_YouTube@小青科学网_3
+      - GB_YouTube@小青科学网_4
+      - GB_YouTube@小青科学网_5
+      - 美国(YouTube@小青科学网)_5
+      - 英国(YouTube@小青科学网)
+      - 俄罗斯_6
+      - 台灣
+      - 香港_26
+      - TW_YouTube@小青科学网_3
+      - TW_YouTube@小青科学网_4
+      - TW_YouTube@小青科学网_5
+      - TW_YouTube@小青科学网_6
+      - TW_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_6
+      - GB_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_8
+      - GB_YouTube@小青科学网_9
+      - GB_YouTube@小青科学网_10
+      - GB_YouTube@小青科学网_11
+      - GB_YouTube@小青科学网_12
+      - GB_YouTube@小青科学网_13
+      - 俄羅斯_18
+      - 美國_3
+      - 香港_27
+      - 俄羅斯_19
+      - HK_YouTube@小青科学网_28
+      - TW_YouTube@小青科学网_8
+      - TW_YouTube@小青科学网_9
+      - TW_YouTube@小青科学网_10
+      - TW_YouTube@小青科学网_11
+      - TW_YouTube@小青科学网_12
+      - TW_YouTube@小青科学网_13
+      - GB_YouTube@小青科学网_14
+      - GB_YouTube@小青科学网_15
+      - JP_YouTube@小青科学网_1
+      - JP_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_29
+      - YouTube@小青科学网_1
+      - YouTube@小青科学网_2
+      - YouTube@小青科学网_3
+      - HK_YouTube@小青科学网_30
+      - HK_YouTube@小青科学网_31
+      - YouTube@小青科学网_4
+      - 荷蘭_3
+      - YouTube@小青科学网_5
+      - HK_YouTube@小青科学网_32
+      - JP_YouTube@小青科学网_3
+      - SG_YouTube@小青科学网_1
+      - 摩爾多瓦_2
+      - ES_YouTube@小青科学网
+      - VMESS节点2-ipv6
+      - 未知VLESS-116|free-nodes
+      - HK_YouTube@小青科学网_33
+      - 摩爾多瓦_3
+      - 法国_1
+      - 法国_2
+      - SG_YouTube@小青科学网_2
+      - DEVLESS-17|free-nodes
+      - 法国_3
+      - 法国_4
+      - 摩爾多瓦_4
+      - SG_YouTube@小青科学网_3
+      - 俄羅斯_20
+      - 法国_5
+      - 摩爾多瓦_5
+      - 摩爾多瓦_6
+      - RU_YouTube@小青科学网
+      - 拉脫維亞
+      - 法國
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国
-      - 🇬🇧 英国
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 美國
-      - 🇺🇸 美国 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 11
-      - 🇫🇷 法国
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇺🇸 美国 14
-      - 🇮🇳 印度
-      - 🇺🇸 美国 15
-      - 🇬🇧 英国 2
-      - 🇬🇧 英国 3
-      - 🇬🇧 英国 4
-      - 🇬🇧 英国 5
-      - 🇬🇧 英国 6
-      - 🇬🇧 英国 7
-      - 🇬🇧 英国 8
-      - 🇬🇧 英国 9
-      - 🇬🇧 英国 10
-      - 🇬🇧 英国 11
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
-      - 🇫🇷 法国 4
-      - 🇫🇷 法国 5
-      - 🇫🇷 法国 6
-      - 🇫🇷 法国 7
-      - 🇫🇷 法国 8
-      - 🇫🇷 法国 9
-      - 🇫🇷 法国 10
-      - 🇫🇷 法国 11
-      - 🇫🇷 法国 12
-      - 🇫🇷 法国 13
-      - 🇬🇧 英国 12
-      - 🇬🇧 英国 13
-      - 🇬🇧 英国 14
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇺🇸 美国 22
-      - 🇺🇸 美国 23
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇺🇸 美国 27
-      - 🇫🇷 法国 14
-      - 🇫🇷 法国 15
-      - 🇫🇷 法国 16
-      - 🇫🇷 法国 17
-      - 🇫🇷 法国 18
-      - 🇫🇷 法国 19
+      - 俄羅斯_1
+      - 美国_1
+      - 俄羅斯_2
+      - 俄羅斯_3
+      - 俄羅斯_4
+      - 俄羅斯_5
+      - 俄羅斯_6
+      - 俄羅斯_7
+      - 俄羅斯_8
+      - 俄羅斯_9
+      - 俄羅斯_10
+      - 印度尼西亚
+      - 美國_1
+      - 荷蘭_1
+      - NL_YouTube@小青科学网
+      - 美國_2
+      - 香港_1
+      - 荷蘭_2
+      - HK_YouTube@小青科学网_1
+      - 香港_2
+      - HK_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_3
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - HK_YouTube@小青科学网_4
+      - HK_YouTube@小青科学网_5
+      - 香港_6
+      - 香港_7
+      - HK_YouTube@小青科学网_6
+      - HK_YouTube@小青科学网_7
+      - 香港_8
+      - 香港_9
+      - IR_YouTube@小青科学网
+      - HK_YouTube@小青科学网_8
+      - 香港_10
+      - 香港_11
+      - HK_YouTube@小青科学网_9
+      - HK_YouTube@小青科学网_10
+      - HK_YouTube@小青科学网_11
+      - 香港_12
+      - HK_YouTube@小青科学网_12
+      - HK_YouTube@小青科学网_13
+      - HK_YouTube@小青科学网_14
+      - HK_YouTube@小青科学网_15
+      - HK_YouTube@小青科学网_16
+      - 香港_13
+      - TW_YouTube@小青科学网_1
+      - 香港_14
+      - 香港_15
+      - 香港_16
+      - HK_YouTube@小青科学网_17
+      - HK_YouTube@小青科学网_18
+      - 香港_17
+      - HK_YouTube@小青科学网_19
+      - HK_YouTube@小青科学网_20
+      - HK_YouTube@小青科学网_21
+      - HK_YouTube@小青科学网_22
+      - HK_YouTube@小青科学网_23
+      - HK_YouTube@小青科学网_24
+      - TW_YouTube@小青科学网_2
+      - 美国(YouTube@小青科学网)_1
+      - HK_YouTube@小青科学网_25
+      - 美国(YouTube@小青科学网)_2
+      - 香港_18
+      - HK_YouTube@小青科学网_26
+      - HK_YouTube@小青科学网_27
+      - 俄羅斯_11
+      - 俄罗斯_1
+      - 香港_19
+      - 香港_20
+      - 俄羅斯_12
+      - 摩爾多瓦_1
+      - CN_YouTube@小青科学网
+      - GB_YouTube@小青科学网_1
+      - 美国(YouTube@小青科学网)_3
+      - 🇬🇧英国
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 俄羅斯_13
+      - 俄羅斯_14
+      - 香港_21
+      - 俄羅斯_15
+      - 俄羅斯_16
+      - 俄罗斯_4
+      - 香港_22
+      - 巴西
+      - 香港_23
+      - GB_YouTube@小青科学网_2
+      - 美国_2
+      - 美国(YouTube@小青科学网)_4
+      - 美国_3
+      - 香港_24
+      - 俄羅斯_17
+      - 俄罗斯_5
+      - 伊朗
+      - 香港_25
+      - GB_youtube@资源分享师
+      - GB_YouTube@小青科学网_3
+      - GB_YouTube@小青科学网_4
+      - GB_YouTube@小青科学网_5
+      - 美国(YouTube@小青科学网)_5
+      - 英国(YouTube@小青科学网)
+      - 俄罗斯_6
+      - 台灣
+      - 香港_26
+      - TW_YouTube@小青科学网_3
+      - TW_YouTube@小青科学网_4
+      - TW_YouTube@小青科学网_5
+      - TW_YouTube@小青科学网_6
+      - TW_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_6
+      - GB_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_8
+      - GB_YouTube@小青科学网_9
+      - GB_YouTube@小青科学网_10
+      - GB_YouTube@小青科学网_11
+      - GB_YouTube@小青科学网_12
+      - GB_YouTube@小青科学网_13
+      - 俄羅斯_18
+      - 美國_3
+      - 香港_27
+      - 俄羅斯_19
+      - HK_YouTube@小青科学网_28
+      - TW_YouTube@小青科学网_8
+      - TW_YouTube@小青科学网_9
+      - TW_YouTube@小青科学网_10
+      - TW_YouTube@小青科学网_11
+      - TW_YouTube@小青科学网_12
+      - TW_YouTube@小青科学网_13
+      - GB_YouTube@小青科学网_14
+      - GB_YouTube@小青科学网_15
+      - JP_YouTube@小青科学网_1
+      - JP_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_29
+      - YouTube@小青科学网_1
+      - YouTube@小青科学网_2
+      - YouTube@小青科学网_3
+      - HK_YouTube@小青科学网_30
+      - HK_YouTube@小青科学网_31
+      - YouTube@小青科学网_4
+      - 荷蘭_3
+      - YouTube@小青科学网_5
+      - HK_YouTube@小青科学网_32
+      - JP_YouTube@小青科学网_3
+      - SG_YouTube@小青科学网_1
+      - 摩爾多瓦_2
+      - ES_YouTube@小青科学网
+      - VMESS节点2-ipv6
+      - 未知VLESS-116|free-nodes
+      - HK_YouTube@小青科学网_33
+      - 摩爾多瓦_3
+      - 法国_1
+      - 法国_2
+      - SG_YouTube@小青科学网_2
+      - DEVLESS-17|free-nodes
+      - 法国_3
+      - 法国_4
+      - 摩爾多瓦_4
+      - SG_YouTube@小青科学网_3
+      - 俄羅斯_20
+      - 法国_5
+      - 摩爾多瓦_5
+      - 摩爾多瓦_6
+      - RU_YouTube@小青科学网
+      - 拉脫維亞
+      - 法國
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国
-      - 🇬🇧 英国
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 美國
-      - 🇺🇸 美国 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 11
-      - 🇫🇷 法国
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇺🇸 美国 14
-      - 🇮🇳 印度
-      - 🇺🇸 美国 15
-      - 🇬🇧 英国 2
-      - 🇬🇧 英国 3
-      - 🇬🇧 英国 4
-      - 🇬🇧 英国 5
-      - 🇬🇧 英国 6
-      - 🇬🇧 英国 7
-      - 🇬🇧 英国 8
-      - 🇬🇧 英国 9
-      - 🇬🇧 英国 10
-      - 🇬🇧 英国 11
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
-      - 🇫🇷 法国 4
-      - 🇫🇷 法国 5
-      - 🇫🇷 法国 6
-      - 🇫🇷 法国 7
-      - 🇫🇷 法国 8
-      - 🇫🇷 法国 9
-      - 🇫🇷 法国 10
-      - 🇫🇷 法国 11
-      - 🇫🇷 法国 12
-      - 🇫🇷 法国 13
-      - 🇬🇧 英国 12
-      - 🇬🇧 英国 13
-      - 🇬🇧 英国 14
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇺🇸 美国 22
-      - 🇺🇸 美国 23
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇺🇸 美国 27
-      - 🇫🇷 法国 14
-      - 🇫🇷 法国 15
-      - 🇫🇷 法国 16
-      - 🇫🇷 法国 17
-      - 🇫🇷 法国 18
-      - 🇫🇷 法国 19
+      - 俄羅斯_1
+      - 美国_1
+      - 俄羅斯_2
+      - 俄羅斯_3
+      - 俄羅斯_4
+      - 俄羅斯_5
+      - 俄羅斯_6
+      - 俄羅斯_7
+      - 俄羅斯_8
+      - 俄羅斯_9
+      - 俄羅斯_10
+      - 印度尼西亚
+      - 美國_1
+      - 荷蘭_1
+      - NL_YouTube@小青科学网
+      - 美國_2
+      - 香港_1
+      - 荷蘭_2
+      - HK_YouTube@小青科学网_1
+      - 香港_2
+      - HK_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_3
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - HK_YouTube@小青科学网_4
+      - HK_YouTube@小青科学网_5
+      - 香港_6
+      - 香港_7
+      - HK_YouTube@小青科学网_6
+      - HK_YouTube@小青科学网_7
+      - 香港_8
+      - 香港_9
+      - IR_YouTube@小青科学网
+      - HK_YouTube@小青科学网_8
+      - 香港_10
+      - 香港_11
+      - HK_YouTube@小青科学网_9
+      - HK_YouTube@小青科学网_10
+      - HK_YouTube@小青科学网_11
+      - 香港_12
+      - HK_YouTube@小青科学网_12
+      - HK_YouTube@小青科学网_13
+      - HK_YouTube@小青科学网_14
+      - HK_YouTube@小青科学网_15
+      - HK_YouTube@小青科学网_16
+      - 香港_13
+      - TW_YouTube@小青科学网_1
+      - 香港_14
+      - 香港_15
+      - 香港_16
+      - HK_YouTube@小青科学网_17
+      - HK_YouTube@小青科学网_18
+      - 香港_17
+      - HK_YouTube@小青科学网_19
+      - HK_YouTube@小青科学网_20
+      - HK_YouTube@小青科学网_21
+      - HK_YouTube@小青科学网_22
+      - HK_YouTube@小青科学网_23
+      - HK_YouTube@小青科学网_24
+      - TW_YouTube@小青科学网_2
+      - 美国(YouTube@小青科学网)_1
+      - HK_YouTube@小青科学网_25
+      - 美国(YouTube@小青科学网)_2
+      - 香港_18
+      - HK_YouTube@小青科学网_26
+      - HK_YouTube@小青科学网_27
+      - 俄羅斯_11
+      - 俄罗斯_1
+      - 香港_19
+      - 香港_20
+      - 俄羅斯_12
+      - 摩爾多瓦_1
+      - CN_YouTube@小青科学网
+      - GB_YouTube@小青科学网_1
+      - 美国(YouTube@小青科学网)_3
+      - 🇬🇧英国
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 俄羅斯_13
+      - 俄羅斯_14
+      - 香港_21
+      - 俄羅斯_15
+      - 俄羅斯_16
+      - 俄罗斯_4
+      - 香港_22
+      - 巴西
+      - 香港_23
+      - GB_YouTube@小青科学网_2
+      - 美国_2
+      - 美国(YouTube@小青科学网)_4
+      - 美国_3
+      - 香港_24
+      - 俄羅斯_17
+      - 俄罗斯_5
+      - 伊朗
+      - 香港_25
+      - GB_youtube@资源分享师
+      - GB_YouTube@小青科学网_3
+      - GB_YouTube@小青科学网_4
+      - GB_YouTube@小青科学网_5
+      - 美国(YouTube@小青科学网)_5
+      - 英国(YouTube@小青科学网)
+      - 俄罗斯_6
+      - 台灣
+      - 香港_26
+      - TW_YouTube@小青科学网_3
+      - TW_YouTube@小青科学网_4
+      - TW_YouTube@小青科学网_5
+      - TW_YouTube@小青科学网_6
+      - TW_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_6
+      - GB_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_8
+      - GB_YouTube@小青科学网_9
+      - GB_YouTube@小青科学网_10
+      - GB_YouTube@小青科学网_11
+      - GB_YouTube@小青科学网_12
+      - GB_YouTube@小青科学网_13
+      - 俄羅斯_18
+      - 美國_3
+      - 香港_27
+      - 俄羅斯_19
+      - HK_YouTube@小青科学网_28
+      - TW_YouTube@小青科学网_8
+      - TW_YouTube@小青科学网_9
+      - TW_YouTube@小青科学网_10
+      - TW_YouTube@小青科学网_11
+      - TW_YouTube@小青科学网_12
+      - TW_YouTube@小青科学网_13
+      - GB_YouTube@小青科学网_14
+      - GB_YouTube@小青科学网_15
+      - JP_YouTube@小青科学网_1
+      - JP_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_29
+      - YouTube@小青科学网_1
+      - YouTube@小青科学网_2
+      - YouTube@小青科学网_3
+      - HK_YouTube@小青科学网_30
+      - HK_YouTube@小青科学网_31
+      - YouTube@小青科学网_4
+      - 荷蘭_3
+      - YouTube@小青科学网_5
+      - HK_YouTube@小青科学网_32
+      - JP_YouTube@小青科学网_3
+      - SG_YouTube@小青科学网_1
+      - 摩爾多瓦_2
+      - ES_YouTube@小青科学网
+      - VMESS节点2-ipv6
+      - 未知VLESS-116|free-nodes
+      - HK_YouTube@小青科学网_33
+      - 摩爾多瓦_3
+      - 法国_1
+      - 法国_2
+      - SG_YouTube@小青科学网_2
+      - DEVLESS-17|free-nodes
+      - 法国_3
+      - 法国_4
+      - 摩爾多瓦_4
+      - SG_YouTube@小青科学网_3
+      - 俄羅斯_20
+      - 法国_5
+      - 摩爾多瓦_5
+      - 摩爾多瓦_6
+      - RU_YouTube@小青科学网
+      - 拉脫維亞
+      - 法國
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国
-      - 🇬🇧 英国
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 美國
-      - 🇺🇸 美国 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 11
-      - 🇫🇷 法国
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇺🇸 美国 14
-      - 🇮🇳 印度
-      - 🇺🇸 美国 15
-      - 🇬🇧 英国 2
-      - 🇬🇧 英国 3
-      - 🇬🇧 英国 4
-      - 🇬🇧 英国 5
-      - 🇬🇧 英国 6
-      - 🇬🇧 英国 7
-      - 🇬🇧 英国 8
-      - 🇬🇧 英国 9
-      - 🇬🇧 英国 10
-      - 🇬🇧 英国 11
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
-      - 🇫🇷 法国 4
-      - 🇫🇷 法国 5
-      - 🇫🇷 法国 6
-      - 🇫🇷 法国 7
-      - 🇫🇷 法国 8
-      - 🇫🇷 法国 9
-      - 🇫🇷 法国 10
-      - 🇫🇷 法国 11
-      - 🇫🇷 法国 12
-      - 🇫🇷 法国 13
-      - 🇬🇧 英国 12
-      - 🇬🇧 英国 13
-      - 🇬🇧 英国 14
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇺🇸 美国 22
-      - 🇺🇸 美国 23
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇺🇸 美国 27
-      - 🇫🇷 法国 14
-      - 🇫🇷 法国 15
-      - 🇫🇷 法国 16
-      - 🇫🇷 法国 17
-      - 🇫🇷 法国 18
-      - 🇫🇷 法国 19
-  - name: 📢 谷歌FCM
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-      - 🇺🇸 美国
-      - 🇬🇧 英国
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 美國
-      - 🇺🇸 美国 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 11
-      - 🇫🇷 法国
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇺🇸 美国 14
-      - 🇮🇳 印度
-      - 🇺🇸 美国 15
-      - 🇬🇧 英国 2
-      - 🇬🇧 英国 3
-      - 🇬🇧 英国 4
-      - 🇬🇧 英国 5
-      - 🇬🇧 英国 6
-      - 🇬🇧 英国 7
-      - 🇬🇧 英国 8
-      - 🇬🇧 英国 9
-      - 🇬🇧 英国 10
-      - 🇬🇧 英国 11
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
-      - 🇫🇷 法国 4
-      - 🇫🇷 法国 5
-      - 🇫🇷 法国 6
-      - 🇫🇷 法国 7
-      - 🇫🇷 法国 8
-      - 🇫🇷 法国 9
-      - 🇫🇷 法国 10
-      - 🇫🇷 法国 11
-      - 🇫🇷 法国 12
-      - 🇫🇷 法国 13
-      - 🇬🇧 英国 12
-      - 🇬🇧 英国 13
-      - 🇬🇧 英国 14
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇺🇸 美国 22
-      - 🇺🇸 美国 23
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇺🇸 美国 27
-      - 🇫🇷 法国 14
-      - 🇫🇷 法国 15
-      - 🇫🇷 法国 16
-      - 🇫🇷 法国 17
-      - 🇫🇷 法国 18
-      - 🇫🇷 法国 19
+      - 俄羅斯_1
+      - 美国_1
+      - 俄羅斯_2
+      - 俄羅斯_3
+      - 俄羅斯_4
+      - 俄羅斯_5
+      - 俄羅斯_6
+      - 俄羅斯_7
+      - 俄羅斯_8
+      - 俄羅斯_9
+      - 俄羅斯_10
+      - 印度尼西亚
+      - 美國_1
+      - 荷蘭_1
+      - NL_YouTube@小青科学网
+      - 美國_2
+      - 香港_1
+      - 荷蘭_2
+      - HK_YouTube@小青科学网_1
+      - 香港_2
+      - HK_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_3
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - HK_YouTube@小青科学网_4
+      - HK_YouTube@小青科学网_5
+      - 香港_6
+      - 香港_7
+      - HK_YouTube@小青科学网_6
+      - HK_YouTube@小青科学网_7
+      - 香港_8
+      - 香港_9
+      - IR_YouTube@小青科学网
+      - HK_YouTube@小青科学网_8
+      - 香港_10
+      - 香港_11
+      - HK_YouTube@小青科学网_9
+      - HK_YouTube@小青科学网_10
+      - HK_YouTube@小青科学网_11
+      - 香港_12
+      - HK_YouTube@小青科学网_12
+      - HK_YouTube@小青科学网_13
+      - HK_YouTube@小青科学网_14
+      - HK_YouTube@小青科学网_15
+      - HK_YouTube@小青科学网_16
+      - 香港_13
+      - TW_YouTube@小青科学网_1
+      - 香港_14
+      - 香港_15
+      - 香港_16
+      - HK_YouTube@小青科学网_17
+      - HK_YouTube@小青科学网_18
+      - 香港_17
+      - HK_YouTube@小青科学网_19
+      - HK_YouTube@小青科学网_20
+      - HK_YouTube@小青科学网_21
+      - HK_YouTube@小青科学网_22
+      - HK_YouTube@小青科学网_23
+      - HK_YouTube@小青科学网_24
+      - TW_YouTube@小青科学网_2
+      - 美国(YouTube@小青科学网)_1
+      - HK_YouTube@小青科学网_25
+      - 美国(YouTube@小青科学网)_2
+      - 香港_18
+      - HK_YouTube@小青科学网_26
+      - HK_YouTube@小青科学网_27
+      - 俄羅斯_11
+      - 俄罗斯_1
+      - 香港_19
+      - 香港_20
+      - 俄羅斯_12
+      - 摩爾多瓦_1
+      - CN_YouTube@小青科学网
+      - GB_YouTube@小青科学网_1
+      - 美国(YouTube@小青科学网)_3
+      - 🇬🇧英国
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 俄羅斯_13
+      - 俄羅斯_14
+      - 香港_21
+      - 俄羅斯_15
+      - 俄羅斯_16
+      - 俄罗斯_4
+      - 香港_22
+      - 巴西
+      - 香港_23
+      - GB_YouTube@小青科学网_2
+      - 美国_2
+      - 美国(YouTube@小青科学网)_4
+      - 美国_3
+      - 香港_24
+      - 俄羅斯_17
+      - 俄罗斯_5
+      - 伊朗
+      - 香港_25
+      - GB_youtube@资源分享师
+      - GB_YouTube@小青科学网_3
+      - GB_YouTube@小青科学网_4
+      - GB_YouTube@小青科学网_5
+      - 美国(YouTube@小青科学网)_5
+      - 英国(YouTube@小青科学网)
+      - 俄罗斯_6
+      - 台灣
+      - 香港_26
+      - TW_YouTube@小青科学网_3
+      - TW_YouTube@小青科学网_4
+      - TW_YouTube@小青科学网_5
+      - TW_YouTube@小青科学网_6
+      - TW_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_6
+      - GB_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_8
+      - GB_YouTube@小青科学网_9
+      - GB_YouTube@小青科学网_10
+      - GB_YouTube@小青科学网_11
+      - GB_YouTube@小青科学网_12
+      - GB_YouTube@小青科学网_13
+      - 俄羅斯_18
+      - 美國_3
+      - 香港_27
+      - 俄羅斯_19
+      - HK_YouTube@小青科学网_28
+      - TW_YouTube@小青科学网_8
+      - TW_YouTube@小青科学网_9
+      - TW_YouTube@小青科学网_10
+      - TW_YouTube@小青科学网_11
+      - TW_YouTube@小青科学网_12
+      - TW_YouTube@小青科学网_13
+      - GB_YouTube@小青科学网_14
+      - GB_YouTube@小青科学网_15
+      - JP_YouTube@小青科学网_1
+      - JP_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_29
+      - YouTube@小青科学网_1
+      - YouTube@小青科学网_2
+      - YouTube@小青科学网_3
+      - HK_YouTube@小青科学网_30
+      - HK_YouTube@小青科学网_31
+      - YouTube@小青科学网_4
+      - 荷蘭_3
+      - YouTube@小青科学网_5
+      - HK_YouTube@小青科学网_32
+      - JP_YouTube@小青科学网_3
+      - SG_YouTube@小青科学网_1
+      - 摩爾多瓦_2
+      - ES_YouTube@小青科学网
+      - VMESS节点2-ipv6
+      - 未知VLESS-116|free-nodes
+      - HK_YouTube@小青科学网_33
+      - 摩爾多瓦_3
+      - 法国_1
+      - 法国_2
+      - SG_YouTube@小青科学网_2
+      - DEVLESS-17|free-nodes
+      - 法国_3
+      - 法国_4
+      - 摩爾多瓦_4
+      - SG_YouTube@小青科学网_3
+      - 俄羅斯_20
+      - 法国_5
+      - 摩爾多瓦_5
+      - 摩爾多瓦_6
+      - RU_YouTube@小青科学网
+      - 拉脫維亞
+      - 法國
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -602,98 +1275,190 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国
-      - 🇬🇧 英国
-      - 🇭🇰 香港
-      - 🇭🇰 香港 2
-      - 美國
-      - 🇺🇸 美国 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 11
-      - 🇫🇷 法国
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇺🇸 美国 14
-      - 🇮🇳 印度
-      - 🇺🇸 美国 15
-      - 🇬🇧 英国 2
-      - 🇬🇧 英国 3
-      - 🇬🇧 英国 4
-      - 🇬🇧 英国 5
-      - 🇬🇧 英国 6
-      - 🇬🇧 英国 7
-      - 🇬🇧 英国 8
-      - 🇬🇧 英国 9
-      - 🇬🇧 英国 10
-      - 🇬🇧 英国 11
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
-      - 🇫🇷 法国 4
-      - 🇫🇷 法国 5
-      - 🇫🇷 法国 6
-      - 🇫🇷 法国 7
-      - 🇫🇷 法国 8
-      - 🇫🇷 法国 9
-      - 🇫🇷 法国 10
-      - 🇫🇷 法国 11
-      - 🇫🇷 法国 12
-      - 🇫🇷 法国 13
-      - 🇬🇧 英国 12
-      - 🇬🇧 英国 13
-      - 🇬🇧 英国 14
-      - 🇭🇰 香港 5
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇺🇸 美国 22
-      - 🇺🇸 美国 23
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇺🇸 美国 27
-      - 🇫🇷 法国 14
-      - 🇫🇷 法国 15
-      - 🇫🇷 法国 16
-      - 🇫🇷 法国 17
-      - 🇫🇷 法国 18
-      - 🇫🇷 法国 19
+      - 俄羅斯_1
+      - 美国_1
+      - 俄羅斯_2
+      - 俄羅斯_3
+      - 俄羅斯_4
+      - 俄羅斯_5
+      - 俄羅斯_6
+      - 俄羅斯_7
+      - 俄羅斯_8
+      - 俄羅斯_9
+      - 俄羅斯_10
+      - 印度尼西亚
+      - 美國_1
+      - 荷蘭_1
+      - NL_YouTube@小青科学网
+      - 美國_2
+      - 香港_1
+      - 荷蘭_2
+      - HK_YouTube@小青科学网_1
+      - 香港_2
+      - HK_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_3
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - HK_YouTube@小青科学网_4
+      - HK_YouTube@小青科学网_5
+      - 香港_6
+      - 香港_7
+      - HK_YouTube@小青科学网_6
+      - HK_YouTube@小青科学网_7
+      - 香港_8
+      - 香港_9
+      - IR_YouTube@小青科学网
+      - HK_YouTube@小青科学网_8
+      - 香港_10
+      - 香港_11
+      - HK_YouTube@小青科学网_9
+      - HK_YouTube@小青科学网_10
+      - HK_YouTube@小青科学网_11
+      - 香港_12
+      - HK_YouTube@小青科学网_12
+      - HK_YouTube@小青科学网_13
+      - HK_YouTube@小青科学网_14
+      - HK_YouTube@小青科学网_15
+      - HK_YouTube@小青科学网_16
+      - 香港_13
+      - TW_YouTube@小青科学网_1
+      - 香港_14
+      - 香港_15
+      - 香港_16
+      - HK_YouTube@小青科学网_17
+      - HK_YouTube@小青科学网_18
+      - 香港_17
+      - HK_YouTube@小青科学网_19
+      - HK_YouTube@小青科学网_20
+      - HK_YouTube@小青科学网_21
+      - HK_YouTube@小青科学网_22
+      - HK_YouTube@小青科学网_23
+      - HK_YouTube@小青科学网_24
+      - TW_YouTube@小青科学网_2
+      - 美国(YouTube@小青科学网)_1
+      - HK_YouTube@小青科学网_25
+      - 美国(YouTube@小青科学网)_2
+      - 香港_18
+      - HK_YouTube@小青科学网_26
+      - HK_YouTube@小青科学网_27
+      - 俄羅斯_11
+      - 俄罗斯_1
+      - 香港_19
+      - 香港_20
+      - 俄羅斯_12
+      - 摩爾多瓦_1
+      - CN_YouTube@小青科学网
+      - GB_YouTube@小青科学网_1
+      - 美国(YouTube@小青科学网)_3
+      - 🇬🇧英国
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 俄羅斯_13
+      - 俄羅斯_14
+      - 香港_21
+      - 俄羅斯_15
+      - 俄羅斯_16
+      - 俄罗斯_4
+      - 香港_22
+      - 巴西
+      - 香港_23
+      - GB_YouTube@小青科学网_2
+      - 美国_2
+      - 美国(YouTube@小青科学网)_4
+      - 美国_3
+      - 香港_24
+      - 俄羅斯_17
+      - 俄罗斯_5
+      - 伊朗
+      - 香港_25
+      - GB_youtube@资源分享师
+      - GB_YouTube@小青科学网_3
+      - GB_YouTube@小青科学网_4
+      - GB_YouTube@小青科学网_5
+      - 美国(YouTube@小青科学网)_5
+      - 英国(YouTube@小青科学网)
+      - 俄罗斯_6
+      - 台灣
+      - 香港_26
+      - TW_YouTube@小青科学网_3
+      - TW_YouTube@小青科学网_4
+      - TW_YouTube@小青科学网_5
+      - TW_YouTube@小青科学网_6
+      - TW_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_6
+      - GB_YouTube@小青科学网_7
+      - GB_YouTube@小青科学网_8
+      - GB_YouTube@小青科学网_9
+      - GB_YouTube@小青科学网_10
+      - GB_YouTube@小青科学网_11
+      - GB_YouTube@小青科学网_12
+      - GB_YouTube@小青科学网_13
+      - 俄羅斯_18
+      - 美國_3
+      - 香港_27
+      - 俄羅斯_19
+      - HK_YouTube@小青科学网_28
+      - TW_YouTube@小青科学网_8
+      - TW_YouTube@小青科学网_9
+      - TW_YouTube@小青科学网_10
+      - TW_YouTube@小青科学网_11
+      - TW_YouTube@小青科学网_12
+      - TW_YouTube@小青科学网_13
+      - GB_YouTube@小青科学网_14
+      - GB_YouTube@小青科学网_15
+      - JP_YouTube@小青科学网_1
+      - JP_YouTube@小青科学网_2
+      - HK_YouTube@小青科学网_29
+      - YouTube@小青科学网_1
+      - YouTube@小青科学网_2
+      - YouTube@小青科学网_3
+      - HK_YouTube@小青科学网_30
+      - HK_YouTube@小青科学网_31
+      - YouTube@小青科学网_4
+      - 荷蘭_3
+      - YouTube@小青科学网_5
+      - HK_YouTube@小青科学网_32
+      - JP_YouTube@小青科学网_3
+      - SG_YouTube@小青科学网_1
+      - 摩爾多瓦_2
+      - ES_YouTube@小青科学网
+      - VMESS节点2-ipv6
+      - 未知VLESS-116|free-nodes
+      - HK_YouTube@小青科学网_33
+      - 摩爾多瓦_3
+      - 法国_1
+      - 法国_2
+      - SG_YouTube@小青科学网_2
+      - DEVLESS-17|free-nodes
+      - 法国_3
+      - 法国_4
+      - 摩爾多瓦_4
+      - SG_YouTube@小青科学网_3
+      - 俄羅斯_20
+      - 法国_5
+      - 摩爾多瓦_5
+      - 摩爾多瓦_6
+      - RU_YouTube@小青科学网
+      - 拉脫維亞
+      - 法國
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
-  - DOMAIN-SUFFIX,internal,🎯 全球直连
-  - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
-  - IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
-  - IP-CIDR,169.254.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
   - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
   - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
   - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
   - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
-  - DOMAIN,instant.arubanetworks.com,🎯 全球直连
-  - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
   - DOMAIN,router.asus.com,🎯 全球直连
-  - DOMAIN,www.asusrouter.com,🎯 全球直连
   - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
   - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
@@ -701,52 +1466,20 @@ rules:
   - DOMAIN-SUFFIX,p.to,🎯 全球直连
   - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
   - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
-  - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
   - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
   - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
-  - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
-  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
-  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
-  - DOMAIN,dl.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
-  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
-  - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
-  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
-  - DOMAIN,livew.l.qq.com,🎯 全球直连
-  - DOMAIN,vd.l.qq.com,🎯 全球直连
-  - DOMAIN,errlog.umeng.com,🎯 全球直连
-  - DOMAIN,msg.umeng.com,🎯 全球直连
-  - DOMAIN,msg.umengcloud.com,🎯 全球直连
-  - DOMAIN,tracking.miui.com,🎯 全球直连
-  - DOMAIN,app.adjust.com,🎯 全球直连
-  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
-  - DOMAIN,rewards.hypixel.net,🎯 全球直连
-  - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
-  - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
-  - DOMAIN-SUFFIX,synology.me,🎯 全球直连
-  - DOMAIN-SUFFIX,DiskStation.me,🎯 全球直连
-  - DOMAIN-SUFFIX,i234.me,🎯 全球直连
-  - DOMAIN-SUFFIX,myDS.me,🎯 全球直连
-  - DOMAIN-SUFFIX,DSCloud.biz,🎯 全球直连
-  - DOMAIN-SUFFIX,DSCloud.me,🎯 全球直连
-  - DOMAIN-SUFFIX,DSCloud.mobi,🎯 全球直连
-  - DOMAIN-SUFFIX,DSmyNAS.com,🎯 全球直连
-  - DOMAIN-SUFFIX,DSmyNAS.net,🎯 全球直连
-  - DOMAIN-SUFFIX,DSmyNAS.org,🎯 全球直连
-  - DOMAIN-SUFFIX,FamilyDS.com,🎯 全球直连
-  - DOMAIN-SUFFIX,FamilyDS.net,🎯 全球直连
-  - DOMAIN-SUFFIX,FamilyDS.org,🎯 全球直连
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
   - DOMAIN-KEYWORD,adsensor,🛑 全球拦截
+  - DOMAIN-KEYWORD,adservice,🛑 全球拦截
   - DOMAIN-KEYWORD,adsmogo,🛑 全球拦截
   - DOMAIN-KEYWORD,adsrvmedia,🛑 全球拦截
   - DOMAIN-KEYWORD,adsserving,🛑 全球拦截
   - DOMAIN-KEYWORD,adsystem,🛑 全球拦截
   - DOMAIN-KEYWORD,adwords,🛑 全球拦截
+  - DOMAIN-KEYWORD,analysis,🛑 全球拦截
   - DOMAIN-KEYWORD,applovin,🛑 全球拦截
   - DOMAIN-KEYWORD,appsflyer,🛑 全球拦截
   - DOMAIN-KEYWORD,domob,🛑 全球拦截
@@ -760,8 +1493,28 @@ rules:
   - DOMAIN-KEYWORD,pingfore,🛑 全球拦截
   - DOMAIN-KEYWORD,socdm,🛑 全球拦截
   - DOMAIN-KEYWORD,supersonicads,🛑 全球拦截
+  - DOMAIN-KEYWORD,usage,🛑 全球拦截
   - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
   - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
+  - DOMAIN-SUFFIX,admob.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ads.gmodules.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,ads.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,adservice.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,afd.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,badad.googleplex.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,csi.gstatic.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,doubleclick.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,doubleclick.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,google-analytics.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googleadservices.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googleadsserving.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,googlecommerce.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,googlesyndication.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,mobileads.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead-tpc.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,pagead.l.google.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,service.urchin.com,🛑 全球拦截
   - DOMAIN-SUFFIX,09mk.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,100peng.com,🛑 全球拦截
   - DOMAIN-SUFFIX,114la.com,🛑 全球拦截
@@ -921,6 +1674,7 @@ rules:
   - DOMAIN-SUFFIX,edigitalsurvey.com,🛑 全球拦截
   - DOMAIN-SUFFIX,eduancm.com,🛑 全球拦截
   - DOMAIN-SUFFIX,emarbox.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,epsilon.com,🛑 全球拦截
   - DOMAIN-SUFFIX,exosrv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,fancyapi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,feitian001.com,🛑 全球拦截
@@ -996,6 +1750,7 @@ rules:
   - DOMAIN-SUFFIX,mediaplex.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mediav.com,🛑 全球拦截
   - DOMAIN-SUFFIX,megajoy.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,meiqia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mgogo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,miaozhen.com,🛑 全球拦截
   - DOMAIN-SUFFIX,microad-cn.com,🛑 全球拦截
@@ -1010,7 +1765,7 @@ rules:
   - DOMAIN-SUFFIX,mobclix.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mobgi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mobisage.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,moogos.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,mobvista.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mopub.com,🛑 全球拦截
   - DOMAIN-SUFFIX,moquanad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mpush.cn,🛑 全球拦截
@@ -1019,6 +1774,7 @@ rules:
   - DOMAIN-SUFFIX,mzy2014.com,🛑 全球拦截
   - DOMAIN-SUFFIX,networkbench.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ninebox.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,ntalker.com,🛑 全球拦截
   - DOMAIN-SUFFIX,nylalobghyhirgh.com,🛑 全球拦截
   - DOMAIN-SUFFIX,o2omobi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,oadz.com,🛑 全球拦截
@@ -1053,8 +1809,10 @@ rules:
   - DOMAIN-SUFFIX,rtbasia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sanya1.com,🛑 全球拦截
   - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,serving-sys.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitemeter.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitescout.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitetag.us,🛑 全球拦截
@@ -1102,7 +1860,6 @@ rules:
   - DOMAIN-SUFFIX,uuzu.com,🛑 全球拦截
   - DOMAIN-SUFFIX,uyunad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vamaker.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vlion.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,voiceads.com,🛑 全球拦截
   - DOMAIN-SUFFIX,vpon.com,🛑 全球拦截
@@ -1119,7 +1876,6 @@ rules:
   - DOMAIN-SUFFIX,wqmobile.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wrating.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wumii.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,xcy8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xdrig.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xiaozhen.com,🛑 全球拦截
@@ -1205,6 +1961,7 @@ rules:
   - DOMAIN-SUFFIX,criteo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,criteo.net,🛑 全球拦截
   - DOMAIN-SUFFIX,csbew.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,demdex.net,🛑 全球拦截
   - DOMAIN-SUFFIX,directrev.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dumedia.ru,🛑 全球拦截
   - DOMAIN-SUFFIX,effectivemeasure.com,🛑 全球拦截
@@ -1435,10 +2192,12 @@ rules:
   - DOMAIN-SUFFIX,activate-sea.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate-sjc0.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,activate.adobe.com,🍃 应用净化
+  - DOMAIN-SUFFIX,activate.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns-3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,adobe-dns.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,ereg.adobe.com,🍃 应用净化
+  - DOMAIN-SUFFIX,ereg.wip3.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,geo2.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hl2rcv.adobe.com,🍃 应用净化
   - DOMAIN-SUFFIX,hlrcv.stage.adobe.com,🍃 应用净化
@@ -1490,8 +2249,10 @@ rules:
   - DOMAIN-SUFFIX,baidu9635.com,🍃 应用净化
   - DOMAIN-SUFFIX,baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,baidutv.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,baikebcs.bdimg.com,🍃 应用净化
   - DOMAIN-SUFFIX,banlv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bar.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,bdimg.share.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bdplus.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,btlaunch.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,c.baidu.cn,🍃 应用净化
@@ -1509,6 +2270,7 @@ rules:
   - DOMAIN-SUFFIX,click.hm.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.qianqian.com,🍃 应用净化
   - DOMAIN-SUFFIX,cm.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,cm.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,cpro.baidustatic.com,🍃 应用净化
@@ -1611,10 +2373,13 @@ rules:
   - DOMAIN-SUFFIX,rp.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,rplog.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,s.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,s.cpro.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,sa.tuisong.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sclick.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sestat.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shadu.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,share.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,snippet.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobar.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,sobartop.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,spcode.baidu.cn,🍃 应用净化
@@ -1631,6 +2396,7 @@ rules:
   - DOMAIN-SUFFIX,tuijian.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,tuisong.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,uat1.bfsspadserver.8le8le.com,🍃 应用净化
   - DOMAIN-SUFFIX,ubmcmm.baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,ucstat.baidu.com,🍃 应用净化
@@ -1655,6 +2421,7 @@ rules:
   - DOMAIN-SUFFIX,wisepush.video.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,wm.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,wn.pos.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.cn,🍃 应用净化
   - DOMAIN-SUFFIX,znsv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,zz.bdstatic.com,🍃 应用净化
@@ -1705,11 +2472,7 @@ rules:
   - DOMAIN-SUFFIX,ic.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,log.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,nativeapp.toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pangolin.snssdk.com,🍃 应用净化
   - DOMAIN-SUFFIX,partner.toutiao.com,🍃 应用净化
-  - DOMAIN-SUFFIX,pglstatp-toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,sm.toutiao.com,🍃 应用净化
   - DOMAIN-SUFFIX,a.dangdang.com,🍃 应用净化
   - DOMAIN-SUFFIX,click.dangdang.com,🍃 应用净化
@@ -1839,6 +2602,7 @@ rules:
   - DOMAIN-SUFFIX,jellyfish.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migc.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,migcreport.g.mi.com,🍃 应用净化
+  - DOMAIN-SUFFIX,mis.g.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,notice.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ppurifier.game.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,r.browser.miui.com,🍃 应用净化
@@ -1846,6 +2610,8 @@ rules:
   - DOMAIN-SUFFIX,shenghuo.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,stat.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,union.mi.com,🍃 应用净化
+  - DOMAIN-SUFFIX,wtradv.market.xiaomi.com,🍃 应用净化
+  - DOMAIN-SUFFIX,xmpush.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ad.api.moji.com,🍃 应用净化
   - DOMAIN-SUFFIX,app.moji001.com,🍃 应用净化
   - DOMAIN-SUFFIX,cdn.moji002.com,🍃 应用净化
@@ -1906,7 +2672,9 @@ rules:
   - DOMAIN-SUFFIX,log.mix.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,mobileads.dx.cn,🍃 应用净化
   - DOMAIN-SUFFIX,newspush.sinajs.cn,🍃 应用净化
+  - DOMAIN-SUFFIX,pay.mobile.sina.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sax.mobile.sina.cn,🍃 应用净化
+  - DOMAIN-SUFFIX,sax.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,saxd.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sdkapp.mobile.sina.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sdkapp.uve.weibo.com,🍃 应用净化
@@ -2038,6 +2806,8 @@ rules:
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
   - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
+  - DOMAIN-SUFFIX,sugar.zhihu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shrek.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,simba.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,union.6.cn,🍃 应用净化
@@ -2225,6 +2995,7 @@ rules:
   - DOMAIN-SUFFIX,couchcoaster.jp,🍃 应用净化
   - DOMAIN-SUFFIX,delivery.dmkt-sp.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ehg-youtube.hitbox.com,🍃 应用净化
+  - DOMAIN-SUFFIX,m-78.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nichibenren.or.jp,🍃 应用净化
   - DOMAIN-SUFFIX,nicorette.co.kr,🍃 应用净化
   - DOMAIN-SUFFIX,ssl-youtube.2cnt.net,🍃 应用净化
@@ -2235,6 +3006,8 @@ rules:
   - DOMAIN-SUFFIX,ads.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,afp.wasu.tv,🍃 应用净化
   - DOMAIN-SUFFIX,c.algovid.com,🍃 应用净化
+  - DOMAIN-SUFFIX,cc.xtgreat.com,🍃 应用净化
+  - DOMAIN-SUFFIX,d.dsp.imageter.com,🍃 应用净化
   - DOMAIN-SUFFIX,gg.jtertp.com,🍃 应用净化
   - DOMAIN-SUFFIX,gridsum-vd.cntv.cn,🍃 应用净化
   - DOMAIN-SUFFIX,kwflvcdn.000dn.com,🍃 应用净化
@@ -2307,6 +3080,7 @@ rules:
   - DOMAIN-SUFFIX,dol.tianyaui.cn,🍃 应用净化
   - DOMAIN-SUFFIX,dw.xcar.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,e.nexac.com,🍃 应用净化
+  - DOMAIN-SUFFIX,eq.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,exp.17wo.cn,🍃 应用净化
   - DOMAIN-SUFFIX,game.51yund.com,🍃 应用净化
   - DOMAIN-SUFFIX,ganjituiguang.ganji.com,🍃 应用净化
@@ -2323,6 +3097,7 @@ rules:
   - DOMAIN-SUFFIX,mobileads.msn.com,🍃 应用净化
   - DOMAIN-SUFFIX,n.cosbot.cn,🍃 应用净化
   - DOMAIN-SUFFIX,newton-api.ele.me,🍃 应用净化
+  - DOMAIN-SUFFIX,ozone.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,pdl.gionee.com,🍃 应用净化
   - DOMAIN-SUFFIX,pica-juicy.picacomic.com,🍃 应用净化
   - DOMAIN-SUFFIX,pixel.wp.com,🍃 应用净化
@@ -2335,6 +3110,7 @@ rules:
   - DOMAIN-SUFFIX,res.gwifi.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,ssp.kssws.ks-cdn.com,🍃 应用净化
   - DOMAIN-SUFFIX,sta.ganji.com,🍃 应用净化
+  - DOMAIN-SUFFIX,stat.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,stat.it168.com,🍃 应用净化
   - DOMAIN-SUFFIX,stats.chinaz.com,🍃 应用净化
   - DOMAIN-SUFFIX,stats.developingperspective.com,🍃 应用净化
@@ -2342,41 +3118,7 @@ rules:
   - DOMAIN-SUFFIX,tracker.yhd.com,🍃 应用净化
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
-  - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt4-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt5-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt6-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,mtalk.google.com,📢 谷歌FCM
-  - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,64.233.188.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,64.233.189.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.23.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.24.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.28.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.127.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.137.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.203.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.204.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,74.125.206.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,108.177.125.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,142.250.4.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,142.250.10.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,142.250.31.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,142.250.96.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,172.217.194.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,172.217.218.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,172.217.219.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,172.253.63.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,172.253.122.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
+  - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -2388,40 +3130,33 @@ rules:
   - DOMAIN-SUFFIX,alt7-mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,alt8-mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,app-measurement.com,🎯 全球直连
+  - DOMAIN-SUFFIX,c.android.clients.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,cache.pack.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,clickserve.dartsearch.net,🎯 全球直连
+  - DOMAIN-SUFFIX,clientservices.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,crl.pki.goog,🎯 全球直连
   - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,fonts.googleapis.com,🎯 全球直连
+  - DOMAIN-SUFFIX,fonts.gstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
+  - DOMAIN-SUFFIX,imasdk.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
   - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
   - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
   - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ssl.gstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
-  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
-  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
-  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
-  - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -2434,11 +3169,8 @@ rules:
   - DOMAIN-SUFFIX,azure.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azure.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azureedge.net,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,azureiotcentral.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azurerms.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,bing.com,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,bing.net,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,cloudapp.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,cloudappsecurity.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,edgesuite.net,Ⓜ️ 微软服务
@@ -2505,8 +3237,6 @@ rules:
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
   - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
-  - DOMAIN-SUFFIX,apple-dns.net,🍎 苹果服务
-  - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
@@ -2530,68 +3260,8 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
-  - DOMAIN-SUFFIX,t.me,📲 电报信息
-  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
-  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
-  - DOMAIN-SUFFIX,telegram.me,📲 电报信息
-  - DOMAIN-SUFFIX,telegram.org,📲 电报信息
-  - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
-  - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
-  - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
-  - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
-  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,anthropic,🌍 国外媒体
-  - DOMAIN-KEYWORD,claude,🌍 国外媒体
-  - DOMAIN-KEYWORD,openai,🌍 国外媒体
-  - DOMAIN,ai.google.dev,🌍 国外媒体
-  - DOMAIN,aistudio.google.com,🌍 国外媒体
-  - DOMAIN,api.githubcopilot.com,🌍 国外媒体
-  - DOMAIN,api.groq.com,🌍 国外媒体
-  - DOMAIN,api.together.xyz,🌍 国外媒体
-  - DOMAIN,bard.google.com,🌍 国外媒体
-  - DOMAIN,console.groq.com,🌍 国外媒体
-  - DOMAIN,copilot-proxy.githubusercontent.com,🌍 国外媒体
-  - DOMAIN,gemini.google.com,🌍 国外媒体
-  - DOMAIN,generativelanguage.googleapis.com,🌍 国外媒体
-  - DOMAIN,notebooklm.google.com,🌍 国外媒体
-  - DOMAIN,sydney.bing.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,ai.azure.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,anthropic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,bard.google.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,claude.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,claude.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,claudeusercontent.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,copilot.cloud.microsoft,🌍 国外媒体
-  - DOMAIN-SUFFIX,copilot.microsoft.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,cursor.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,cursor.sh,🌍 国外媒体
-  - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,gemini.google.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,grazie.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,grazie.aws.intellij.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,jetbrains.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,makersuite.google.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,meta.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,mistral.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,perplexity.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,sora.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,x.ai,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
@@ -2599,28 +3269,15 @@ rules:
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
-  - DOMAIN,atv-ps.amazon.com,🌍 国外媒体
-  - DOMAIN,avodmp4s3ww-a.akamaihd.net,🌍 国外媒体
-  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d1xfray82862hr.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d25xi40x97liuc.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d27xxe7juh1us6.cloudfront.net,🌍 国外媒体
-  - DOMAIN,d3196yreox78o9.cloudfront.net,🌍 国外媒体
-  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
-  - DOMAIN,ktpx.amazon.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,aboutamazon.com,🌍 国外媒体
+  - DOMAIN, atv-ps.amazon.com,🌍 国外媒体
+  - DOMAIN, fls-na.amazon.com,🌍 国外媒体
+  - DOMAIN-SUFFIX, media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazontools.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazontours.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonaws.co.uk,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,seattlespheres.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,llnwd.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,primevideo.com,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
@@ -2639,27 +3296,51 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
-  - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
+  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
+  - DOMAIN-KEYWORD,livedazn,🌍 国外媒体
+  - DOMAIN-KEYWORD,vod2dazn,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
+  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
+  - DOMAIN,players.brightcove.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc1-voddash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc1live21715dazn.akamaized.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-live2dash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-live2hls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-livedash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-voddash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dca-vodhls-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dcb-livedash-perform.secure.footprint.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,dcb-voddash-perform.secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,s.llnwi.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,secure.footprint.net,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,urbanairship.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,widevine.entitlement.us.theplatform.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -2688,12 +3369,25 @@ rules:
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
+  - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
+  - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
+  - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
+  - DOMAIN,players.brightcove.net,🌍 国外媒体
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
+  - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
@@ -2709,7 +3403,6 @@ rules:
   - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
   - DOMAIN,players.brightcove.net,🌍 国外媒体
   - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
@@ -2730,7 +3423,6 @@ rules:
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,iwara.tv,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -2747,7 +3439,6 @@ rules:
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
-  - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
@@ -2759,15 +3450,12 @@ rules:
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
-  - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
-  - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
-  - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
+  - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🌍 国外媒体
   - DOMAIN,netflix.com.edgesuite.net,🌍 国外媒体
   - DOMAIN-SUFFIX,fast.com,🌍 国外媒体
   - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
@@ -2789,9 +3477,12 @@ rules:
   - DOMAIN-SUFFIX,nflxvideo.net,🌍 国外媒体
   - IP-CIDR,8.41.4.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
+  - IP-CIDR,34.210.42.111/32,🌍 国外媒体,no-resolve
   - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
   - IP-CIDR,38.72.126.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
+  - IP-CIDR,52.89.124.203/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,54.148.37.5/32,🌍 国外媒体,no-resolve
   - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
   - IP-CIDR,69.53.224.0/19,🌍 国外媒体,no-resolve
@@ -2802,48 +3493,11 @@ rules:
   - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
   - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
   - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
-  - IP-CIDR,203.75.84.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
-  - DOMAIN-KEYWORD,nivod,🌍 国外媒体
-  - DOMAIN-SUFFIX,biggggg.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,mudvod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbys.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbys1.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbyy.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,newpppp.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivodi.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivodz.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,vod360.net,🌍 国外媒体
-  - DOMAIN-KEYWORD,olevod,🌍 国外媒体
-  - DOMAIN-SUFFIX,haiwaikan.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,iole.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,olehd.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olelive.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevodtv.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,openai,🌍 国外媒体
-  - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,stripe.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
@@ -2854,7 +3508,7 @@ rules:
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,-spotify-,🌍 国外媒体
+  - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
   - DOMAIN-SUFFIX,scdn.co,🌍 国外媒体
@@ -2867,7 +3521,7 @@ rules:
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-  - DOMAIN-KEYWORD,tiktokcdn,🌍 国外媒体
+  - DOMAIN-KEYWORD,-tiktokcdn-com,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
@@ -2878,24 +3532,22 @@ rules:
   - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
   - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
-  - DOMAIN-SUFFIX,ext-twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
   - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
-  - PROCESS-NAME,com.viu.pad,🌍 国外媒体
-  - PROCESS-NAME,com.viu.phone,🌍 国外媒体
-  - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
   - DOMAIN,api.viu.now.com,🌍 国外媒体
   - DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
   - DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
   - DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,bootstrapcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,firebaseio.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jwpcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jwplayer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,nowe.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
@@ -2904,20 +3556,28 @@ rules:
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
   - DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,gvt2.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,withyoutube.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtube-nocookie.com,🌍 国外媒体
   - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubeeducation.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubegaming.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
-  - DOMAIN,music.youtube.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,t.me,📲 电报信息
+  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
+  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
+  - DOMAIN-SUFFIX,telegram.me,📲 电报信息
+  - DOMAIN-SUFFIX,telegram.org,📲 电报信息
+  - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
+  - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
+  - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
+  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
+  - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
+  - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
   - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
+  - DOMAIN-SUFFIX,cccat.io,🚀 节点选择
   - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
   - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
   - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
@@ -2925,7 +3585,6 @@ rules:
   - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
   - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
   - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
-  - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
   - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
@@ -2934,7 +3593,8 @@ rules:
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
-  - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
+  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🚀 节点选择
+  - DOMAIN-SUFFIX,yunpanjingling.com,🚀 节点选择
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -2942,6 +3602,7 @@ rules:
   - DOMAIN-SUFFIX,sg,🚀 节点选择
   - DOMAIN-SUFFIX,tw,🚀 节点选择
   - DOMAIN-SUFFIX,uk,🚀 节点选择
+  - DOMAIN-SUFFIX,us,🚀 节点选择
   - DOMAIN-KEYWORD,1e100,🚀 节点选择
   - DOMAIN-KEYWORD,abema,🚀 节点选择
   - DOMAIN-KEYWORD,appledaily,🚀 节点选择
@@ -2995,6 +3656,7 @@ rules:
   - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
   - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
   - DOMAIN-SUFFIX,daum.net,🚀 节点选择
+  - DOMAIN-SUFFIX,demdex.net,🚀 节点选择
   - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
   - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
   - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
@@ -3092,11 +3754,8 @@ rules:
   - DOMAIN-KEYWORD,uk-live,🚀 节点选择
   - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
   - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
-  - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
-  - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
   - DOMAIN-SUFFIX,apache.org,🚀 节点选择
   - DOMAIN-SUFFIX,docker.com,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
   - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
@@ -3114,13 +3773,6 @@ rules:
   - DOMAIN-SUFFIX,spring.io,🚀 节点选择
   - DOMAIN-SUFFIX,spring.net,🚀 节点选择
   - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
-  - DOMAIN,d1q6f0aelx0por.cloudfront.net,🚀 节点选择
-  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🚀 节点选择
-  - DOMAIN,d36jcksde1wxzq.cloudfront.net,🚀 节点选择
-  - DOMAIN-SUFFIX,compose-spec.io,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
-  - DOMAIN-SUFFIX,dockerhub.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.co,🚀 节点选择
   - DOMAIN-SUFFIX,discord.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
@@ -3154,7 +3806,6 @@ rules:
   - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
   - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
   - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
-  - DOMAIN-SUFFIX,c.gle,🚀 节点选择
   - DOMAIN-SUFFIX,g.co,🚀 节点选择
   - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
   - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
@@ -3195,7 +3846,6 @@ rules:
   - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
-  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
   - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
@@ -3220,8 +3870,6 @@ rules:
   - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
@@ -3234,7 +3882,6 @@ rules:
   - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
   - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
   - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,microsoftpersonalcontent.com,🚀 节点选择
   - DOMAIN-KEYWORD,porn,🚀 节点选择
   - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
   - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
@@ -3260,7 +3907,6 @@ rules:
   - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
   - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
   - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
-  - DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
   - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
   - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
   - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
@@ -3268,22 +3914,7 @@ rules:
   - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
   - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
   - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
-  - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
-  - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
-  - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamserver.net,🚀 节点选择
-  - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
-  - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
-  - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steampipe.akamaized.net,🚀 节点选择
   - DOMAIN-SUFFIX,tap.io,🚀 节点选择
   - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
   - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
@@ -3294,7 +3925,6 @@ rules:
   - DOMAIN-SUFFIX,twimg.co,🚀 节点选择
   - DOMAIN-SUFFIX,twimg.com,🚀 节点选择
   - DOMAIN-SUFFIX,twimg.org,🚀 节点选择
-  - DOMAIN-SUFFIX,x.com,🚀 节点选择
   - DOMAIN-SUFFIX,t.me,🚀 节点选择
   - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
   - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
@@ -3336,14 +3966,10 @@ rules:
   - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
   - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
   - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
-  - DOMAIN-SUFFIX,zoom.us,🚀 节点选择
-  - DOMAIN-SUFFIX,zoomgov.com,🚀 节点选择
   - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
-  - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -3356,15 +3982,11 @@ rules:
   - DOMAIN-SUFFIX,msftconnecttest.com,🎯 全球直连
   - DOMAIN-SUFFIX,msftncsi.com,🎯 全球直连
   - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
-  - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
-  - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
-  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
-  - DOMAIN-SUFFIX,tebex.io,🎯 全球直连
   - DOMAIN-SUFFIX,cn,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
-  - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
+  - DOMAIN-SUFFIX,中国,🎯 全球直连
+  - DOMAIN-SUFFIX,公司,🎯 全球直连
+  - DOMAIN-SUFFIX,网络,🎯 全球直连
+  - DOMAIN-KEYWORD,-cn,🎯 全球直连
   - DOMAIN-KEYWORD,360buy,🎯 全球直连
   - DOMAIN-KEYWORD,alicdn,🎯 全球直连
   - DOMAIN-KEYWORD,alimama,🎯 全球直连
@@ -3375,6 +3997,7 @@ rules:
   - DOMAIN-KEYWORD,ccgslb,🎯 全球直连
   - DOMAIN-KEYWORD,chinacache,🎯 全球直连
   - DOMAIN-KEYWORD,duobao,🎯 全球直连
+  - DOMAIN-KEYWORD,duolingo,🎯 全球直连
   - DOMAIN-KEYWORD,jdpay,🎯 全球直连
   - DOMAIN-KEYWORD,moke,🎯 全球直连
   - DOMAIN-KEYWORD,qhimg,🎯 全球直连
@@ -3398,7 +4021,6 @@ rules:
   - DOMAIN-SUFFIX,aliapp.org,🎯 全球直连
   - DOMAIN-SUFFIX,alibaba.com,🎯 全球直连
   - DOMAIN-SUFFIX,alibabacloud.com,🎯 全球直连
-  - DOMAIN-SUFFIX,alibabachengdun.com,🎯 全球直连
   - DOMAIN-SUFFIX,alibabausercontent.com,🎯 全球直连
   - DOMAIN-SUFFIX,alicdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,alicloudccp.com,🎯 全球直连
@@ -3412,12 +4034,10 @@ rules:
   - DOMAIN-SUFFIX,aliyuncdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyuncs.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyundrive.com,🎯 全球直连
-  - DOMAIN-SUFFIX,aliyundrive.net,🎯 全球直连
   - DOMAIN-SUFFIX,amap.com,🎯 全球直连
   - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
   - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
   - DOMAIN-SUFFIX,ele.me,🎯 全球直连
-  - DOMAIN-SUFFIX,elemecdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hichina.com,🎯 全球直连
   - DOMAIN-SUFFIX,mmstat.com,🎯 全球直连
   - DOMAIN-SUFFIX,mxhichina.com,🎯 全球直连
@@ -3425,7 +4045,6 @@ rules:
   - DOMAIN-SUFFIX,taobao.com,🎯 全球直连
   - DOMAIN-SUFFIX,taobaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,tbcache.com,🎯 全球直连
-  - DOMAIN-SUFFIX,tbcdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,tbcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,tmall.com,🎯 全球直连
   - DOMAIN-SUFFIX,tmall.hk,🎯 全球直连
@@ -3434,7 +4053,6 @@ rules:
   - DOMAIN-SUFFIX,xiami.net,🎯 全球直连
   - DOMAIN-SUFFIX,ykimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,youku.com,🎯 全球直连
-  - DOMAIN-SUFFIX,qwen.ai,🎯 全球直连
   - DOMAIN-SUFFIX,baidu.com,🎯 全球直连
   - DOMAIN-SUFFIX,baidubcr.com,🎯 全球直连
   - DOMAIN-SUFFIX,baidupcs.com,🎯 全球直连
@@ -3455,8 +4073,7 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bilibili.co,🎯 全球直连
-  - DOMAIN-SUFFIX,biliintl.co,🎯 全球直连
+  - DOMAIN-SUFFIX,bilibili.tv,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -3464,30 +4081,16 @@ rules:
   - DOMAIN-SUFFIX,hdslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,im9.com,🎯 全球直连
   - DOMAIN-SUFFIX,smtcdns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,amemv.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bdxiguaimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bdxiguastatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,byted-static.com,🎯 全球直连
+  - DOMAIN-SUFFIX,battle.net,🎯 全球直连
+  - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
+  - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.net,🎯 全球直连
   - DOMAIN-SUFFIX,bytedns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,bytednsdoc.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytegoofy.com,🎯 全球直连
   - DOMAIN-SUFFIX,byteimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytescm.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytetos.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytexservice.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyin.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyincdn.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinpic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinstatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyinvod.com,🎯 全球直连
-  - DOMAIN-SUFFIX,feelgood.cn,🎯 全球直连
   - DOMAIN-SUFFIX,feiliao.com,🎯 全球直连
   - DOMAIN-SUFFIX,gifshow.com,🎯 全球直连
   - DOMAIN-SUFFIX,huoshan.com,🎯 全球直连
-  - DOMAIN-SUFFIX,huoshanzhibo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ibytedapm.com,🎯 全球直连
   - DOMAIN-SUFFIX,iesdouyin.com,🎯 全球直连
   - DOMAIN-SUFFIX,ixigua.com,🎯 全球直连
   - DOMAIN-SUFFIX,kspkg.com,🎯 全球直连
@@ -3495,7 +4098,6 @@ rules:
   - DOMAIN-SUFFIX,snssdk.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao13.com,🎯 全球直连
-  - DOMAIN-SUFFIX,toutiaoapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaocloud.com,🎯 全球直连
@@ -3504,67 +4106,33 @@ rules:
   - DOMAIN-SUFFIX,toutiaoimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiaopage.com,🎯 全球直连
   - DOMAIN-SUFFIX,wukong.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zijieapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zijieimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjbyte.com,🎯 全球直连
   - DOMAIN-SUFFIX,zjcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cctv.com,🎯 全球直连
   - DOMAIN-SUFFIX,cctvpic.com,🎯 全球直连
   - DOMAIN-SUFFIX,livechina.com,🎯 全球直连
-  - DOMAIN,auth.wosms.cn,🎯 全球直连
-  - DOMAIN,config.cmpassport.com,🎯 全球直连
-  - DOMAIN,enrichgw.10010.com,🎯 全球直连
-  - DOMAIN,hmrz.wo.cn,🎯 全球直连
-  - DOMAIN,id.mail.wo.cn,🎯 全球直连
-  - DOMAIN,log.cmpassport.com,🎯 全球直连
-  - DOMAIN,log1.cmpassport.com,🎯 全球直连
-  - DOMAIN,mdn.open.wo.cn,🎯 全球直连
-  - DOMAIN,nishub1.10010.com,🎯 全球直连
-  - DOMAIN,opencloud.wostore.cn,🎯 全球直连
-  - DOMAIN,ye.dun.163yun.com,🎯 全球直连
-  - DOMAIN-SUFFIX,auth.wo.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,cmpassport.com,🎯 全球直连
-  - DOMAIN-SUFFIX,id6.me,🎯 全球直连
-  - DOMAIN-SUFFIX,mob.com,🎯 全球直连
-  - DOMAIN-SUFFIX,open.e.189.cn,🎯 全球直连
   - DOMAIN-SUFFIX,21cn.com,🎯 全球直连
   - DOMAIN-SUFFIX,didialift.com,🎯 全球直连
   - DOMAIN-SUFFIX,didiglobal.com,🎯 全球直连
   - DOMAIN-SUFFIX,udache.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytefcdnrd.com,🎯 全球直连
-  - DOMAIN-SUFFIX,edgesrv.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.tv,🎯 全球直连
-  - DOMAIN-SUFFIX,douyucdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyutv.com,🎯 全球直连
   - DOMAIN-SUFFIX,epicgames.com,🎯 全球直连
-  - DOMAIN-SUFFIX,epicgames.dev,🎯 全球直连
   - DOMAIN-SUFFIX,helpshift.com,🎯 全球直连
   - DOMAIN-SUFFIX,paragon.com,🎯 全球直连
   - DOMAIN-SUFFIX,unrealengine.com,🎯 全球直连
   - DOMAIN-SUFFIX,dbankcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hc-cdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hicloud.com,🎯 全球直连
-  - DOMAIN-SUFFIX,hihonor.com,🎯 全球直连
   - DOMAIN-SUFFIX,huawei.com,🎯 全球直连
   - DOMAIN-SUFFIX,huaweicloud.com,🎯 全球直连
   - DOMAIN-SUFFIX,huaweishop.net,🎯 全球直连
   - DOMAIN-SUFFIX,hwccpc.com,🎯 全球直连
   - DOMAIN-SUFFIX,vmall.com,🎯 全球直连
   - DOMAIN-SUFFIX,vmallres.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawnfs.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawno.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawntech.com,🎯 全球直连
-  - DOMAIN-SUFFIX,coloros.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytap.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapcs.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapdownload.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapimage.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapmobi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,oppo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,oppoer.me,🎯 全球直连
-  - DOMAIN-SUFFIX,oppomobile.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflyink.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflyrec.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflytek.com,🎯 全球直连
@@ -3626,16 +4194,10 @@ rules:
   - DOMAIN-SUFFIX,leju.com,🎯 全球直连
   - DOMAIN-SUFFIX,miaopai.com,🎯 全球直连
   - DOMAIN-SUFFIX,sina.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sina.com.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,sina.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaapp.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sinaapp.cn,🎯 全球直连
   - DOMAIN-SUFFIX,sinaimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,sinaimg.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,weibo.cn,🎯 全球直连
   - DOMAIN-SUFFIX,weibocdn.com,🎯 全球直连
-  - DOMAIN-SUFFIX,weibocdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,xiaoka.tv,🎯 全球直连
   - DOMAIN-SUFFIX,go2map.com,🎯 全球直连
   - DOMAIN-SUFFIX,sogo.com,🎯 全球直连
@@ -3652,22 +4214,20 @@ rules:
   - DOMAIN-SUFFIX,playstationnetwork.com,🎯 全球直连
   - DOMAIN-SUFFIX,sony.com,🎯 全球直连
   - DOMAIN-SUFFIX,sonyentertainmentnetwork.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
+  - DOMAIN-SUFFIX,csgo.wmsj.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,dl.steam.ksyna.com,🎯 全球直连
+  - DOMAIN-SUFFIX,dota2.wmsj.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.bscstorage.net,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.eccdnx.com,🎯 全球直连
+  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🎯 全球直连
   - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamgames.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steampowered.com.8686c.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamstat.us,🎯 全球直连
+  - DOMAIN-SUFFIX,steamstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
-  - DOMAIN,csgo.wmsj.cn,🎯 全球直连
-  - DOMAIN,dota2.wmsj.cn,🎯 全球直连
-  - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
-  - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
-  - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
-  - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
-  - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
-  - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
-  - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
+  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net,🎯 全球直连
   - DOMAIN-SUFFIX,foxmail.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,idqqimg.com,🎯 全球直连
@@ -3716,7 +4276,46 @@ rules:
   - DOMAIN-SUFFIX,zmzapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zmzapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,zmzfile.com,🎯 全球直连
+  - DOMAIN-KEYWORD,announce,🎯 全球直连
+  - DOMAIN-KEYWORD,torrent,🎯 全球直连
+  - DOMAIN-KEYWORD,tracker,🎯 全球直连
+  - DOMAIN-SUFFIX,animebytes.tv,🎯 全球直连
+  - DOMAIN-SUFFIX,animetorrents.me,🎯 全球直连
+  - DOMAIN-SUFFIX,awesome-hd.me,🎯 全球直连
+  - DOMAIN-SUFFIX,beitai.pt,🎯 全球直连
+  - DOMAIN-SUFFIX,bittorrent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,broadcasthe.net,🎯 全球直连
+  - DOMAIN-SUFFIX,chdbits.co,🎯 全球直连
+  - DOMAIN-SUFFIX,classix-unlimited.co.uk,🎯 全球直连
+  - DOMAIN-SUFFIX,empornium.me,🎯 全球直连
+  - DOMAIN-SUFFIX,gazellegames.net,🎯 全球直连
+  - DOMAIN-SUFFIX,hd4fans.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdchina.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdhome.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdsky.me,🎯 全球直连
+  - DOMAIN-SUFFIX,hdtime.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdzone.me,🎯 全球直连
+  - DOMAIN-SUFFIX,icetorrent.org,🎯 全球直连
+  - DOMAIN-SUFFIX,jpopsuki.eu,🎯 全球直连
+  - DOMAIN-SUFFIX,keepfrds.com,🎯 全球直连
+  - DOMAIN-SUFFIX,leaguehd.com,🎯 全球直连
+  - DOMAIN-SUFFIX,m-team.cc,🎯 全球直连
+  - DOMAIN-SUFFIX,madsrevolution.net,🎯 全球直连
+  - DOMAIN-SUFFIX,msg.vg,🎯 全球直连
+  - DOMAIN-SUFFIX,nanyangpt.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ncore.cc,🎯 全球直连
+  - DOMAIN-SUFFIX,open.cd,🎯 全球直连
+  - DOMAIN-SUFFIX,ourbits.club,🎯 全球直连
+  - DOMAIN-SUFFIX,passthepopcorn.me,🎯 全球直连
+  - DOMAIN-SUFFIX,privatehd.to,🎯 全球直连
+  - DOMAIN-SUFFIX,pthome.net,🎯 全球直连
+  - DOMAIN-SUFFIX,redacted.ch,🎯 全球直连
+  - DOMAIN-SUFFIX,springsunday.net,🎯 全球直连
+  - DOMAIN-SUFFIX,tjupt.org,🎯 全球直连
+  - DOMAIN-SUFFIX,totheglory.im,🎯 全球直连
+  - DOMAIN-SUFFIX,trontv.com,🎯 全球直连
   - DOMAIN-SUFFIX,teamviewer.com,🎯 全球直连
+  - IP-CIDR,109.239.140.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,139.220.243.27/32,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.102.56/32,🎯 全球直连,no-resolve
   - IP-CIDR,185.188.32.1/28,🎯 全球直连,no-resolve
@@ -3728,12 +4327,9 @@ rules:
   - DOMAIN-SUFFIX,baomitu.com,🎯 全球直连
   - DOMAIN-SUFFIX,bootcss.com,🎯 全球直连
   - DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
+  - DOMAIN-SUFFIX,jsdelivr.net,🎯 全球直连
   - DOMAIN-SUFFIX,staticfile.org,🎯 全球直连
   - DOMAIN-SUFFIX,upaiyun.com,🎯 全球直连
-  - DOMAIN-SUFFIX,doh.pub,🎯 全球直连
-  - DOMAIN-SUFFIX,dns.alidns.com,🎯 全球直连
-  - DOMAIN-SUFFIX,doh.360.cn,🎯 全球直连
-  - IP-CIDR,1.12.12.12/32,🎯 全球直连,no-resolve
   - DOMAIN-SUFFIX,10010.com,🎯 全球直连
   - DOMAIN-SUFFIX,115.com,🎯 全球直连
   - DOMAIN-SUFFIX,12306.com,🎯 全球直连
@@ -3755,7 +4351,6 @@ rules:
   - DOMAIN-SUFFIX,air-matters.io,🎯 全球直连
   - DOMAIN-SUFFIX,aixifan.com,🎯 全球直连
   - DOMAIN-SUFFIX,algocasts.io,🎯 全球直连
-  - DOMAIN-SUFFIX,asklink.com,🎯 全球直连
   - DOMAIN-SUFFIX,babytree.com,🎯 全球直连
   - DOMAIN-SUFFIX,babytreeimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,baicizhan.com,🎯 全球直连
@@ -3764,7 +4359,6 @@ rules:
   - DOMAIN-SUFFIX,biqudu.com,🎯 全球直连
   - DOMAIN-SUFFIX,biquge.com,🎯 全球直连
   - DOMAIN-SUFFIX,bitauto.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bosszhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,c-ctrip.com,🎯 全球直连
   - DOMAIN-SUFFIX,camera360.com,🎯 全球直连
   - DOMAIN-SUFFIX,cdnmama.com,🎯 全球直连
@@ -3779,6 +4373,8 @@ rules:
   - DOMAIN-SUFFIX,clouddn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cloudxns.net,🎯 全球直连
   - DOMAIN-SUFFIX,cn163.net,🎯 全球直连
+  - DOMAIN-SUFFIX,cnbeta.com,🎯 全球直连
+  - DOMAIN-SUFFIX,cnbetacdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,cnblogs.com,🎯 全球直连
   - DOMAIN-SUFFIX,cnki.net,🎯 全球直连
   - DOMAIN-SUFFIX,cnmstl.net,🎯 全球直连
@@ -3800,7 +4396,6 @@ rules:
   - DOMAIN-SUFFIX,eastday.com,🎯 全球直连
   - DOMAIN-SUFFIX,eastmoney.com,🎯 全球直连
   - DOMAIN-SUFFIX,ecitic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,element-plus.org,🎯 全球直连
   - DOMAIN-SUFFIX,ewqcxz.com,🎯 全球直连
   - DOMAIN-SUFFIX,fang.com,🎯 全球直连
   - DOMAIN-SUFFIX,fantasy.tv,🎯 全球直连
@@ -3844,7 +4439,6 @@ rules:
   - DOMAIN-SUFFIX,kaola.com,🎯 全球直连
   - DOMAIN-SUFFIX,knewone.com,🎯 全球直连
   - DOMAIN-SUFFIX,koowo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,koyso.com,🎯 全球直连
   - DOMAIN-SUFFIX,ksyungslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,kuaidi100.com,🎯 全球直连
   - DOMAIN-SUFFIX,kugou.com,🎯 全球直连
@@ -3855,9 +4449,11 @@ rules:
   - DOMAIN-SUFFIX,lanzoux.com,🎯 全球直连
   - DOMAIN-SUFFIX,lemicp.com,🎯 全球直连
   - DOMAIN-SUFFIX,letitfly.me,🎯 全球直连
+  - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.fm,🎯 全球直连
   - DOMAIN-SUFFIX,lizhi.io,🎯 全球直连
   - DOMAIN-SUFFIX,lizhifm.com,🎯 全球直连
+  - DOMAIN-SUFFIX,loli.net,🎯 全球直连
   - DOMAIN-SUFFIX,luoo.net,🎯 全球直连
   - DOMAIN-SUFFIX,lvmama.com,🎯 全球直连
   - DOMAIN-SUFFIX,lxdns.com,🎯 全球直连
@@ -3880,11 +4476,11 @@ rules:
   - DOMAIN-SUFFIX,nruan.com,🎯 全球直连
   - DOMAIN-SUFFIX,nuomi.com,🎯 全球直连
   - DOMAIN-SUFFIX,onedns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,oneplus.com,🎯 全球直连
   - DOMAIN-SUFFIX,onlinedown.net,🎯 全球直连
   - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
   - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
   - DOMAIN-SUFFIX,ourdvs.com,🎯 全球直连
+  - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
   - DOMAIN-SUFFIX,polyv.net,🎯 全球直连
   - DOMAIN-SUFFIX,qbox.me,🎯 全球直连
   - DOMAIN-SUFFIX,qcloud.com,🎯 全球直连
@@ -3903,8 +4499,9 @@ rules:
   - DOMAIN-SUFFIX,quanmin.tv,🎯 全球直连
   - DOMAIN-SUFFIX,qunar.com,🎯 全球直连
   - DOMAIN-SUFFIX,qunarzz.com,🎯 全球直连
-  - DOMAIN-SUFFIX,realme.com,🎯 全球直连
+  - DOMAIN-SUFFIX,rarbg.to,🎯 全球直连
   - DOMAIN-SUFFIX,repaik.com,🎯 全球直连
+  - DOMAIN-SUFFIX,rrmj.tv,🎯 全球直连
   - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
   - DOMAIN-SUFFIX,runoob.com,🎯 全球直连
   - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
@@ -3912,6 +4509,7 @@ rules:
   - DOMAIN-SUFFIX,sf-express.com,🎯 全球直连
   - DOMAIN-SUFFIX,shumilou.net,🎯 全球直连
   - DOMAIN-SUFFIX,simplecd.me,🎯 全球直连
+  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
   - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
   - DOMAIN-SUFFIX,snwx.com,🎯 全球直连
   - DOMAIN-SUFFIX,soufunimg.com,🎯 全球直连
@@ -3937,7 +4535,6 @@ rules:
   - DOMAIN-SUFFIX,upyun.com,🎯 全球直连
   - DOMAIN-SUFFIX,uxengine.net,🎯 全球直连
   - DOMAIN-SUFFIX,videocc.net,🎯 全球直连
-  - DOMAIN-SUFFIX,vivo.com,🎯 全球直连
   - DOMAIN-SUFFIX,wandoujia.com,🎯 全球直连
   - DOMAIN-SUFFIX,weather.com,🎯 全球直连
   - DOMAIN-SUFFIX,weico.cc,🎯 全球直连
@@ -3974,101 +4571,69 @@ rules:
   - DOMAIN-SUFFIX,zhaopin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
-  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
-  - DOMAIN-SUFFIX,95516.com,🎯 全球直连
   - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
-  - IP-CIDR,8.209.32.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,8.209.40.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,8.209.48.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,8.210.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,8.211.64.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,8.211.128.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,8.211.144.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,8.211.152.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,8.211.208.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,8.211.224.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,8.212.0.0/14,🎯 全球直连,no-resolve
-  - IP-CIDR,8.216.0.0/13,🎯 全球直连,no-resolve
+  - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,41.222.240.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,41.223.119.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,43.242.168.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,45.112.212.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,47.52.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,47.56.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.75.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,47.89.0.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,47.89.64.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,47.89.82.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,47.89.91.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,47.89.100.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,47.90.0.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,47.91.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,47.92.0.0/14,🎯 全球直连,no-resolve
-  - IP-CIDR,47.240.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,47.242.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.244.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,47.246.5.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,47.246.16.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,47.246.60.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,47.246.65.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,47.74.0.0/15,🎯 全球直连,no-resolve
+  - IP-CIDR,47.76.0.0/14,🎯 全球直连,no-resolve
+  - IP-CIDR,47.80.0.0/12,🎯 全球直连,no-resolve
+  - IP-CIDR,47.235.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,47.236.0.0/14,🎯 全球直连,no-resolve
+  - IP-CIDR,47.240.0.0/14,🎯 全球直连,no-resolve
+  - IP-CIDR,47.244.0.0/15,🎯 全球直连,no-resolve
+  - IP-CIDR,47.246.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,47.250.0.0/15,🎯 全球直连,no-resolve
+  - IP-CIDR,47.252.0.0/15,🎯 全球直连,no-resolve
+  - IP-CIDR,47.254.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,59.82.0.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,59.82.240.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,59.82.248.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,72.254.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,103.38.56.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.52.76.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.206.40.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,110.76.21.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,110.76.23.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,112.125.0.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.79.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.80.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.84.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.88.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.93.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.94.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.102.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.104.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.112.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.124.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.64.0/18,🎯 全球直连,no-resolve
   - IP-CIDR,119.38.208.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,119.38.224.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,119.42.224.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,139.95.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,140.205.1.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,140.205.122.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,149.129.64.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,163.181.32.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,163.181.40.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,170.33.0.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,198.11.141.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,198.11.184.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,205.204.104.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,205.204.117.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,205.204.122.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,205.204.124.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,147.139.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,149.129.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,155.102.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,161.117.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,163.181.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,170.33.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,198.11.128.0/18,🎯 全球直连,no-resolve
+  - IP-CIDR,205.204.96.0/19,🎯 全球直连,no-resolve
+  - IP-CIDR,19.28.0.0/23,🎯 全球直连,no-resolve
   - IP-CIDR,45.40.192.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,49.51.56.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,49.51.60.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,49.51.110.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,49.51.112.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,49.51.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,62.234.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,94.191.0.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,103.7.28.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,103.116.50.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,103.231.60.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,109.244.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,111.30.128.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,111.30.136.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,111.30.139.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,111.30.140.0/23,🎯 全球直连,no-resolve
   - IP-CIDR,115.159.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.0.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.64.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.124.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.128.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.164.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.168.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.176.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.192.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.224.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,119.29.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,119.28.0.0/15,🎯 全球直连,no-resolve
+  - IP-CIDR,120.88.56.0/23,🎯 全球直连,no-resolve
   - IP-CIDR,121.51.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,129.28.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,129.204.0.0/16,🎯 全球直连,no-resolve
@@ -4076,46 +4641,61 @@ rules:
   - IP-CIDR,132.232.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,134.175.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,146.56.192.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,150.109.32.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,150.109.64.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,150.109.96.0/19,🎯 全球直连,no-resolve
+  - IP-CIDR,148.70.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,150.109.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,152.136.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,162.14.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,162.62.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,170.106.130.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,182.254.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,188.131.128.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,203.195.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.128.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.144.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.158.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.180.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.208.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.212.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.218.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.220.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.248.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,203.205.128.0/17,🎯 全球直连,no-resolve
+  - IP-CIDR,210.4.138.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,211.152.128.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,211.152.132.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,211.152.148.0/23,🎯 全球直连,no-resolve
   - IP-CIDR,212.64.0.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,212.129.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,45.113.194.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,45.113.192.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,63.217.23.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,63.243.252.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,103.235.44.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,104.193.88.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,106.12.0.0/15,🎯 全球直连,no-resolve
   - IP-CIDR,114.28.224.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,119.63.192.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,180.76.0.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,180.76.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,182.61.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,185.10.105.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,185.10.104.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,202.46.48.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,203.90.238.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,43.254.0.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,45.249.212.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,49.4.0.0/17,🎯 全球直连,no-resolve
+  - IP-CIDR,78.101.192.0/19,🎯 全球直连,no-resolve
+  - IP-CIDR,78.101.224.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,81.52.161.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,85.97.220.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.31.200.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,103.69.140.0/23,🎯 全球直连,no-resolve
   - IP-CIDR,103.218.216.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,114.115.128.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,114.116.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,116.63.128.0/18,🎯 全球直连,no-resolve
   - IP-CIDR,116.66.184.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,116.71.96.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,116.71.128.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,116.71.136.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,116.71.141.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,116.71.142.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,116.71.243.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,116.71.244.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,116.71.251.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,117.78.0.0/18,🎯 全球直连,no-resolve
   - IP-CIDR,119.3.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,119.8.0.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,119.8.32.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,121.36.0.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,121.36.128.0/18,🎯 全球直连,no-resolve
@@ -4144,7 +4724,37 @@ rules:
   - IP-CIDR,159.138.96.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,159.138.112.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,159.138.125.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.128.0/19,🎯 全球直连,no-resolve
+  - IP-CIDR,159.138.128.0/18,🎯 全球直连,no-resolve
+  - IP-CIDR,159.138.192.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,159.138.223.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,159.138.224.0/19,🎯 全球直连,no-resolve
+  - IP-CIDR,168.195.92.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,185.176.76.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,197.199.0.0/18,🎯 全球直连,no-resolve
+  - IP-CIDR,197.210.163.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,197.252.1.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,197.252.2.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,197.252.4.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,197.252.8.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,200.32.52.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,200.32.54.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,200.32.57.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.0.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.4.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.8.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.11.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.13.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.20.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.22.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.24.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.26.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.29.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.33.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.38.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.40.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.43.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.48.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.135.50.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,42.186.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,45.127.128.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,45.195.24.0/24,🎯 全球直连,no-resolve
@@ -4168,6 +4778,7 @@ rules:
   - IP-CIDR,103.72.128.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,103.74.24.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,103.74.48.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,103.126.92.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.129.252.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.131.252.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.135.240.0/22,🎯 全球直连,no-resolve
@@ -4181,11 +4792,7 @@ rules:
   - IP-CIDR,123.58.160.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,223.252.192.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,101.198.192.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,101.198.194.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,101.198.196.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,101.198.200.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,101.198.208.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
