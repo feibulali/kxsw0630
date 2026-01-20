@@ -5,76 +5,201 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 香港, server: 58.152.110.111, port: 443, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 2, server: 58.152.110.111, port: 443, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 3, server: 58.152.53.219, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡, server: 81.28.13.223, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: ed78b7ec3662e43a, udp: true}
-  - {name: 🇩🇪 德国, server: 57.129.95.232, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: 420946afc5918c49, udp: true}
-  - {name: 🇩🇪 德国 2, server: 57.129.95.232, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: 420946afc5918c49, udp: true}
-  - {name: 🇭🇰 香港 4, server: 58.152.53.219, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国 3, server: 141.95.106.215, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: cbbcbfd5330475d1, udp: true}
-  - {name: 🇺🇸 美国, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN"}, udp: true}
-  - {name: 🇺🇸 美国 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国 3, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1"}, udp: true}
-  - {name: 🇫🇷 法国, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "?ed=2048"}, udp: true}
-  - {name: 🇫🇷 法国 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", headers: {Host: AZERB.NET}}, udp: true}
-  - {name: 🇫🇷 法国 3, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
-  - {name: 🇺🇸 美国 4, server: 2001:bc8:32d7:302::11, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", headers: {Host: Azerb.NET}}, udp: true}
-  - {name: 🇺🇸 美国 5, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: TURK1.NET.NET}}, udp: true}
-  - {name: 🇺🇸 美国 6, server: 2001:bc8:32d7:302::14, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", headers: {Host: TABRIZ.NET}}, udp: true}
-  - {name: 🇺🇸 美国 7, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇫🇷 法国 4, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
+  - {name: 🇭🇰 香港, server: 58.152.46.246, port: 443, type: trojan, password: BxceQaOe, sni: 58.152.46.246, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 2, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: e54aaded-7d83-4dad-a65b-972e11e641a4, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国, server: 2001:bc8:32d7:302::17, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: AZERB.NET}}, udp: true}
+  - {name: 🇺🇸 美国 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10"}, udp: true}
+  - {name: 🇺🇸 美国 3, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: TURK1.NET.NET}}, udp: true}
+  - {name: 🇺🇸 美国 4, server: 2001:bc8:32d7:302::16, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: AZERB.NET}}, udp: true}
+  - {name: 🇺🇸 美国 5, server: 109.234.211.66, port: 2087, type: trojan, password: trojan, sni: store.timimi.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: store.timimi.dpdns.org}}, udp: true}
+  - {name: 🇺🇸 美国 6, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国 7, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: AZERB.NET}}, udp: true}
+  - {name: 🇫🇷 法国, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", headers: {Host: AZERB.NET}}, udp: true}
   - {name: 🇺🇸 美国 8, server: 2001:bc8:32d7:302::15, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: TURK.NET}}, udp: true}
-  - {name: 🇺🇸 美国 9, server: 2001:bc8:32d7:302::16, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: AZERB.NET}}, udp: true}
-  - {name: 🇺🇸 美国 10, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10"}, udp: true}
-  - {name: 🇩🇪 德国 4, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国 5, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: AZERB.NET}}, udp: true}
+  - {name: 🇺🇸 美国 9, server: 2001:bc8:32d7:302::14, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", headers: {Host: TABRIZ.NET}}, udp: true}
+  - {name: 🇺🇸 美国 10, server: 2001:bc8:32d7:302::11, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", headers: {Host: Azerb.NET}}, udp: true}
+  - {name: 🇺🇸 美国 11, server: 2001:bc8:32d7:302::11, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", headers: {Host: TABRIZ.NET}}, udp: true}
+  - {name: 🇫🇷 法国 3, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "?ed=2048"}, udp: true}
+  - {name: 🇫🇷 法国 4, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
+  - {name: 🇺🇸 美国 12, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1"}, udp: true}
+  - {name: 🇺🇸 美国 13, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN"}, udp: true}
+  - {name: 🇺🇸 美国 14, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国 15, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10"}, udp: true}
+  - {name: 🇺🇸 美国 16, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 17, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 18, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 19, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国, server: tunnel2.qqa678.com, port: 47081, type: vmess, uuid: 940962e9-85c7-43fa-a9ca-d523b15a32a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 20, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 21, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 英国, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国 6, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 荷兰, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
-  - {name: 🇨🇳 台湾, server: 220.130.58.136, port: 31101, type: trojan, password: a1049ee8-c121-42ed-8e3f-cdd48aa2bb77, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 2, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: b7a2ebab-a432-4962-8101-0cf9869e865a, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 3, server: 220.130.58.136, port: 31101, type: trojan, password: a0194cb9-ee34-4f75-b620-6d4d72ab1cb0, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 4, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 2680016f-449e-4c72-b9d2-dc1fe5b97909, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 5, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: b99f17f7-38f7-48e7-af00-b260a65d007d, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 6, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 115eff94-b83e-4853-b11e-34a59e47eebc, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 7, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 114461ce-789a-4564-a056-caf89b53e964, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 8, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 2260331b-bd95-47af-94bc-2f320d162bb9, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 9, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: f308b3c2-40c2-4c06-b304-ce9cb2823a54, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 10, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 7de5d3a8-bf15-42a2-8d63-27b05cdf58ab, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 11, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: a92e4cd1-b1d0-48a7-925d-401835299026, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 12, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 7a75e482-0c41-4407-ad4d-d519944e5dd7, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 13, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 013e17fa-d240-4f5e-997c-e47e2ef89eb1, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 14, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 970f06f2-d76f-4a23-9014-381776f8a68e, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 15, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 4eb8c5d3-b8ac-4bea-ac8c-166b9c4279c1, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 荷兰 2, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: wwzVn2ZnHfqYa6l8EWh3eY, udp: true}
-  - {name: 🇨🇳 台湾 16, server: green2.cdntencentmusic.com, port: 31103, type: trojan, password: c67bf403-83b9-417b-81f1-e1f37017746f, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 17, server: green2.cdntencentmusic.com, port: 31103, type: trojan, password: 2260331b-bd95-47af-94bc-2f320d162bb9, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 18, server: green2.cdntencentmusic.com, port: 31103, type: trojan, password: 5e03e749-4b46-41b5-badd-49a1ae4a46db, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 19, server: green2.cdntencentmusic.com, port: 31103, type: trojan, password: abf12a24-e9ca-4c2a-b640-81ab77453919, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 20, server: green2.cdntencentmusic.com, port: 31103, type: trojan, password: 4eb8c5d3-b8ac-4bea-ac8c-166b9c4279c1, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 21, server: 220.130.58.136, port: 31103, type: trojan, password: 114461ce-789a-4564-a056-caf89b53e964, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 22, server: green2.cdntencentmusic.com, port: 31103, type: trojan, password: 114461ce-789a-4564-a056-caf89b53e964, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 23, server: green2.cdntencentmusic.com, port: 31103, type: trojan, password: 0e55a9cb-4116-408e-895b-3653ad8b5392, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 11, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: AZERB.NET}}, udp: true}
-  - {name: 🇺🇸 美国 12, server: 2001:bc8:32d7:302::17, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: AZERB.NET}}, udp: true}
-  - {name: 🇭🇰 香港 5, server: sv2.wy888.us, port: 443, type: vmess, uuid: cda69512-ad1b-4f85-b547-b1d545e7cc90, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sv2.wy888.us}}, udp: true}
-  - {name: 🇺🇸 美国 13, server: 2001:bc8:32d7:302::11, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", headers: {Host: TABRIZ.NET}}, udp: true}
-  - {name: 🇺🇸 美国 14, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10"}, udp: true}
-  - {name: 🇨🇳 台湾 24, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: f308b3c2-40c2-4c06-b304-ce9cb2823a54, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国 5, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: AZERB.NET}}, udp: true}
-  - {name: 🇳🇱 荷兰 3, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm, udp: true}
-  - {name: 🇨🇳 台湾 25, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 2260331b-bd95-47af-94bc-2f320d162bb9, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 26, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: abf12a24-e9ca-4c2a-b640-81ab77453919, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 27, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: a0194cb9-ee34-4f75-b620-6d4d72ab1cb0, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 28, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 0e55a9cb-4116-408e-895b-3653ad8b5392, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 29, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 970f06f2-d76f-4a23-9014-381776f8a68e, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 30, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 84afd818-e363-479a-ba59-9d7e802fb2aa, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 31, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: a1049ee8-c121-42ed-8e3f-cdd48aa2bb77, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 32, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 115eff94-b83e-4853-b11e-34a59e47eebc, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾 33, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: a92e4cd1-b1d0-48a7-925d-401835299026, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国 6, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048"}, udp: true}
-  - {name: 🇺🇸 美国 15, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
+  - {name: 🇺🇸 美国 22, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 23, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 24, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 3, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 25, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 4, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 26, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 27, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 5, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 28, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 6, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 7, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 8, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 9, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 29, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 10, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 30, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 11, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 2, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 14fbcc7f-f014-4335-952d-33bbd66622ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 31, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 12, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 13, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 14, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 15, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 3, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 17bb31aa-0fc0-42d1-9d17-6963a326976b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 4, server: tunnel1.qqa678.com, port: 47081, type: vmess, uuid: 940962e9-85c7-43fa-a9ca-d523b15a32a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 5, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 1e27abe5-b75a-4aa1-8478-2ee87c3ec226, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 16, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 3, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 9bdbbdcf-c17b-4a87-9af9-07c7fa23ebb0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 4, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 297137ab-d441-4f35-a35f-4bd251395dfe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 6, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 54f9c74d-3a0f-4cc4-8a00-3bc974410a8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 7, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 664c626d-0cec-4720-984c-6e363f3423e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 8, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 299e1608-202e-472c-8dd9-4e3ad0511c66, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 9, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: b9e84536-50d8-4f17-9b88-139c5b083d61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 10, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: b202bfe3-bd32-4a05-8dfe-f7ad5e286f38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 5, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 1d044650-8117-4f9a-9a11-a7c9953dc3e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 6, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 2e088354-9d52-467c-8e79-ac755b6837cc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 11, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 989be05a-3eeb-4ecd-9375-46fdcb225b50, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 7, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 4e870a32-3e87-415b-846c-b19b1c404cc5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 12, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 167957f1-dbe0-48bb-aa0c-c56a778e40d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 13, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 25495f02-66da-4147-9b64-d0e7ff76084b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 8, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 31b5e1b4-84e2-4cdf-af9a-92923ce88849, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 9, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 31589a97-6372-4345-b6c5-267995829c60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 17, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 14, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: ce83d923-f146-4d68-ba68-71ddcc2fb790, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 32, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 15, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: af252a39-d9ef-4ce7-a5a6-1a7d0eb8fb56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 10, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: ef0744b3-43e3-4093-81bf-07c709fd73ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 16, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: c4702802-0263-4849-9586-be04d6d5ae18, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 33, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 17, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 51bd9aa6-e373-4f8c-af64-c43e67530519, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 11, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 8b31cefc-0d37-48f0-bd29-1a1ae23cf84d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 18, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 0b91c482-7f08-41da-89ec-749a86da9de0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 12, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: e81376bb-3424-47af-930f-498c5573e37a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 34, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 18, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 19, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: f1a8ca4d-91c9-4d03-a44d-38db46e1e3f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 20, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 53037bd4-f024-4c7c-aaca-a8bb8de54372, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 21, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: e3f6dbab-a5ed-492d-9964-7a22959c6330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 13, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 75f971fd-afdf-4fd8-9012-cb94165e7372, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 14, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 818c9c00-be4d-4634-a8dd-b8193dfc7ca7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 22, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 5648c3bc-4565-49ac-9c64-eefbbdccc0aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 15, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 4894ff21-0a99-40f1-b394-b706c03fb46c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 23, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: c33e19c5-a7b9-47c6-b9f2-1d514e7ecd1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 24, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 12584923-5bea-4c00-ab9c-f22760618b26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 25, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: a439a28d-6c85-4541-b6fc-0ce9764509ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 26, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 5ea60137-0af7-4380-afaf-bdc67461f13b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 16, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 4798a43a-bc4f-429a-87c0-8f265f28b37d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 27, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 2c1cb850-20d0-4557-90e3-7bad0f8edc64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 28, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 8ddf2c12-0623-4120-9042-a351c0890b46, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 29, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 8cf4ee83-05c9-405a-bdb2-22ea67b20b2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 17, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 5c8b15e9-1aeb-4eab-b481-a44f2efc8b19, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 30, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 94f7d6ad-6155-47cb-874b-52fee14e1e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 18, server: 58.152.53.219, port: 443, type: trojan, password: BxceQaOe, sni: 58.152.53.219, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 19, server: 58.152.53.219, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 20, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: b09e9c44-5510-4ca3-a729-9451203860e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 31, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: fe568587-eb10-4a18-8e2d-ff5927dd2163, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 21, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: c6d8504f-c1d6-47d5-aa06-c50c3921728b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 22, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 21b7df24-3218-41c2-88a5-62bdb36717c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 32, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 2080bf57-e3e2-43de-ba17-19af45d93e75, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 33, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 234f4380-2918-4c9d-9dba-9ae4ea8013a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 34, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 72be0988-f3bc-4d3c-ad0f-823d343b7ca0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 35, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: f3f77fc6-b530-4c70-b489-b6249d17fef4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 23, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 5a2c9f25-0857-4def-9cfb-35bfc9c44da6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 36, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 67ea9628-b1b5-4a0f-887d-6034aa9ca753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 37, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: aee23a8e-c1dc-4e24-a9b5-741a96bccada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 38, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: ee33b54b-8f12-4ac3-9251-206e0efa0609, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 39, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: d3278ac8-5e5f-4f1d-a70b-1a76c9764fa7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 24, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: e0710ab8-6e1c-4de8-b551-dca8867cf21d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 40, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 372463a3-ebae-412a-a21a-b3fd9b0aedcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 41, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 929e6d01-7c9f-4f67-ad40-807ebdd32888, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 42, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 94be404d-0c8d-4c37-a93d-5efae185d182, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 43, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 2dbccbfc-5658-4dda-a00f-55b53cd96da0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 44, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 01391fe4-4fec-48e3-ad3a-f8c0f729a692, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 45, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 9e8fc218-d3cb-4299-8234-1a68a1afc73e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 46, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 9395f789-c77e-4664-aa34-4ea116f12a31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 25, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 4b2cea5c-9d6f-4a9b-b383-7e4703a269cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 47, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 70685d0e-9e9a-4c89-a6f9-4a77a6ba9db9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 48, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: ef677166-1fb3-46c0-91a7-91a9efea47c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 26, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 2c8ad959-c1eb-4a80-9812-a79a793c11a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 49, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 9a28d270-afab-488a-ac06-8bf7a271c524, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 50, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 61028964-a315-4b75-948f-270f9b251fc3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 27, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: f50c3513-f4f3-4fec-a698-1f420abf9865, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 28, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: aa05b363-a8dc-4117-aa3e-b8a0f6a6e6b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 51, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 83947a94-8d80-49b8-8491-3832888b629f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 52, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 37071526-6bec-4a44-abf6-de43021aa83d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 53, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 398c2b08-7492-43d7-abe7-9cc20a1f8de8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 54, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 2afcc111-4b9c-4b5f-8c1a-6444bc5444c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 55, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 2283023b-722d-4f47-9243-ec4037e28153, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 56, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 902c151a-809d-4e90-88cd-c1d426cc36a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 57, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: cb1e8c75-2f46-4584-a433-89d15466c5d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 58, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: 3edbd005-c81d-474d-8220-9eec5063c24b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 59, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: a0dd87d6-887a-4d87-81e1-f9429c0b42a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 29, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: 0e719952-cd7e-4a04-8775-6553b48f1943, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 30, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: c33e19c5-a7b9-47c6-b9f2-1d514e7ecd1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 60, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: 0179e955-8096-461f-8bf7-f0fecc8777ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 31, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: e88cd796-9d89-4f53-a7ff-c4b8db7bc11a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 61, server: ffiw.owwoedu.com, port: 59504, type: vmess, uuid: 9dbeae54-4e7c-4de5-af86-797b89dc163c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 62, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: 9e6da970-fcfc-486b-b117-f7a31751e3c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 63, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: a44eb76f-df0a-4075-a431-9401c02e5993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 64, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: b7e5e77e-08fb-4818-b8ba-3554496d4eb9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 65, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: f0d90b29-5caa-4b4b-a605-07de1b4eba73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 66, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: f26599d1-83c7-4515-af40-8918efd66d9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 32, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: 61f75093-2e52-47a4-b656-948f437e5b93, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 67, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: 0888f649-4349-4364-a602-928e5c543c6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 5, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048"}, udp: true}
+  - {name: 🇺🇸 美国 35, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
+  - {name: 中国 68, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: ce7bc463-4c80-47aa-8cfd-9a58483674a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 69, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 8ac6a8c1-5006-4eaf-aa0d-3ed8646ea7d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 33, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 4e0a63c0-940b-4063-8e77-1daa00e751cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 70, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 20dae97d-e31d-4a9f-be7f-b83ec49c297c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 71, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 4663abd4-d232-473c-ba69-6ad09c1d0e55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 36, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 6, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
+  - {name: 🇺🇸 美国 37, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 38, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: wwzVn2ZnHfqYa6l8EWh3eY, udp: true}
+  - {name: 🇺🇸 美国 39, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
+  - {name: 🇭🇰 香港 34, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 2f4814bf-7ef4-461b-b506-a4cb5db73af0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 72, server: cees.owwoedu.com, port: 49310, type: vmess, uuid: 0196af45-e75f-4bcb-8110-2a28bcde37e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 73, server: cees.owwoedu.com, port: 49310, type: vmess, uuid: 313355c5-6511-496b-86dd-19926acf5680, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 19, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 74, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 13436767-c100-4250-8166-b35474d51a83, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 35, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: c2d09562-c614-4a45-921a-3c35ec4ff786, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 75, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 99f021b3-5688-4f88-a2a3-57efbf64a249, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 36, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: a3c0b648-5c03-4f87-b412-01ae68694dae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 37, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: d98a10b2-1380-40c1-a197-ec84118082fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 38, server: cees.owwoedu.com, port: 49310, type: vmess, uuid: f655152a-45e1-40d3-b1ea-cabf3c35e909, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 76, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 5260eced-d5c4-442f-a5f0-5f5fde3933a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 39, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 91a6c728-6756-4804-83e8-0c0fd5cd91b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 40, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 7a13b43d-a65f-4d9b-9727-760d950f4926, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 77, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: bca399f0-e0b2-49b7-9c7d-8426b03e8f50, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 78, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 4183e774-d2a0-441c-8773-909f6624ad96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 79, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: b81094ad-191c-4cad-9618-13434aa9bfbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 80, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 995bd272-bd88-407c-a0d5-f3c72e4de860, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 81, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: b254655a-29b5-41f4-8c0b-1b8df62b10fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 41, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: f756b502-0cd9-41c8-b1ad-7f3e609468ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 42, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: dade82f3-363e-4e10-af78-6b7319f05e47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 43, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 5c1b1113-93ec-4dff-8cd4-100b77ac9066, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 44, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 7b2fa7a2-7b8f-4745-af5c-1889be13253f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 82, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 97c5f8dc-b22f-4f53-b1a1-17a270a9b54b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 45, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: 7e0086fa-1d26-45f7-b40a-75919b41068a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 83, server: cees.owwoedu.com, port: 49303, type: vmess, uuid: 871e8d40-937b-4a6a-958b-4ba942d23000, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 46, server: cees.owwoedu.com, port: 49312, type: vmess, uuid: 305f0802-746e-475b-943b-b1aa154844e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 47, server: ffiw.owwoedu.com, port: 59503, type: vmess, uuid: 7e2cb113-2dce-488e-83ec-5fc774ff0e04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -83,74 +208,199 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇸🇬 新加坡
-      - 🇩🇪 德国
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 4
-      - 🇩🇪 德国 3
       - 🇺🇸 美国
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇫🇷 法国
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
       - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
       - 🇺🇸 美国 7
-      - 🇫🇷 法国 4
+      - 🇫🇷 法国
       - 🇺🇸 美国 8
+      - 🇫🇷 法国 2
       - 🇺🇸 美国 9
       - 🇺🇸 美国 10
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇬🇧 英国
-      - 🇩🇪 德国 6
-      - 🇳🇱 荷兰
-      - 🇨🇳 台湾
-      - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 🇨🇳 台湾 7
-      - 🇨🇳 台湾 8
-      - 🇨🇳 台湾 9
-      - 🇨🇳 台湾 10
-      - 🇨🇳 台湾 11
-      - 🇨🇳 台湾 12
-      - 🇨🇳 台湾 13
-      - 🇨🇳 台湾 14
-      - 🇨🇳 台湾 15
-      - 🇳🇱 荷兰 2
-      - 🇨🇳 台湾 16
-      - 🇨🇳 台湾 17
-      - 🇨🇳 台湾 18
-      - 🇨🇳 台湾 19
-      - 🇨🇳 台湾 20
-      - 🇨🇳 台湾 21
-      - 🇨🇳 台湾 22
-      - 🇨🇳 台湾 23
       - 🇺🇸 美国 11
+      - 🇫🇷 法国 3
+      - 🇫🇷 法国 4
       - 🇺🇸 美国 12
-      - 🇭🇰 香港 5
       - 🇺🇸 美国 13
       - 🇺🇸 美国 14
-      - 🇨🇳 台湾 24
-      - 🇫🇷 法国 5
-      - 🇳🇱 荷兰 3
-      - 🇨🇳 台湾 25
-      - 🇨🇳 台湾 26
-      - 🇨🇳 台湾 27
-      - 🇨🇳 台湾 28
-      - 🇨🇳 台湾 29
-      - 🇨🇳 台湾 30
-      - 🇨🇳 台湾 31
-      - 🇨🇳 台湾 32
-      - 🇨🇳 台湾 33
-      - 🇫🇷 法国 6
       - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 19
+      - 中国
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇬🇧 英国
+      - 🇺🇸 美国 22
+      - 🇺🇸 美国 23
+      - 🇺🇸 美国 24
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇺🇸 美国 25
+      - 🇬🇧 英国 4
+      - 🇺🇸 美国 26
+      - 🇺🇸 美国 27
+      - 🇬🇧 英国 5
+      - 🇺🇸 美国 28
+      - 🇬🇧 英国 6
+      - 🇬🇧 英国 7
+      - 🇬🇧 英国 8
+      - 🇬🇧 英国 9
+      - 🇺🇸 美国 29
+      - 🇬🇧 英国 10
+      - 🇺🇸 美国 30
+      - 🇬🇧 英国 11
+      - 中国 2
+      - 🇺🇸 美国 31
+      - 🇬🇧 英国 12
+      - 🇬🇧 英国 13
+      - 🇬🇧 英国 14
+      - 🇬🇧 英国 15
+      - 中国 3
+      - 🇩🇪 德国
+      - 中国 4
+      - 中国 5
+      - 🇬🇧 英国 16
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 中国 6
+      - 中国 7
+      - 中国 8
+      - 中国 9
+      - 中国 10
+      - 🇭🇰 香港 5
+      - 🇭🇰 香港 6
+      - 中国 11
+      - 🇭🇰 香港 7
+      - 中国 12
+      - 中国 13
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇬🇧 英国 17
+      - 中国 14
+      - 🇺🇸 美国 32
+      - 中国 15
+      - 🇭🇰 香港 10
+      - 中国 16
+      - 🇺🇸 美国 33
+      - 中国 17
+      - 🇭🇰 香港 11
+      - 中国 18
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 34
+      - 🇬🇧 英国 18
+      - 中国 19
+      - 中国 20
+      - 中国 21
+      - 🇭🇰 香港 13
+      - 🇭🇰 香港 14
+      - 中国 22
+      - 🇭🇰 香港 15
+      - 中国 23
+      - 中国 24
+      - 中国 25
+      - 中国 26
+      - 🇭🇰 香港 16
+      - 中国 27
+      - 中国 28
+      - 中国 29
+      - 🇭🇰 香港 17
+      - 中国 30
+      - 🇭🇰 香港 18
+      - 🇭🇰 香港 19
+      - 🇭🇰 香港 20
+      - 中国 31
+      - 🇭🇰 香港 21
+      - 🇭🇰 香港 22
+      - 中国 32
+      - 中国 33
+      - 中国 34
+      - 中国 35
+      - 🇭🇰 香港 23
+      - 中国 36
+      - 中国 37
+      - 中国 38
+      - 中国 39
+      - 🇭🇰 香港 24
+      - 中国 40
+      - 中国 41
+      - 中国 42
+      - 中国 43
+      - 中国 44
+      - 中国 45
+      - 中国 46
+      - 🇭🇰 香港 25
+      - 中国 47
+      - 中国 48
+      - 🇭🇰 香港 26
+      - 中国 49
+      - 中国 50
+      - 🇭🇰 香港 27
+      - 🇭🇰 香港 28
+      - 中国 51
+      - 中国 52
+      - 中国 53
+      - 中国 54
+      - 中国 55
+      - 中国 56
+      - 中国 57
+      - 中国 58
+      - 中国 59
+      - 🇭🇰 香港 29
+      - 🇭🇰 香港 30
+      - 中国 60
+      - 🇭🇰 香港 31
+      - 中国 61
+      - 中国 62
+      - 中国 63
+      - 中国 64
+      - 中国 65
+      - 中国 66
+      - 🇭🇰 香港 32
+      - 中国 67
+      - 🇫🇷 法国 5
+      - 🇺🇸 美国 35
+      - 中国 68
+      - 中国 69
+      - 🇭🇰 香港 33
+      - 中国 70
+      - 中国 71
+      - 🇺🇸 美国 36
+      - 🇫🇷 法国 6
+      - 🇺🇸 美国 37
+      - 🇺🇸 美国 38
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 34
+      - 中国 72
+      - 中国 73
+      - 🇬🇧 英国 19
+      - 中国 74
+      - 🇭🇰 香港 35
+      - 中国 75
+      - 🇭🇰 香港 36
+      - 🇭🇰 香港 37
+      - 🇭🇰 香港 38
+      - 中国 76
+      - 🇭🇰 香港 39
+      - 🇭🇰 香港 40
+      - 中国 77
+      - 中国 78
+      - 中国 79
+      - 中国 80
+      - 中国 81
+      - 🇭🇰 香港 41
+      - 🇭🇰 香港 42
+      - 🇭🇰 香港 43
+      - 🇭🇰 香港 44
+      - 中国 82
+      - 🇭🇰 香港 45
+      - 中国 83
+      - 🇭🇰 香港 46
+      - 🇭🇰 香港 47
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -159,74 +409,199 @@ proxy-groups:
     proxies:
       - 🇭🇰 香港
       - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇸🇬 新加坡
-      - 🇩🇪 德国
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 4
-      - 🇩🇪 德国 3
       - 🇺🇸 美国
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇫🇷 法国
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
       - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
       - 🇺🇸 美国 7
-      - 🇫🇷 法国 4
+      - 🇫🇷 法国
       - 🇺🇸 美国 8
+      - 🇫🇷 法国 2
       - 🇺🇸 美国 9
       - 🇺🇸 美国 10
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇬🇧 英国
-      - 🇩🇪 德国 6
-      - 🇳🇱 荷兰
-      - 🇨🇳 台湾
-      - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 🇨🇳 台湾 7
-      - 🇨🇳 台湾 8
-      - 🇨🇳 台湾 9
-      - 🇨🇳 台湾 10
-      - 🇨🇳 台湾 11
-      - 🇨🇳 台湾 12
-      - 🇨🇳 台湾 13
-      - 🇨🇳 台湾 14
-      - 🇨🇳 台湾 15
-      - 🇳🇱 荷兰 2
-      - 🇨🇳 台湾 16
-      - 🇨🇳 台湾 17
-      - 🇨🇳 台湾 18
-      - 🇨🇳 台湾 19
-      - 🇨🇳 台湾 20
-      - 🇨🇳 台湾 21
-      - 🇨🇳 台湾 22
-      - 🇨🇳 台湾 23
       - 🇺🇸 美国 11
+      - 🇫🇷 法国 3
+      - 🇫🇷 法国 4
       - 🇺🇸 美国 12
-      - 🇭🇰 香港 5
       - 🇺🇸 美国 13
       - 🇺🇸 美国 14
-      - 🇨🇳 台湾 24
-      - 🇫🇷 法国 5
-      - 🇳🇱 荷兰 3
-      - 🇨🇳 台湾 25
-      - 🇨🇳 台湾 26
-      - 🇨🇳 台湾 27
-      - 🇨🇳 台湾 28
-      - 🇨🇳 台湾 29
-      - 🇨🇳 台湾 30
-      - 🇨🇳 台湾 31
-      - 🇨🇳 台湾 32
-      - 🇨🇳 台湾 33
-      - 🇫🇷 法国 6
       - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 19
+      - 中国
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇬🇧 英国
+      - 🇺🇸 美国 22
+      - 🇺🇸 美国 23
+      - 🇺🇸 美国 24
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇺🇸 美国 25
+      - 🇬🇧 英国 4
+      - 🇺🇸 美国 26
+      - 🇺🇸 美国 27
+      - 🇬🇧 英国 5
+      - 🇺🇸 美国 28
+      - 🇬🇧 英国 6
+      - 🇬🇧 英国 7
+      - 🇬🇧 英国 8
+      - 🇬🇧 英国 9
+      - 🇺🇸 美国 29
+      - 🇬🇧 英国 10
+      - 🇺🇸 美国 30
+      - 🇬🇧 英国 11
+      - 中国 2
+      - 🇺🇸 美国 31
+      - 🇬🇧 英国 12
+      - 🇬🇧 英国 13
+      - 🇬🇧 英国 14
+      - 🇬🇧 英国 15
+      - 中国 3
+      - 🇩🇪 德国
+      - 中国 4
+      - 中国 5
+      - 🇬🇧 英国 16
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 中国 6
+      - 中国 7
+      - 中国 8
+      - 中国 9
+      - 中国 10
+      - 🇭🇰 香港 5
+      - 🇭🇰 香港 6
+      - 中国 11
+      - 🇭🇰 香港 7
+      - 中国 12
+      - 中国 13
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇬🇧 英国 17
+      - 中国 14
+      - 🇺🇸 美国 32
+      - 中国 15
+      - 🇭🇰 香港 10
+      - 中国 16
+      - 🇺🇸 美国 33
+      - 中国 17
+      - 🇭🇰 香港 11
+      - 中国 18
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 34
+      - 🇬🇧 英国 18
+      - 中国 19
+      - 中国 20
+      - 中国 21
+      - 🇭🇰 香港 13
+      - 🇭🇰 香港 14
+      - 中国 22
+      - 🇭🇰 香港 15
+      - 中国 23
+      - 中国 24
+      - 中国 25
+      - 中国 26
+      - 🇭🇰 香港 16
+      - 中国 27
+      - 中国 28
+      - 中国 29
+      - 🇭🇰 香港 17
+      - 中国 30
+      - 🇭🇰 香港 18
+      - 🇭🇰 香港 19
+      - 🇭🇰 香港 20
+      - 中国 31
+      - 🇭🇰 香港 21
+      - 🇭🇰 香港 22
+      - 中国 32
+      - 中国 33
+      - 中国 34
+      - 中国 35
+      - 🇭🇰 香港 23
+      - 中国 36
+      - 中国 37
+      - 中国 38
+      - 中国 39
+      - 🇭🇰 香港 24
+      - 中国 40
+      - 中国 41
+      - 中国 42
+      - 中国 43
+      - 中国 44
+      - 中国 45
+      - 中国 46
+      - 🇭🇰 香港 25
+      - 中国 47
+      - 中国 48
+      - 🇭🇰 香港 26
+      - 中国 49
+      - 中国 50
+      - 🇭🇰 香港 27
+      - 🇭🇰 香港 28
+      - 中国 51
+      - 中国 52
+      - 中国 53
+      - 中国 54
+      - 中国 55
+      - 中国 56
+      - 中国 57
+      - 中国 58
+      - 中国 59
+      - 🇭🇰 香港 29
+      - 🇭🇰 香港 30
+      - 中国 60
+      - 🇭🇰 香港 31
+      - 中国 61
+      - 中国 62
+      - 中国 63
+      - 中国 64
+      - 中国 65
+      - 中国 66
+      - 🇭🇰 香港 32
+      - 中国 67
+      - 🇫🇷 法国 5
+      - 🇺🇸 美国 35
+      - 中国 68
+      - 中国 69
+      - 🇭🇰 香港 33
+      - 中国 70
+      - 中国 71
+      - 🇺🇸 美国 36
+      - 🇫🇷 法国 6
+      - 🇺🇸 美国 37
+      - 🇺🇸 美国 38
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 34
+      - 中国 72
+      - 中国 73
+      - 🇬🇧 英国 19
+      - 中国 74
+      - 🇭🇰 香港 35
+      - 中国 75
+      - 🇭🇰 香港 36
+      - 🇭🇰 香港 37
+      - 🇭🇰 香港 38
+      - 中国 76
+      - 🇭🇰 香港 39
+      - 🇭🇰 香港 40
+      - 中国 77
+      - 中国 78
+      - 中国 79
+      - 中国 80
+      - 中国 81
+      - 🇭🇰 香港 41
+      - 🇭🇰 香港 42
+      - 🇭🇰 香港 43
+      - 🇭🇰 香港 44
+      - 中国 82
+      - 🇭🇰 香港 45
+      - 中国 83
+      - 🇭🇰 香港 46
+      - 🇭🇰 香港 47
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -235,74 +610,199 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰 香港
       - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇸🇬 新加坡
-      - 🇩🇪 德国
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 4
-      - 🇩🇪 德国 3
       - 🇺🇸 美国
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇫🇷 法国
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
       - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
       - 🇺🇸 美国 7
-      - 🇫🇷 法国 4
+      - 🇫🇷 法国
       - 🇺🇸 美国 8
+      - 🇫🇷 法国 2
       - 🇺🇸 美国 9
       - 🇺🇸 美国 10
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇬🇧 英国
-      - 🇩🇪 德国 6
-      - 🇳🇱 荷兰
-      - 🇨🇳 台湾
-      - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 🇨🇳 台湾 7
-      - 🇨🇳 台湾 8
-      - 🇨🇳 台湾 9
-      - 🇨🇳 台湾 10
-      - 🇨🇳 台湾 11
-      - 🇨🇳 台湾 12
-      - 🇨🇳 台湾 13
-      - 🇨🇳 台湾 14
-      - 🇨🇳 台湾 15
-      - 🇳🇱 荷兰 2
-      - 🇨🇳 台湾 16
-      - 🇨🇳 台湾 17
-      - 🇨🇳 台湾 18
-      - 🇨🇳 台湾 19
-      - 🇨🇳 台湾 20
-      - 🇨🇳 台湾 21
-      - 🇨🇳 台湾 22
-      - 🇨🇳 台湾 23
       - 🇺🇸 美国 11
+      - 🇫🇷 法国 3
+      - 🇫🇷 法国 4
       - 🇺🇸 美国 12
-      - 🇭🇰 香港 5
       - 🇺🇸 美国 13
       - 🇺🇸 美国 14
-      - 🇨🇳 台湾 24
-      - 🇫🇷 法国 5
-      - 🇳🇱 荷兰 3
-      - 🇨🇳 台湾 25
-      - 🇨🇳 台湾 26
-      - 🇨🇳 台湾 27
-      - 🇨🇳 台湾 28
-      - 🇨🇳 台湾 29
-      - 🇨🇳 台湾 30
-      - 🇨🇳 台湾 31
-      - 🇨🇳 台湾 32
-      - 🇨🇳 台湾 33
-      - 🇫🇷 法国 6
       - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 19
+      - 中国
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇬🇧 英国
+      - 🇺🇸 美国 22
+      - 🇺🇸 美国 23
+      - 🇺🇸 美国 24
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇺🇸 美国 25
+      - 🇬🇧 英国 4
+      - 🇺🇸 美国 26
+      - 🇺🇸 美国 27
+      - 🇬🇧 英国 5
+      - 🇺🇸 美国 28
+      - 🇬🇧 英国 6
+      - 🇬🇧 英国 7
+      - 🇬🇧 英国 8
+      - 🇬🇧 英国 9
+      - 🇺🇸 美国 29
+      - 🇬🇧 英国 10
+      - 🇺🇸 美国 30
+      - 🇬🇧 英国 11
+      - 中国 2
+      - 🇺🇸 美国 31
+      - 🇬🇧 英国 12
+      - 🇬🇧 英国 13
+      - 🇬🇧 英国 14
+      - 🇬🇧 英国 15
+      - 中国 3
+      - 🇩🇪 德国
+      - 中国 4
+      - 中国 5
+      - 🇬🇧 英国 16
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 中国 6
+      - 中国 7
+      - 中国 8
+      - 中国 9
+      - 中国 10
+      - 🇭🇰 香港 5
+      - 🇭🇰 香港 6
+      - 中国 11
+      - 🇭🇰 香港 7
+      - 中国 12
+      - 中国 13
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇬🇧 英国 17
+      - 中国 14
+      - 🇺🇸 美国 32
+      - 中国 15
+      - 🇭🇰 香港 10
+      - 中国 16
+      - 🇺🇸 美国 33
+      - 中国 17
+      - 🇭🇰 香港 11
+      - 中国 18
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 34
+      - 🇬🇧 英国 18
+      - 中国 19
+      - 中国 20
+      - 中国 21
+      - 🇭🇰 香港 13
+      - 🇭🇰 香港 14
+      - 中国 22
+      - 🇭🇰 香港 15
+      - 中国 23
+      - 中国 24
+      - 中国 25
+      - 中国 26
+      - 🇭🇰 香港 16
+      - 中国 27
+      - 中国 28
+      - 中国 29
+      - 🇭🇰 香港 17
+      - 中国 30
+      - 🇭🇰 香港 18
+      - 🇭🇰 香港 19
+      - 🇭🇰 香港 20
+      - 中国 31
+      - 🇭🇰 香港 21
+      - 🇭🇰 香港 22
+      - 中国 32
+      - 中国 33
+      - 中国 34
+      - 中国 35
+      - 🇭🇰 香港 23
+      - 中国 36
+      - 中国 37
+      - 中国 38
+      - 中国 39
+      - 🇭🇰 香港 24
+      - 中国 40
+      - 中国 41
+      - 中国 42
+      - 中国 43
+      - 中国 44
+      - 中国 45
+      - 中国 46
+      - 🇭🇰 香港 25
+      - 中国 47
+      - 中国 48
+      - 🇭🇰 香港 26
+      - 中国 49
+      - 中国 50
+      - 🇭🇰 香港 27
+      - 🇭🇰 香港 28
+      - 中国 51
+      - 中国 52
+      - 中国 53
+      - 中国 54
+      - 中国 55
+      - 中国 56
+      - 中国 57
+      - 中国 58
+      - 中国 59
+      - 🇭🇰 香港 29
+      - 🇭🇰 香港 30
+      - 中国 60
+      - 🇭🇰 香港 31
+      - 中国 61
+      - 中国 62
+      - 中国 63
+      - 中国 64
+      - 中国 65
+      - 中国 66
+      - 🇭🇰 香港 32
+      - 中国 67
+      - 🇫🇷 法国 5
+      - 🇺🇸 美国 35
+      - 中国 68
+      - 中国 69
+      - 🇭🇰 香港 33
+      - 中国 70
+      - 中国 71
+      - 🇺🇸 美国 36
+      - 🇫🇷 法国 6
+      - 🇺🇸 美国 37
+      - 🇺🇸 美国 38
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 34
+      - 中国 72
+      - 中国 73
+      - 🇬🇧 英国 19
+      - 中国 74
+      - 🇭🇰 香港 35
+      - 中国 75
+      - 🇭🇰 香港 36
+      - 🇭🇰 香港 37
+      - 🇭🇰 香港 38
+      - 中国 76
+      - 🇭🇰 香港 39
+      - 🇭🇰 香港 40
+      - 中国 77
+      - 中国 78
+      - 中国 79
+      - 中国 80
+      - 中国 81
+      - 🇭🇰 香港 41
+      - 🇭🇰 香港 42
+      - 🇭🇰 香港 43
+      - 🇭🇰 香港 44
+      - 中国 82
+      - 🇭🇰 香港 45
+      - 中国 83
+      - 🇭🇰 香港 46
+      - 🇭🇰 香港 47
   - name: 📲 电报信息
     type: select
     proxies:
@@ -310,74 +810,199 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰 香港
       - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇸🇬 新加坡
-      - 🇩🇪 德国
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 4
-      - 🇩🇪 德国 3
       - 🇺🇸 美国
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇫🇷 法国
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
       - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
       - 🇺🇸 美国 7
-      - 🇫🇷 法国 4
+      - 🇫🇷 法国
       - 🇺🇸 美国 8
+      - 🇫🇷 法国 2
       - 🇺🇸 美国 9
       - 🇺🇸 美国 10
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇬🇧 英国
-      - 🇩🇪 德国 6
-      - 🇳🇱 荷兰
-      - 🇨🇳 台湾
-      - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 🇨🇳 台湾 7
-      - 🇨🇳 台湾 8
-      - 🇨🇳 台湾 9
-      - 🇨🇳 台湾 10
-      - 🇨🇳 台湾 11
-      - 🇨🇳 台湾 12
-      - 🇨🇳 台湾 13
-      - 🇨🇳 台湾 14
-      - 🇨🇳 台湾 15
-      - 🇳🇱 荷兰 2
-      - 🇨🇳 台湾 16
-      - 🇨🇳 台湾 17
-      - 🇨🇳 台湾 18
-      - 🇨🇳 台湾 19
-      - 🇨🇳 台湾 20
-      - 🇨🇳 台湾 21
-      - 🇨🇳 台湾 22
-      - 🇨🇳 台湾 23
       - 🇺🇸 美国 11
+      - 🇫🇷 法国 3
+      - 🇫🇷 法国 4
       - 🇺🇸 美国 12
-      - 🇭🇰 香港 5
       - 🇺🇸 美国 13
       - 🇺🇸 美国 14
-      - 🇨🇳 台湾 24
-      - 🇫🇷 法国 5
-      - 🇳🇱 荷兰 3
-      - 🇨🇳 台湾 25
-      - 🇨🇳 台湾 26
-      - 🇨🇳 台湾 27
-      - 🇨🇳 台湾 28
-      - 🇨🇳 台湾 29
-      - 🇨🇳 台湾 30
-      - 🇨🇳 台湾 31
-      - 🇨🇳 台湾 32
-      - 🇨🇳 台湾 33
-      - 🇫🇷 法国 6
       - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 19
+      - 中国
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇬🇧 英国
+      - 🇺🇸 美国 22
+      - 🇺🇸 美国 23
+      - 🇺🇸 美国 24
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇺🇸 美国 25
+      - 🇬🇧 英国 4
+      - 🇺🇸 美国 26
+      - 🇺🇸 美国 27
+      - 🇬🇧 英国 5
+      - 🇺🇸 美国 28
+      - 🇬🇧 英国 6
+      - 🇬🇧 英国 7
+      - 🇬🇧 英国 8
+      - 🇬🇧 英国 9
+      - 🇺🇸 美国 29
+      - 🇬🇧 英国 10
+      - 🇺🇸 美国 30
+      - 🇬🇧 英国 11
+      - 中国 2
+      - 🇺🇸 美国 31
+      - 🇬🇧 英国 12
+      - 🇬🇧 英国 13
+      - 🇬🇧 英国 14
+      - 🇬🇧 英国 15
+      - 中国 3
+      - 🇩🇪 德国
+      - 中国 4
+      - 中国 5
+      - 🇬🇧 英国 16
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 中国 6
+      - 中国 7
+      - 中国 8
+      - 中国 9
+      - 中国 10
+      - 🇭🇰 香港 5
+      - 🇭🇰 香港 6
+      - 中国 11
+      - 🇭🇰 香港 7
+      - 中国 12
+      - 中国 13
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇬🇧 英国 17
+      - 中国 14
+      - 🇺🇸 美国 32
+      - 中国 15
+      - 🇭🇰 香港 10
+      - 中国 16
+      - 🇺🇸 美国 33
+      - 中国 17
+      - 🇭🇰 香港 11
+      - 中国 18
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 34
+      - 🇬🇧 英国 18
+      - 中国 19
+      - 中国 20
+      - 中国 21
+      - 🇭🇰 香港 13
+      - 🇭🇰 香港 14
+      - 中国 22
+      - 🇭🇰 香港 15
+      - 中国 23
+      - 中国 24
+      - 中国 25
+      - 中国 26
+      - 🇭🇰 香港 16
+      - 中国 27
+      - 中国 28
+      - 中国 29
+      - 🇭🇰 香港 17
+      - 中国 30
+      - 🇭🇰 香港 18
+      - 🇭🇰 香港 19
+      - 🇭🇰 香港 20
+      - 中国 31
+      - 🇭🇰 香港 21
+      - 🇭🇰 香港 22
+      - 中国 32
+      - 中国 33
+      - 中国 34
+      - 中国 35
+      - 🇭🇰 香港 23
+      - 中国 36
+      - 中国 37
+      - 中国 38
+      - 中国 39
+      - 🇭🇰 香港 24
+      - 中国 40
+      - 中国 41
+      - 中国 42
+      - 中国 43
+      - 中国 44
+      - 中国 45
+      - 中国 46
+      - 🇭🇰 香港 25
+      - 中国 47
+      - 中国 48
+      - 🇭🇰 香港 26
+      - 中国 49
+      - 中国 50
+      - 🇭🇰 香港 27
+      - 🇭🇰 香港 28
+      - 中国 51
+      - 中国 52
+      - 中国 53
+      - 中国 54
+      - 中国 55
+      - 中国 56
+      - 中国 57
+      - 中国 58
+      - 中国 59
+      - 🇭🇰 香港 29
+      - 🇭🇰 香港 30
+      - 中国 60
+      - 🇭🇰 香港 31
+      - 中国 61
+      - 中国 62
+      - 中国 63
+      - 中国 64
+      - 中国 65
+      - 中国 66
+      - 🇭🇰 香港 32
+      - 中国 67
+      - 🇫🇷 法国 5
+      - 🇺🇸 美国 35
+      - 中国 68
+      - 中国 69
+      - 🇭🇰 香港 33
+      - 中国 70
+      - 中国 71
+      - 🇺🇸 美国 36
+      - 🇫🇷 法国 6
+      - 🇺🇸 美国 37
+      - 🇺🇸 美国 38
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 34
+      - 中国 72
+      - 中国 73
+      - 🇬🇧 英国 19
+      - 中国 74
+      - 🇭🇰 香港 35
+      - 中国 75
+      - 🇭🇰 香港 36
+      - 🇭🇰 香港 37
+      - 🇭🇰 香港 38
+      - 中国 76
+      - 🇭🇰 香港 39
+      - 🇭🇰 香港 40
+      - 中国 77
+      - 中国 78
+      - 中国 79
+      - 中国 80
+      - 中国 81
+      - 🇭🇰 香港 41
+      - 🇭🇰 香港 42
+      - 🇭🇰 香港 43
+      - 🇭🇰 香港 44
+      - 中国 82
+      - 🇭🇰 香港 45
+      - 中国 83
+      - 🇭🇰 香港 46
+      - 🇭🇰 香港 47
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -385,74 +1010,199 @@ proxy-groups:
       - 🚀 节点选择
       - 🇭🇰 香港
       - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇸🇬 新加坡
-      - 🇩🇪 德国
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 4
-      - 🇩🇪 德国 3
       - 🇺🇸 美国
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇫🇷 法国
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
       - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
       - 🇺🇸 美国 7
-      - 🇫🇷 法国 4
+      - 🇫🇷 法国
       - 🇺🇸 美国 8
+      - 🇫🇷 法国 2
       - 🇺🇸 美国 9
       - 🇺🇸 美国 10
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇬🇧 英国
-      - 🇩🇪 德国 6
-      - 🇳🇱 荷兰
-      - 🇨🇳 台湾
-      - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 🇨🇳 台湾 7
-      - 🇨🇳 台湾 8
-      - 🇨🇳 台湾 9
-      - 🇨🇳 台湾 10
-      - 🇨🇳 台湾 11
-      - 🇨🇳 台湾 12
-      - 🇨🇳 台湾 13
-      - 🇨🇳 台湾 14
-      - 🇨🇳 台湾 15
-      - 🇳🇱 荷兰 2
-      - 🇨🇳 台湾 16
-      - 🇨🇳 台湾 17
-      - 🇨🇳 台湾 18
-      - 🇨🇳 台湾 19
-      - 🇨🇳 台湾 20
-      - 🇨🇳 台湾 21
-      - 🇨🇳 台湾 22
-      - 🇨🇳 台湾 23
       - 🇺🇸 美国 11
+      - 🇫🇷 法国 3
+      - 🇫🇷 法国 4
       - 🇺🇸 美国 12
-      - 🇭🇰 香港 5
       - 🇺🇸 美国 13
       - 🇺🇸 美国 14
-      - 🇨🇳 台湾 24
-      - 🇫🇷 法国 5
-      - 🇳🇱 荷兰 3
-      - 🇨🇳 台湾 25
-      - 🇨🇳 台湾 26
-      - 🇨🇳 台湾 27
-      - 🇨🇳 台湾 28
-      - 🇨🇳 台湾 29
-      - 🇨🇳 台湾 30
-      - 🇨🇳 台湾 31
-      - 🇨🇳 台湾 32
-      - 🇨🇳 台湾 33
-      - 🇫🇷 法国 6
       - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 19
+      - 中国
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇬🇧 英国
+      - 🇺🇸 美国 22
+      - 🇺🇸 美国 23
+      - 🇺🇸 美国 24
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇺🇸 美国 25
+      - 🇬🇧 英国 4
+      - 🇺🇸 美国 26
+      - 🇺🇸 美国 27
+      - 🇬🇧 英国 5
+      - 🇺🇸 美国 28
+      - 🇬🇧 英国 6
+      - 🇬🇧 英国 7
+      - 🇬🇧 英国 8
+      - 🇬🇧 英国 9
+      - 🇺🇸 美国 29
+      - 🇬🇧 英国 10
+      - 🇺🇸 美国 30
+      - 🇬🇧 英国 11
+      - 中国 2
+      - 🇺🇸 美国 31
+      - 🇬🇧 英国 12
+      - 🇬🇧 英国 13
+      - 🇬🇧 英国 14
+      - 🇬🇧 英国 15
+      - 中国 3
+      - 🇩🇪 德国
+      - 中国 4
+      - 中国 5
+      - 🇬🇧 英国 16
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 中国 6
+      - 中国 7
+      - 中国 8
+      - 中国 9
+      - 中国 10
+      - 🇭🇰 香港 5
+      - 🇭🇰 香港 6
+      - 中国 11
+      - 🇭🇰 香港 7
+      - 中国 12
+      - 中国 13
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇬🇧 英国 17
+      - 中国 14
+      - 🇺🇸 美国 32
+      - 中国 15
+      - 🇭🇰 香港 10
+      - 中国 16
+      - 🇺🇸 美国 33
+      - 中国 17
+      - 🇭🇰 香港 11
+      - 中国 18
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 34
+      - 🇬🇧 英国 18
+      - 中国 19
+      - 中国 20
+      - 中国 21
+      - 🇭🇰 香港 13
+      - 🇭🇰 香港 14
+      - 中国 22
+      - 🇭🇰 香港 15
+      - 中国 23
+      - 中国 24
+      - 中国 25
+      - 中国 26
+      - 🇭🇰 香港 16
+      - 中国 27
+      - 中国 28
+      - 中国 29
+      - 🇭🇰 香港 17
+      - 中国 30
+      - 🇭🇰 香港 18
+      - 🇭🇰 香港 19
+      - 🇭🇰 香港 20
+      - 中国 31
+      - 🇭🇰 香港 21
+      - 🇭🇰 香港 22
+      - 中国 32
+      - 中国 33
+      - 中国 34
+      - 中国 35
+      - 🇭🇰 香港 23
+      - 中国 36
+      - 中国 37
+      - 中国 38
+      - 中国 39
+      - 🇭🇰 香港 24
+      - 中国 40
+      - 中国 41
+      - 中国 42
+      - 中国 43
+      - 中国 44
+      - 中国 45
+      - 中国 46
+      - 🇭🇰 香港 25
+      - 中国 47
+      - 中国 48
+      - 🇭🇰 香港 26
+      - 中国 49
+      - 中国 50
+      - 🇭🇰 香港 27
+      - 🇭🇰 香港 28
+      - 中国 51
+      - 中国 52
+      - 中国 53
+      - 中国 54
+      - 中国 55
+      - 中国 56
+      - 中国 57
+      - 中国 58
+      - 中国 59
+      - 🇭🇰 香港 29
+      - 🇭🇰 香港 30
+      - 中国 60
+      - 🇭🇰 香港 31
+      - 中国 61
+      - 中国 62
+      - 中国 63
+      - 中国 64
+      - 中国 65
+      - 中国 66
+      - 🇭🇰 香港 32
+      - 中国 67
+      - 🇫🇷 法国 5
+      - 🇺🇸 美国 35
+      - 中国 68
+      - 中国 69
+      - 🇭🇰 香港 33
+      - 中国 70
+      - 中国 71
+      - 🇺🇸 美国 36
+      - 🇫🇷 法国 6
+      - 🇺🇸 美国 37
+      - 🇺🇸 美国 38
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 34
+      - 中国 72
+      - 中国 73
+      - 🇬🇧 英国 19
+      - 中国 74
+      - 🇭🇰 香港 35
+      - 中国 75
+      - 🇭🇰 香港 36
+      - 🇭🇰 香港 37
+      - 🇭🇰 香港 38
+      - 中国 76
+      - 🇭🇰 香港 39
+      - 🇭🇰 香港 40
+      - 中国 77
+      - 中国 78
+      - 中国 79
+      - 中国 80
+      - 中国 81
+      - 🇭🇰 香港 41
+      - 🇭🇰 香港 42
+      - 🇭🇰 香港 43
+      - 🇭🇰 香港 44
+      - 中国 82
+      - 🇭🇰 香港 45
+      - 中国 83
+      - 🇭🇰 香港 46
+      - 🇭🇰 香港 47
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -460,74 +1210,199 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰 香港
       - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇸🇬 新加坡
-      - 🇩🇪 德国
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 4
-      - 🇩🇪 德国 3
       - 🇺🇸 美国
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇫🇷 法国
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
       - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
       - 🇺🇸 美国 7
-      - 🇫🇷 法国 4
+      - 🇫🇷 法国
       - 🇺🇸 美国 8
+      - 🇫🇷 法国 2
       - 🇺🇸 美国 9
       - 🇺🇸 美国 10
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇬🇧 英国
-      - 🇩🇪 德国 6
-      - 🇳🇱 荷兰
-      - 🇨🇳 台湾
-      - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 🇨🇳 台湾 7
-      - 🇨🇳 台湾 8
-      - 🇨🇳 台湾 9
-      - 🇨🇳 台湾 10
-      - 🇨🇳 台湾 11
-      - 🇨🇳 台湾 12
-      - 🇨🇳 台湾 13
-      - 🇨🇳 台湾 14
-      - 🇨🇳 台湾 15
-      - 🇳🇱 荷兰 2
-      - 🇨🇳 台湾 16
-      - 🇨🇳 台湾 17
-      - 🇨🇳 台湾 18
-      - 🇨🇳 台湾 19
-      - 🇨🇳 台湾 20
-      - 🇨🇳 台湾 21
-      - 🇨🇳 台湾 22
-      - 🇨🇳 台湾 23
       - 🇺🇸 美国 11
+      - 🇫🇷 法国 3
+      - 🇫🇷 法国 4
       - 🇺🇸 美国 12
-      - 🇭🇰 香港 5
       - 🇺🇸 美国 13
       - 🇺🇸 美国 14
-      - 🇨🇳 台湾 24
-      - 🇫🇷 法国 5
-      - 🇳🇱 荷兰 3
-      - 🇨🇳 台湾 25
-      - 🇨🇳 台湾 26
-      - 🇨🇳 台湾 27
-      - 🇨🇳 台湾 28
-      - 🇨🇳 台湾 29
-      - 🇨🇳 台湾 30
-      - 🇨🇳 台湾 31
-      - 🇨🇳 台湾 32
-      - 🇨🇳 台湾 33
-      - 🇫🇷 法国 6
       - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 19
+      - 中国
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇬🇧 英国
+      - 🇺🇸 美国 22
+      - 🇺🇸 美国 23
+      - 🇺🇸 美国 24
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇺🇸 美国 25
+      - 🇬🇧 英国 4
+      - 🇺🇸 美国 26
+      - 🇺🇸 美国 27
+      - 🇬🇧 英国 5
+      - 🇺🇸 美国 28
+      - 🇬🇧 英国 6
+      - 🇬🇧 英国 7
+      - 🇬🇧 英国 8
+      - 🇬🇧 英国 9
+      - 🇺🇸 美国 29
+      - 🇬🇧 英国 10
+      - 🇺🇸 美国 30
+      - 🇬🇧 英国 11
+      - 中国 2
+      - 🇺🇸 美国 31
+      - 🇬🇧 英国 12
+      - 🇬🇧 英国 13
+      - 🇬🇧 英国 14
+      - 🇬🇧 英国 15
+      - 中国 3
+      - 🇩🇪 德国
+      - 中国 4
+      - 中国 5
+      - 🇬🇧 英国 16
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 中国 6
+      - 中国 7
+      - 中国 8
+      - 中国 9
+      - 中国 10
+      - 🇭🇰 香港 5
+      - 🇭🇰 香港 6
+      - 中国 11
+      - 🇭🇰 香港 7
+      - 中国 12
+      - 中国 13
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇬🇧 英国 17
+      - 中国 14
+      - 🇺🇸 美国 32
+      - 中国 15
+      - 🇭🇰 香港 10
+      - 中国 16
+      - 🇺🇸 美国 33
+      - 中国 17
+      - 🇭🇰 香港 11
+      - 中国 18
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 34
+      - 🇬🇧 英国 18
+      - 中国 19
+      - 中国 20
+      - 中国 21
+      - 🇭🇰 香港 13
+      - 🇭🇰 香港 14
+      - 中国 22
+      - 🇭🇰 香港 15
+      - 中国 23
+      - 中国 24
+      - 中国 25
+      - 中国 26
+      - 🇭🇰 香港 16
+      - 中国 27
+      - 中国 28
+      - 中国 29
+      - 🇭🇰 香港 17
+      - 中国 30
+      - 🇭🇰 香港 18
+      - 🇭🇰 香港 19
+      - 🇭🇰 香港 20
+      - 中国 31
+      - 🇭🇰 香港 21
+      - 🇭🇰 香港 22
+      - 中国 32
+      - 中国 33
+      - 中国 34
+      - 中国 35
+      - 🇭🇰 香港 23
+      - 中国 36
+      - 中国 37
+      - 中国 38
+      - 中国 39
+      - 🇭🇰 香港 24
+      - 中国 40
+      - 中国 41
+      - 中国 42
+      - 中国 43
+      - 中国 44
+      - 中国 45
+      - 中国 46
+      - 🇭🇰 香港 25
+      - 中国 47
+      - 中国 48
+      - 🇭🇰 香港 26
+      - 中国 49
+      - 中国 50
+      - 🇭🇰 香港 27
+      - 🇭🇰 香港 28
+      - 中国 51
+      - 中国 52
+      - 中国 53
+      - 中国 54
+      - 中国 55
+      - 中国 56
+      - 中国 57
+      - 中国 58
+      - 中国 59
+      - 🇭🇰 香港 29
+      - 🇭🇰 香港 30
+      - 中国 60
+      - 🇭🇰 香港 31
+      - 中国 61
+      - 中国 62
+      - 中国 63
+      - 中国 64
+      - 中国 65
+      - 中国 66
+      - 🇭🇰 香港 32
+      - 中国 67
+      - 🇫🇷 法国 5
+      - 🇺🇸 美国 35
+      - 中国 68
+      - 中国 69
+      - 🇭🇰 香港 33
+      - 中国 70
+      - 中国 71
+      - 🇺🇸 美国 36
+      - 🇫🇷 法国 6
+      - 🇺🇸 美国 37
+      - 🇺🇸 美国 38
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 34
+      - 中国 72
+      - 中国 73
+      - 🇬🇧 英国 19
+      - 中国 74
+      - 🇭🇰 香港 35
+      - 中国 75
+      - 🇭🇰 香港 36
+      - 🇭🇰 香港 37
+      - 🇭🇰 香港 38
+      - 中国 76
+      - 🇭🇰 香港 39
+      - 🇭🇰 香港 40
+      - 中国 77
+      - 中国 78
+      - 中国 79
+      - 中国 80
+      - 中国 81
+      - 🇭🇰 香港 41
+      - 🇭🇰 香港 42
+      - 🇭🇰 香港 43
+      - 🇭🇰 香港 44
+      - 中国 82
+      - 🇭🇰 香港 45
+      - 中国 83
+      - 🇭🇰 香港 46
+      - 🇭🇰 香港 47
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -536,74 +1411,199 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇭🇰 香港
       - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇸🇬 新加坡
-      - 🇩🇪 德国
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 4
-      - 🇩🇪 德国 3
       - 🇺🇸 美国
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇫🇷 法国
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
       - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
       - 🇺🇸 美国 7
-      - 🇫🇷 法国 4
+      - 🇫🇷 法国
       - 🇺🇸 美国 8
+      - 🇫🇷 法国 2
       - 🇺🇸 美国 9
       - 🇺🇸 美国 10
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇬🇧 英国
-      - 🇩🇪 德国 6
-      - 🇳🇱 荷兰
-      - 🇨🇳 台湾
-      - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 🇨🇳 台湾 7
-      - 🇨🇳 台湾 8
-      - 🇨🇳 台湾 9
-      - 🇨🇳 台湾 10
-      - 🇨🇳 台湾 11
-      - 🇨🇳 台湾 12
-      - 🇨🇳 台湾 13
-      - 🇨🇳 台湾 14
-      - 🇨🇳 台湾 15
-      - 🇳🇱 荷兰 2
-      - 🇨🇳 台湾 16
-      - 🇨🇳 台湾 17
-      - 🇨🇳 台湾 18
-      - 🇨🇳 台湾 19
-      - 🇨🇳 台湾 20
-      - 🇨🇳 台湾 21
-      - 🇨🇳 台湾 22
-      - 🇨🇳 台湾 23
       - 🇺🇸 美国 11
+      - 🇫🇷 法国 3
+      - 🇫🇷 法国 4
       - 🇺🇸 美国 12
-      - 🇭🇰 香港 5
       - 🇺🇸 美国 13
       - 🇺🇸 美国 14
-      - 🇨🇳 台湾 24
-      - 🇫🇷 法国 5
-      - 🇳🇱 荷兰 3
-      - 🇨🇳 台湾 25
-      - 🇨🇳 台湾 26
-      - 🇨🇳 台湾 27
-      - 🇨🇳 台湾 28
-      - 🇨🇳 台湾 29
-      - 🇨🇳 台湾 30
-      - 🇨🇳 台湾 31
-      - 🇨🇳 台湾 32
-      - 🇨🇳 台湾 33
-      - 🇫🇷 法国 6
       - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 19
+      - 中国
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇬🇧 英国
+      - 🇺🇸 美国 22
+      - 🇺🇸 美国 23
+      - 🇺🇸 美国 24
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇺🇸 美国 25
+      - 🇬🇧 英国 4
+      - 🇺🇸 美国 26
+      - 🇺🇸 美国 27
+      - 🇬🇧 英国 5
+      - 🇺🇸 美国 28
+      - 🇬🇧 英国 6
+      - 🇬🇧 英国 7
+      - 🇬🇧 英国 8
+      - 🇬🇧 英国 9
+      - 🇺🇸 美国 29
+      - 🇬🇧 英国 10
+      - 🇺🇸 美国 30
+      - 🇬🇧 英国 11
+      - 中国 2
+      - 🇺🇸 美国 31
+      - 🇬🇧 英国 12
+      - 🇬🇧 英国 13
+      - 🇬🇧 英国 14
+      - 🇬🇧 英国 15
+      - 中国 3
+      - 🇩🇪 德国
+      - 中国 4
+      - 中国 5
+      - 🇬🇧 英国 16
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 中国 6
+      - 中国 7
+      - 中国 8
+      - 中国 9
+      - 中国 10
+      - 🇭🇰 香港 5
+      - 🇭🇰 香港 6
+      - 中国 11
+      - 🇭🇰 香港 7
+      - 中国 12
+      - 中国 13
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇬🇧 英国 17
+      - 中国 14
+      - 🇺🇸 美国 32
+      - 中国 15
+      - 🇭🇰 香港 10
+      - 中国 16
+      - 🇺🇸 美国 33
+      - 中国 17
+      - 🇭🇰 香港 11
+      - 中国 18
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 34
+      - 🇬🇧 英国 18
+      - 中国 19
+      - 中国 20
+      - 中国 21
+      - 🇭🇰 香港 13
+      - 🇭🇰 香港 14
+      - 中国 22
+      - 🇭🇰 香港 15
+      - 中国 23
+      - 中国 24
+      - 中国 25
+      - 中国 26
+      - 🇭🇰 香港 16
+      - 中国 27
+      - 中国 28
+      - 中国 29
+      - 🇭🇰 香港 17
+      - 中国 30
+      - 🇭🇰 香港 18
+      - 🇭🇰 香港 19
+      - 🇭🇰 香港 20
+      - 中国 31
+      - 🇭🇰 香港 21
+      - 🇭🇰 香港 22
+      - 中国 32
+      - 中国 33
+      - 中国 34
+      - 中国 35
+      - 🇭🇰 香港 23
+      - 中国 36
+      - 中国 37
+      - 中国 38
+      - 中国 39
+      - 🇭🇰 香港 24
+      - 中国 40
+      - 中国 41
+      - 中国 42
+      - 中国 43
+      - 中国 44
+      - 中国 45
+      - 中国 46
+      - 🇭🇰 香港 25
+      - 中国 47
+      - 中国 48
+      - 🇭🇰 香港 26
+      - 中国 49
+      - 中国 50
+      - 🇭🇰 香港 27
+      - 🇭🇰 香港 28
+      - 中国 51
+      - 中国 52
+      - 中国 53
+      - 中国 54
+      - 中国 55
+      - 中国 56
+      - 中国 57
+      - 中国 58
+      - 中国 59
+      - 🇭🇰 香港 29
+      - 🇭🇰 香港 30
+      - 中国 60
+      - 🇭🇰 香港 31
+      - 中国 61
+      - 中国 62
+      - 中国 63
+      - 中国 64
+      - 中国 65
+      - 中国 66
+      - 🇭🇰 香港 32
+      - 中国 67
+      - 🇫🇷 法国 5
+      - 🇺🇸 美国 35
+      - 中国 68
+      - 中国 69
+      - 🇭🇰 香港 33
+      - 中国 70
+      - 中国 71
+      - 🇺🇸 美国 36
+      - 🇫🇷 法国 6
+      - 🇺🇸 美国 37
+      - 🇺🇸 美国 38
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 34
+      - 中国 72
+      - 中国 73
+      - 🇬🇧 英国 19
+      - 中国 74
+      - 🇭🇰 香港 35
+      - 中国 75
+      - 🇭🇰 香港 36
+      - 🇭🇰 香港 37
+      - 🇭🇰 香港 38
+      - 中国 76
+      - 🇭🇰 香港 39
+      - 🇭🇰 香港 40
+      - 中国 77
+      - 中国 78
+      - 中国 79
+      - 中国 80
+      - 中国 81
+      - 🇭🇰 香港 41
+      - 🇭🇰 香港 42
+      - 🇭🇰 香港 43
+      - 🇭🇰 香港 44
+      - 中国 82
+      - 🇭🇰 香港 45
+      - 中国 83
+      - 🇭🇰 香港 46
+      - 🇭🇰 香港 47
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -628,74 +1628,199 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇭🇰 香港
       - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇸🇬 新加坡
-      - 🇩🇪 德国
-      - 🇩🇪 德国 2
-      - 🇭🇰 香港 4
-      - 🇩🇪 德国 3
       - 🇺🇸 美国
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
-      - 🇫🇷 法国
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
       - 🇺🇸 美国 4
       - 🇺🇸 美国 5
       - 🇺🇸 美国 6
       - 🇺🇸 美国 7
-      - 🇫🇷 法国 4
+      - 🇫🇷 法国
       - 🇺🇸 美国 8
+      - 🇫🇷 法国 2
       - 🇺🇸 美国 9
       - 🇺🇸 美国 10
-      - 🇩🇪 德国 4
-      - 🇩🇪 德国 5
-      - 🇬🇧 英国
-      - 🇩🇪 德国 6
-      - 🇳🇱 荷兰
-      - 🇨🇳 台湾
-      - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 🇨🇳 台湾 7
-      - 🇨🇳 台湾 8
-      - 🇨🇳 台湾 9
-      - 🇨🇳 台湾 10
-      - 🇨🇳 台湾 11
-      - 🇨🇳 台湾 12
-      - 🇨🇳 台湾 13
-      - 🇨🇳 台湾 14
-      - 🇨🇳 台湾 15
-      - 🇳🇱 荷兰 2
-      - 🇨🇳 台湾 16
-      - 🇨🇳 台湾 17
-      - 🇨🇳 台湾 18
-      - 🇨🇳 台湾 19
-      - 🇨🇳 台湾 20
-      - 🇨🇳 台湾 21
-      - 🇨🇳 台湾 22
-      - 🇨🇳 台湾 23
       - 🇺🇸 美国 11
+      - 🇫🇷 法国 3
+      - 🇫🇷 法国 4
       - 🇺🇸 美国 12
-      - 🇭🇰 香港 5
       - 🇺🇸 美国 13
       - 🇺🇸 美国 14
-      - 🇨🇳 台湾 24
-      - 🇫🇷 法国 5
-      - 🇳🇱 荷兰 3
-      - 🇨🇳 台湾 25
-      - 🇨🇳 台湾 26
-      - 🇨🇳 台湾 27
-      - 🇨🇳 台湾 28
-      - 🇨🇳 台湾 29
-      - 🇨🇳 台湾 30
-      - 🇨🇳 台湾 31
-      - 🇨🇳 台湾 32
-      - 🇨🇳 台湾 33
-      - 🇫🇷 法国 6
       - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 19
+      - 中国
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇬🇧 英国
+      - 🇺🇸 美国 22
+      - 🇺🇸 美国 23
+      - 🇺🇸 美国 24
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇺🇸 美国 25
+      - 🇬🇧 英国 4
+      - 🇺🇸 美国 26
+      - 🇺🇸 美国 27
+      - 🇬🇧 英国 5
+      - 🇺🇸 美国 28
+      - 🇬🇧 英国 6
+      - 🇬🇧 英国 7
+      - 🇬🇧 英国 8
+      - 🇬🇧 英国 9
+      - 🇺🇸 美国 29
+      - 🇬🇧 英国 10
+      - 🇺🇸 美国 30
+      - 🇬🇧 英国 11
+      - 中国 2
+      - 🇺🇸 美国 31
+      - 🇬🇧 英国 12
+      - 🇬🇧 英国 13
+      - 🇬🇧 英国 14
+      - 🇬🇧 英国 15
+      - 中国 3
+      - 🇩🇪 德国
+      - 中国 4
+      - 中国 5
+      - 🇬🇧 英国 16
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 中国 6
+      - 中国 7
+      - 中国 8
+      - 中国 9
+      - 中国 10
+      - 🇭🇰 香港 5
+      - 🇭🇰 香港 6
+      - 中国 11
+      - 🇭🇰 香港 7
+      - 中国 12
+      - 中国 13
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇬🇧 英国 17
+      - 中国 14
+      - 🇺🇸 美国 32
+      - 中国 15
+      - 🇭🇰 香港 10
+      - 中国 16
+      - 🇺🇸 美国 33
+      - 中国 17
+      - 🇭🇰 香港 11
+      - 中国 18
+      - 🇭🇰 香港 12
+      - 🇺🇸 美国 34
+      - 🇬🇧 英国 18
+      - 中国 19
+      - 中国 20
+      - 中国 21
+      - 🇭🇰 香港 13
+      - 🇭🇰 香港 14
+      - 中国 22
+      - 🇭🇰 香港 15
+      - 中国 23
+      - 中国 24
+      - 中国 25
+      - 中国 26
+      - 🇭🇰 香港 16
+      - 中国 27
+      - 中国 28
+      - 中国 29
+      - 🇭🇰 香港 17
+      - 中国 30
+      - 🇭🇰 香港 18
+      - 🇭🇰 香港 19
+      - 🇭🇰 香港 20
+      - 中国 31
+      - 🇭🇰 香港 21
+      - 🇭🇰 香港 22
+      - 中国 32
+      - 中国 33
+      - 中国 34
+      - 中国 35
+      - 🇭🇰 香港 23
+      - 中国 36
+      - 中国 37
+      - 中国 38
+      - 中国 39
+      - 🇭🇰 香港 24
+      - 中国 40
+      - 中国 41
+      - 中国 42
+      - 中国 43
+      - 中国 44
+      - 中国 45
+      - 中国 46
+      - 🇭🇰 香港 25
+      - 中国 47
+      - 中国 48
+      - 🇭🇰 香港 26
+      - 中国 49
+      - 中国 50
+      - 🇭🇰 香港 27
+      - 🇭🇰 香港 28
+      - 中国 51
+      - 中国 52
+      - 中国 53
+      - 中国 54
+      - 中国 55
+      - 中国 56
+      - 中国 57
+      - 中国 58
+      - 中国 59
+      - 🇭🇰 香港 29
+      - 🇭🇰 香港 30
+      - 中国 60
+      - 🇭🇰 香港 31
+      - 中国 61
+      - 中国 62
+      - 中国 63
+      - 中国 64
+      - 中国 65
+      - 中国 66
+      - 🇭🇰 香港 32
+      - 中国 67
+      - 🇫🇷 法国 5
+      - 🇺🇸 美国 35
+      - 中国 68
+      - 中国 69
+      - 🇭🇰 香港 33
+      - 中国 70
+      - 中国 71
+      - 🇺🇸 美国 36
+      - 🇫🇷 法国 6
+      - 🇺🇸 美国 37
+      - 🇺🇸 美国 38
+      - 🇺🇸 美国 39
+      - 🇭🇰 香港 34
+      - 中国 72
+      - 中国 73
+      - 🇬🇧 英国 19
+      - 中国 74
+      - 🇭🇰 香港 35
+      - 中国 75
+      - 🇭🇰 香港 36
+      - 🇭🇰 香港 37
+      - 🇭🇰 香港 38
+      - 中国 76
+      - 🇭🇰 香港 39
+      - 🇭🇰 香港 40
+      - 中国 77
+      - 中国 78
+      - 中国 79
+      - 中国 80
+      - 中国 81
+      - 🇭🇰 香港 41
+      - 🇭🇰 香港 42
+      - 🇭🇰 香港 43
+      - 🇭🇰 香港 44
+      - 中国 82
+      - 🇭🇰 香港 45
+      - 中国 83
+      - 🇭🇰 香港 46
+      - 🇭🇰 香港 47
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
